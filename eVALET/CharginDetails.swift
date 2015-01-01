@@ -1,5 +1,5 @@
 //
-//  ViewController0.swift
+//  ChargingDetails.swift
 //  eVALET
 //
 //  Created by Drew Taylor on 8/26/15.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController0: UIViewController {
+class ChargingDetails: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

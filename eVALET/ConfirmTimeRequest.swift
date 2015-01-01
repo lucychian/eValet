@@ -1,18 +1,30 @@
 //
-//  ViewController1.swift
+//  ConfirmTimeRequest.swift
 //  eVALET
 //
-//  Created by Drew Taylor on 8/26/15.
+//  Created by Drew Taylor on 8/31/15.
 //  Copyright © 2015 Drew Taylor. All rights reserved.
 //
 
 import UIKit
 
-class ViewController1: UIViewController {
+class ConfirmTimeRequest: UIViewController {
 
+    @IBOutlet var datePicker: UIDatePicker!
+    
+    @IBOutlet var confirmTradeButton: UIButton!
+    
+    @IBAction func confirmTradeButton(sender: AnyObject) {
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        datePicker.backgroundColor = UIColor.whiteColor()
+        
+        confirmTradeButton.layer.cornerRadius = 5
+        
         // Do any additional setup after loading the view.
     }
 

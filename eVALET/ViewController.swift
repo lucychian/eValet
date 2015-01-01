@@ -19,6 +19,7 @@ class ViewController: UIViewController {
     @IBAction func viewTradeButton(sender: AnyObject) {
     }
     
+    
     var frame: CGRect = CGRectMake(0, 0, 0, 0)
     
     
@@ -48,13 +49,13 @@ class ViewController: UIViewController {
         self.scrollView.contentSize = CGSizeMake(self.scrollView.frame.size.width * 2, self.scrollView.frame.size.height)
         pageControl.addTarget(self, action: Selector("changePage:"), forControlEvents: UIControlEvents.ValueChanged)
         
-        let vc0 = ViewController0(nibName: "ViewController0", bundle: nil)
+        let vc0 = CarDetails(nibName: "CarDetails", bundle: nil)
         
         self.addChildViewController(vc0)
         self.scrollView.addSubview(vc0.view)
         vc0.didMoveToParentViewController(self)
         
-        let vc1 = ViewController1(nibName: "ViewController1", bundle: nil)
+        let vc1 = ChargingDetails(nibName: "ChargingDetails", bundle: nil)
         
         var frame1 = vc1.view.frame
         frame1.origin.x = self.view.frame.size.width

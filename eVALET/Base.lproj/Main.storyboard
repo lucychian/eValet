@@ -10,6 +10,8 @@
             <string>HelveticaNeue</string>
             <string>HelveticaNeue</string>
             <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -55,34 +57,23 @@
                                 </items>
                             </navigationBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Percent charged" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2dh-WQ-wBJ">
-                                <rect key="frame" x="237" y="361" width="126" height="21"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <rect key="frame" x="237" y="361" width="168" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Time until full" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TN5-bz-526">
-                                <rect key="frame" x="249" y="408" width="101" height="21"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <rect key="frame" x="249" y="408" width="134" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Trade at 0:00PM" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wPw-8L-Sec">
-                                <rect key="frame" x="237" y="454" width="126" height="21"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Trade at 0:00 PM" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wPw-8L-Sec">
+                                <rect key="frame" x="237" y="454" width="163" height="24"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kTB-L6-Ffm">
-                                <rect key="frame" x="223" y="493" width="155" height="30"/>
-                                <color key="backgroundColor" red="0.44313725490196076" green="0.6705882352941176" blue="0.21176470588235294" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                <state key="normal" title="View Trade">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="viewTradeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5eZ-jc-DwY"/>
-                                </connections>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Clock-50" translatesAutoresizingMaskIntoConstraints="NO" id="rrn-mA-JST">
                                 <rect key="frame" x="215" y="409" width="20" height="20"/>
                                 <constraints>
@@ -104,13 +95,29 @@
                                     <constraint firstAttribute="width" constant="20" id="h2v-Eg-D0c"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kTB-L6-Ffm">
+                                <rect key="frame" x="156" y="486" width="289" height="45"/>
+                                <color key="backgroundColor" red="0.44313725490196076" green="0.6705882352941176" blue="0.21176470588235294" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="350" id="2cr-Pu-MqW"/>
+                                    <constraint firstAttribute="height" constant="50" id="ykq-FL-hXY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="View Trade">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="viewTradeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GTM-nx-kbY"/>
+                                    <segue destination="cSh-zF-ZeF" kind="show" animates="NO" id="tTR-K0-kqd"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.90980392156862744" green="0.90980392156862744" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="wPw-8L-Sec" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0zi-0V-r0M"/>
-                            <constraint firstItem="kTB-L6-Ffm" firstAttribute="top" secondItem="wPw-8L-Sec" secondAttribute="bottom" constant="30" id="1Ay-Jm-7aK"/>
                             <constraint firstItem="7em-xo-rbv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="5Ty-rP-p6c"/>
                             <constraint firstItem="2dh-WQ-wBJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="64H-Na-ehS"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="kTB-L6-Ffm" secondAttribute="bottom" constant="20" id="G99-Ay-WZZ"/>
                             <constraint firstItem="TN5-bz-526" firstAttribute="top" secondItem="2dh-WQ-wBJ" secondAttribute="bottom" constant="25" id="IKm-FR-7lb"/>
                             <constraint firstItem="g53-bc-Tsy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="JBd-ak-eqq"/>
                             <constraint firstItem="wPw-8L-Sec" firstAttribute="top" secondItem="TN5-bz-526" secondAttribute="bottom" constant="25" id="LOv-k0-hN5"/>
@@ -138,6 +145,112 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="474" y="354"/>
+        </scene>
+        <!--Confirm Time Request-->
+        <scene sceneID="B0f-OM-8fC">
+            <objects>
+                <viewController id="cSh-zF-ZeF" customClass="ConfirmTimeRequest" customModule="eVALET" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="R84-8T-0Dd"/>
+                        <viewControllerLayoutGuide type="bottom" id="85D-TG-KPn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5md-xX-GwK">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" ambiguous="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5rV-4W-qT6">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="66"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="66" id="SSP-zD-KEb"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="66" id="UKa-Kp-rFv"/>
+                                </constraints>
+                                <color key="barTintColor" red="0.4431372549" green="0.6705882353" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="eVALET" id="1ra-ta-2pe">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="search" id="L7b-Fr-TMH">
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <datePicker contentMode="scaleToFill" ambiguous="YES" misplaced="YES" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="d0r-os-bbD">
+                                <rect key="frame" x="0.0" y="66" width="600" height="216"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <date key="date" timeIntervalSinceReferenceDate="462749133.06454998">
+                                    <!--2015-08-31 21:25:33 +0000-->
+                                </date>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Choose the time that works for you to trade cars, given the range supplied." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="68j-xv-hmQ">
+                                <rect key="frame" x="141" y="290" width="319" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="319" id="lHQ-FY-tEa"/>
+                                    <constraint firstAttribute="height" constant="43" id="uV1-9t-zFa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.50196081399917603" green="0.50196081399917603" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kcy-Ho-G4v">
+                                <rect key="frame" x="127" y="495" width="347" height="48"/>
+                                <color key="backgroundColor" red="0.4431372549" green="0.6705882353" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="350" id="OrU-WQ-1MS"/>
+                                    <constraint firstAttribute="height" constant="50" id="aHQ-M7-GHQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="Confirm Trade">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="confirmTradeButton:" destination="cSh-zF-ZeF" eventType="touchUpInside" id="qPY-sN-nod"/>
+                                    <action selector="viewTradeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BX7-QR-T3f"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" animates="NO" id="ZAr-xl-N1x"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90980392156862744" green="0.90980392156862744" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="5rV-4W-qT6" firstAttribute="leading" secondItem="5md-xX-GwK" secondAttribute="leadingMargin" constant="-20" id="7pa-q4-Ixi"/>
+                            <constraint firstItem="d0r-os-bbD" firstAttribute="centerX" secondItem="5md-xX-GwK" secondAttribute="centerX" id="99n-wo-1jS"/>
+                            <constraint firstItem="kcy-Ho-G4v" firstAttribute="centerX" secondItem="5md-xX-GwK" secondAttribute="centerX" id="Yhn-QM-0Ja"/>
+                            <constraint firstItem="68j-xv-hmQ" firstAttribute="top" secondItem="d0r-os-bbD" secondAttribute="bottom" constant="15" id="hMh-s9-S7L"/>
+                            <constraint firstItem="68j-xv-hmQ" firstAttribute="centerX" secondItem="5md-xX-GwK" secondAttribute="centerX" id="jn0-bK-16B"/>
+                            <constraint firstItem="85D-TG-KPn" firstAttribute="top" secondItem="kcy-Ho-G4v" secondAttribute="bottom" constant="20" id="n28-Me-9PG"/>
+                            <constraint firstItem="d0r-os-bbD" firstAttribute="top" secondItem="5rV-4W-qT6" secondAttribute="bottom" id="nhj-w9-Li7"/>
+                            <constraint firstItem="85D-TG-KPn" firstAttribute="top" secondItem="kcy-Ho-G4v" secondAttribute="bottom" constant="30" id="ysi-tf-81R"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5rV-4W-qT6" secondAttribute="trailing" constant="-20" id="zda-yS-Sh1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="confirmTradeButton" destination="kcy-Ho-G4v" id="5w7-AA-b1b"/>
+                        <outlet property="datePicker" destination="d0r-os-bbD" id="WjP-8i-9w0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rPC-t6-Tdu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="474" y="1097"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="qYK-wx-0Yv">
+            <objects>
+                <viewController id="4Eg-Qa-L7o" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xJr-yd-e5K"/>
+                        <viewControllerLayoutGuide type="bottom" id="ax4-gW-y65"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="06z-ux-nSw">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YtB-Ny-sC9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="474" y="1800"/>
         </scene>
     </scenes>
     <resources>
