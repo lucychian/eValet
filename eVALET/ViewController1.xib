@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8173.3" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8142"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController1" customModule="eVALET" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Charging Details" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gga-AV-fiv">
+                    <rect key="frame" x="96" y="25" width="409" height="26"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="station" translatesAutoresizingMaskIntoConstraints="NO" id="me5-UZ-0TI">
+                    <rect key="frame" x="304" y="67" width="100" height="128"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="128" id="LRH-Q5-zSi"/>
+                        <constraint firstAttribute="width" constant="100" id="tgv-po-rGs"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Station #" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J8Y-lq-dOx">
+                    <rect key="frame" x="221" y="82" width="75" height="20"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Trading @ 0:00 PM   " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1bO-mt-z9u">
+                    <rect key="frame" x="139" y="130" width="157" height="21"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="License #" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZZs-GO-zRE">
+                    <rect key="frame" x="223" y="174" width="73" height="21"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.90980392156862744" green="0.90980392156862744" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="J8Y-lq-dOx" firstAttribute="top" secondItem="gga-AV-fiv" secondAttribute="bottom" constant="30" id="0Oo-LL-Rh0"/>
+                <constraint firstItem="1bO-mt-z9u" firstAttribute="top" secondItem="J8Y-lq-dOx" secondAttribute="bottom" constant="25" id="1CW-vb-sf1"/>
+                <constraint firstItem="me5-UZ-0TI" firstAttribute="leading" secondItem="J8Y-lq-dOx" secondAttribute="trailing" constant="10" id="2Ob-1L-lRS"/>
+                <constraint firstItem="gga-AV-fiv" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="2qS-oe-F8r"/>
+                <constraint firstItem="me5-UZ-0TI" firstAttribute="leading" secondItem="ZZs-GO-zRE" secondAttribute="trailing" constant="10" id="BDa-yi-3ig"/>
+                <constraint firstItem="ZZs-GO-zRE" firstAttribute="trailing" secondItem="1bO-mt-z9u" secondAttribute="trailing" id="NK5-LQ-84i"/>
+                <constraint firstItem="gga-AV-fiv" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="O0s-67-bE4"/>
+                <constraint firstItem="ZZs-GO-zRE" firstAttribute="top" secondItem="1bO-mt-z9u" secondAttribute="bottom" constant="25" id="SWb-mW-syD"/>
+                <constraint firstItem="J8Y-lq-dOx" firstAttribute="trailing" secondItem="1bO-mt-z9u" secondAttribute="trailing" id="nQl-LN-q5X"/>
+                <constraint firstItem="me5-UZ-0TI" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="50" id="pLE-x3-O4H"/>
+                <constraint firstItem="me5-UZ-0TI" firstAttribute="top" secondItem="gga-AV-fiv" secondAttribute="bottom" constant="20" id="sJc-rF-p55"/>
+                <constraint firstItem="me5-UZ-0TI" firstAttribute="leading" secondItem="1bO-mt-z9u" secondAttribute="trailing" constant="10" id="yF9-ml-LE5"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="station" width="1500" height="2101"/>
+    </resources>
+</document>

@@ -1,0 +1,307 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A81908D1B8E2BC2003F1C7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A81908C1B8E2BC2003F1C7F /* AppDelegate.swift */; };
+		3A81908F1B8E2BC2003F1C7F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A81908E1B8E2BC2003F1C7F /* ViewController.swift */; };
+		3A8190921B8E2BC2003F1C7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A8190901B8E2BC2003F1C7F /* Main.storyboard */; };
+		3A8190941B8E2BC2003F1C7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A8190931B8E2BC2003F1C7F /* Assets.xcassets */; };
+		3A8190971B8E2BC2003F1C7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A8190951B8E2BC2003F1C7F /* LaunchScreen.storyboard */; };
+		3A8190A41B8E2C4C003F1C7F /* ViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8190A21B8E2C4C003F1C7F /* ViewController1.swift */; };
+		3A8190A51B8E2C4C003F1C7F /* ViewController1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A8190A31B8E2C4C003F1C7F /* ViewController1.xib */; };
+		3A8190A81B8E3316003F1C7F /* ViewController0.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8190A61B8E3316003F1C7F /* ViewController0.swift */; };
+		3A8190A91B8E3316003F1C7F /* ViewController0.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A8190A71B8E3316003F1C7F /* ViewController0.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3A8190891B8E2BC2003F1C7F /* eVALET.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eVALET.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A81908C1B8E2BC2003F1C7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3A81908E1B8E2BC2003F1C7F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3A8190911B8E2BC2003F1C7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3A8190931B8E2BC2003F1C7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3A8190961B8E2BC2003F1C7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3A8190981B8E2BC2003F1C7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A8190A21B8E2C4C003F1C7F /* ViewController1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController1.swift; sourceTree = "<group>"; };
+		3A8190A31B8E2C4C003F1C7F /* ViewController1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController1.xib; sourceTree = "<group>"; };
+		3A8190A61B8E3316003F1C7F /* ViewController0.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController0.swift; sourceTree = "<group>"; };
+		3A8190A71B8E3316003F1C7F /* ViewController0.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController0.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3A8190861B8E2BC2003F1C7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A8190801B8E2BC2003F1C7F = {
+			isa = PBXGroup;
+			children = (
+				3A81908B1B8E2BC2003F1C7F /* eVALET */,
+				3A81908A1B8E2BC2003F1C7F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3A81908A1B8E2BC2003F1C7F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3A8190891B8E2BC2003F1C7F /* eVALET.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3A81908B1B8E2BC2003F1C7F /* eVALET */ = {
+			isa = PBXGroup;
+			children = (
+				3A81908C1B8E2BC2003F1C7F /* AppDelegate.swift */,
+				3A81908E1B8E2BC2003F1C7F /* ViewController.swift */,
+				3A8190901B8E2BC2003F1C7F /* Main.storyboard */,
+				3A8190A21B8E2C4C003F1C7F /* ViewController1.swift */,
+				3A8190A61B8E3316003F1C7F /* ViewController0.swift */,
+				3A8190A71B8E3316003F1C7F /* ViewController0.xib */,
+				3A8190A31B8E2C4C003F1C7F /* ViewController1.xib */,
+				3A8190931B8E2BC2003F1C7F /* Assets.xcassets */,
+				3A8190951B8E2BC2003F1C7F /* LaunchScreen.storyboard */,
+				3A8190981B8E2BC2003F1C7F /* Info.plist */,
+			);
+			path = eVALET;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3A8190881B8E2BC2003F1C7F /* eVALET */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A81909B1B8E2BC2003F1C7F /* Build configuration list for PBXNativeTarget "eVALET" */;
+			buildPhases = (
+				3A8190851B8E2BC2003F1C7F /* Sources */,
+				3A8190861B8E2BC2003F1C7F /* Frameworks */,
+				3A8190871B8E2BC2003F1C7F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = eVALET;
+			productName = eVALET;
+			productReference = 3A8190891B8E2BC2003F1C7F /* eVALET.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3A8190811B8E2BC2003F1C7F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Drew Taylor";
+				TargetAttributes = {
+					3A8190881B8E2BC2003F1C7F = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = 3A8190841B8E2BC2003F1C7F /* Build configuration list for PBXProject "eVALET" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3A8190801B8E2BC2003F1C7F;
+			productRefGroup = 3A81908A1B8E2BC2003F1C7F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3A8190881B8E2BC2003F1C7F /* eVALET */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3A8190871B8E2BC2003F1C7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A8190971B8E2BC2003F1C7F /* LaunchScreen.storyboard in Resources */,
+				3A8190A51B8E2C4C003F1C7F /* ViewController1.xib in Resources */,
+				3A8190A91B8E3316003F1C7F /* ViewController0.xib in Resources */,
+				3A8190941B8E2BC2003F1C7F /* Assets.xcassets in Resources */,
+				3A8190921B8E2BC2003F1C7F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3A8190851B8E2BC2003F1C7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A8190A41B8E2C4C003F1C7F /* ViewController1.swift in Sources */,
+				3A81908F1B8E2BC2003F1C7F /* ViewController.swift in Sources */,
+				3A81908D1B8E2BC2003F1C7F /* AppDelegate.swift in Sources */,
+				3A8190A81B8E3316003F1C7F /* ViewController0.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3A8190901B8E2BC2003F1C7F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A8190911B8E2BC2003F1C7F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3A8190951B8E2BC2003F1C7F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A8190961B8E2BC2003F1C7F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3A8190991B8E2BC2003F1C7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3A81909A1B8E2BC2003F1C7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3A81909C1B8E2BC2003F1C7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = eVALET/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.DrewTaylor.eVALET;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3A81909D1B8E2BC2003F1C7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = eVALET/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.DrewTaylor.eVALET;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3A8190841B8E2BC2003F1C7F /* Build configuration list for PBXProject "eVALET" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A8190991B8E2BC2003F1C7F /* Debug */,
+				3A81909A1B8E2BC2003F1C7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A81909B1B8E2BC2003F1C7F /* Build configuration list for PBXNativeTarget "eVALET" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A81909C1B8E2BC2003F1C7F /* Debug */,
+				3A81909D1B8E2BC2003F1C7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3A8190811B8E2BC2003F1C7F /* Project object */;
+}

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8173.3" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8142"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="eVALET" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" directionalLockEnabled="YES" alwaysBounceHorizontal="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7em-xo-rbv">
+                                <rect key="frame" x="0.0" y="64" width="600" height="240"/>
+                            </scrollView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="2" translatesAutoresizingMaskIntoConstraints="NO" id="hZR-Sy-VNS">
+                                <rect key="frame" x="281" y="304" width="39" height="37"/>
+                                <color key="pageIndicatorTintColor" red="0.81960784313725488" green="0.81960784313725488" blue="0.81960784313725488" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="currentPageIndicatorTintColor" red="0.0" green="0.50196081399917603" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="pageControl:" destination="BYZ-38-t0r" eventType="valueChanged" id="fnV-rK-cXD"/>
+                                </connections>
+                            </pageControl>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g53-bc-Tsy">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="66"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="66" id="M71-tC-2fs"/>
+                                </constraints>
+                                <color key="barTintColor" red="0.44313725490196076" green="0.6705882352941176" blue="0.21176470588235294" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="eVALET" id="nrd-xw-bSe">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="search" id="gBp-iD-FBZ">
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Percent charged" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2dh-WQ-wBJ">
+                                <rect key="frame" x="237" y="361" width="126" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Time until full" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TN5-bz-526">
+                                <rect key="frame" x="249" y="408" width="101" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Trade at 0:00PM" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wPw-8L-Sec">
+                                <rect key="frame" x="237" y="454" width="126" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kTB-L6-Ffm">
+                                <rect key="frame" x="223" y="493" width="155" height="30"/>
+                                <color key="backgroundColor" red="0.44313725490196076" green="0.6705882352941176" blue="0.21176470588235294" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="View Trade">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="viewTradeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5eZ-jc-DwY"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Clock-50" translatesAutoresizingMaskIntoConstraints="NO" id="rrn-mA-JST">
+                                <rect key="frame" x="215" y="409" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="90f-CV-iv3"/>
+                                    <constraint firstAttribute="width" constant="20" id="gFB-Ub-fEM"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Clock-50" translatesAutoresizingMaskIntoConstraints="NO" id="o0J-Ax-bxH">
+                                <rect key="frame" x="203" y="362" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="01m-w5-Zzw"/>
+                                    <constraint firstAttribute="height" constant="20" id="24I-hi-eIj"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Clock-50" translatesAutoresizingMaskIntoConstraints="NO" id="bhm-EI-M3q">
+                                <rect key="frame" x="203" y="455" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="Jh3-ao-4Nd"/>
+                                    <constraint firstAttribute="width" constant="20" id="h2v-Eg-D0c"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90980392156862744" green="0.90980392156862744" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="wPw-8L-Sec" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0zi-0V-r0M"/>
+                            <constraint firstItem="kTB-L6-Ffm" firstAttribute="top" secondItem="wPw-8L-Sec" secondAttribute="bottom" constant="30" id="1Ay-Jm-7aK"/>
+                            <constraint firstItem="7em-xo-rbv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="5Ty-rP-p6c"/>
+                            <constraint firstItem="2dh-WQ-wBJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="64H-Na-ehS"/>
+                            <constraint firstItem="TN5-bz-526" firstAttribute="top" secondItem="2dh-WQ-wBJ" secondAttribute="bottom" constant="25" id="IKm-FR-7lb"/>
+                            <constraint firstItem="g53-bc-Tsy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="JBd-ak-eqq"/>
+                            <constraint firstItem="wPw-8L-Sec" firstAttribute="top" secondItem="TN5-bz-526" secondAttribute="bottom" constant="25" id="LOv-k0-hN5"/>
+                            <constraint firstItem="wPw-8L-Sec" firstAttribute="leading" secondItem="bhm-EI-M3q" secondAttribute="trailing" constant="10" id="Ped-Ka-s52"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7em-xo-rbv" secondAttribute="trailing" constant="-20" id="Q9F-lD-mkd"/>
+                            <constraint firstItem="hZR-Sy-VNS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RmY-N0-TAp"/>
+                            <constraint firstItem="kTB-L6-Ffm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Sxu-T4-FKc"/>
+                            <constraint firstItem="TN5-bz-526" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UD3-yn-fsm"/>
+                            <constraint firstItem="2dh-WQ-wBJ" firstAttribute="top" secondItem="hZR-Sy-VNS" secondAttribute="bottom" constant="30" id="btg-Iy-LSa"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="g53-bc-Tsy" secondAttribute="trailing" constant="-20" id="gMU-7F-W3M"/>
+                            <constraint firstItem="2dh-WQ-wBJ" firstAttribute="leading" secondItem="o0J-Ax-bxH" secondAttribute="trailing" constant="10" id="mDd-Ni-lx3"/>
+                            <constraint firstItem="TN5-bz-526" firstAttribute="leading" secondItem="rrn-mA-JST" secondAttribute="trailing" constant="10" id="n7p-pO-2Dc"/>
+                            <constraint firstItem="g53-bc-Tsy" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="tMe-sW-IYk"/>
+                            <constraint firstItem="7em-xo-rbv" firstAttribute="top" secondItem="g53-bc-Tsy" secondAttribute="bottom" id="uKq-Z9-BGy"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="pageControl" destination="hZR-Sy-VNS" id="3r6-Oy-s3G"/>
+                        <outlet property="scrollView" destination="7em-xo-rbv" id="TIb-yx-iDd"/>
+                        <outlet property="viewTradeButton" destination="kTB-L6-Ffm" id="Wvs-Pu-ZZw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="474" y="354"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Clock-50" width="50" height="50"/>
+    </resources>
+</document>
