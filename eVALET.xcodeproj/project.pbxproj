@@ -7,28 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3A0535D21B95022C0047E0A5 /* ConfirmTimeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0535D11B95022C0047E0A5 /* ConfirmTimeRequest.swift */; };
+		3A0535D21B95022C0047E0A5 /* ConfirmAcceptRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0535D11B95022C0047E0A5 /* ConfirmAcceptRequest.swift */; };
+		3A40DDA21A54C7DA0008D4A3 /* TimeRangeStart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A40DDA11A54C7DA0008D4A3 /* TimeRangeStart.swift */; };
+		3A40DDA41B9626F30008D4A3 /* TimeRangeEnd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A40DDA31B9626F30008D4A3 /* TimeRangeEnd.swift */; };
+		3A40DDA61B962CAB0008D4A3 /* ConfirmTimeRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A40DDA51B962CAB0008D4A3 /* ConfirmTimeRange.swift */; };
+		3A40DDA81B962D630008D4A3 /* CarNotDocked.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A40DDA71B962D630008D4A3 /* CarNotDocked.swift */; };
 		3A81908D1B8E2BC2003F1C7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A81908C1B8E2BC2003F1C7F /* AppDelegate.swift */; };
-		3A81908F1B8E2BC2003F1C7F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A81908E1B8E2BC2003F1C7F /* ViewController.swift */; };
+		3A81908F1B8E2BC2003F1C7F /* CarDocked.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A81908E1B8E2BC2003F1C7F /* CarDocked.swift */; };
 		3A8190921B8E2BC2003F1C7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A8190901B8E2BC2003F1C7F /* Main.storyboard */; };
 		3A8190941B8E2BC2003F1C7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A8190931B8E2BC2003F1C7F /* Assets.xcassets */; };
 		3A8190971B8E2BC2003F1C7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A8190951B8E2BC2003F1C7F /* LaunchScreen.storyboard */; };
-		3A8190A41B8E2C4C003F1C7F /* CharginDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8190A21B8E2C4C003F1C7F /* CharginDetails.swift */; };
+		3A8190A41B8E2C4C003F1C7F /* ChargingDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8190A21B8E2C4C003F1C7F /* ChargingDetails.swift */; };
 		3A8190A51B8E2C4C003F1C7F /* ChargingDetails.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A8190A31B8E2C4C003F1C7F /* ChargingDetails.xib */; };
 		3A8190A81B8E3316003F1C7F /* CarDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8190A61B8E3316003F1C7F /* CarDetails.swift */; };
 		3A8190A91B8E3316003F1C7F /* CarDetails.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A8190A71B8E3316003F1C7F /* CarDetails.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3A0535D11B95022C0047E0A5 /* ConfirmTimeRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmTimeRequest.swift; sourceTree = "<group>"; };
+		3A0535D11B95022C0047E0A5 /* ConfirmAcceptRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmAcceptRequest.swift; sourceTree = "<group>"; };
+		3A40DDA11A54C7DA0008D4A3 /* TimeRangeStart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeRangeStart.swift; sourceTree = "<group>"; };
+		3A40DDA31B9626F30008D4A3 /* TimeRangeEnd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeRangeEnd.swift; sourceTree = "<group>"; };
+		3A40DDA51B962CAB0008D4A3 /* ConfirmTimeRange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmTimeRange.swift; sourceTree = "<group>"; };
+		3A40DDA71B962D630008D4A3 /* CarNotDocked.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarNotDocked.swift; sourceTree = "<group>"; };
 		3A8190891B8E2BC2003F1C7F /* eVALET.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eVALET.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A81908C1B8E2BC2003F1C7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3A81908E1B8E2BC2003F1C7F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3A81908E1B8E2BC2003F1C7F /* CarDocked.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDocked.swift; sourceTree = "<group>"; };
 		3A8190911B8E2BC2003F1C7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3A8190931B8E2BC2003F1C7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A8190961B8E2BC2003F1C7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A8190981B8E2BC2003F1C7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3A8190A21B8E2C4C003F1C7F /* CharginDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharginDetails.swift; sourceTree = "<group>"; };
+		3A8190A21B8E2C4C003F1C7F /* ChargingDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChargingDetails.swift; sourceTree = "<group>"; };
 		3A8190A31B8E2C4C003F1C7F /* ChargingDetails.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChargingDetails.xib; sourceTree = "<group>"; };
 		3A8190A61B8E3316003F1C7F /* CarDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarDetails.swift; sourceTree = "<group>"; };
 		3A8190A71B8E3316003F1C7F /* CarDetails.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CarDetails.xib; sourceTree = "<group>"; };
@@ -45,6 +53,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A40DDA91B9634F40008D4A3 /* When Car is Docked */ = {
+			isa = PBXGroup;
+			children = (
+				3A81908E1B8E2BC2003F1C7F /* CarDocked.swift */,
+				3A8190A61B8E3316003F1C7F /* CarDetails.swift */,
+				3A8190A71B8E3316003F1C7F /* CarDetails.xib */,
+				3A8190A21B8E2C4C003F1C7F /* ChargingDetails.swift */,
+				3A8190A31B8E2C4C003F1C7F /* ChargingDetails.xib */,
+				3A0535D11B95022C0047E0A5 /* ConfirmAcceptRequest.swift */,
+			);
+			name = "When Car is Docked";
+			sourceTree = "<group>";
+		};
+		3A40DDAA1B9635450008D4A3 /* When Car is Not Docked */ = {
+			isa = PBXGroup;
+			children = (
+				3A40DDA71B962D630008D4A3 /* CarNotDocked.swift */,
+				3A40DDA11A54C7DA0008D4A3 /* TimeRangeStart.swift */,
+				3A40DDA31B9626F30008D4A3 /* TimeRangeEnd.swift */,
+				3A40DDA51B962CAB0008D4A3 /* ConfirmTimeRange.swift */,
+			);
+			name = "When Car is Not Docked";
+			sourceTree = "<group>";
+		};
 		3A8190801B8E2BC2003F1C7F = {
 			isa = PBXGroup;
 			children = (
@@ -66,12 +98,8 @@
 			children = (
 				3A81908C1B8E2BC2003F1C7F /* AppDelegate.swift */,
 				3A8190901B8E2BC2003F1C7F /* Main.storyboard */,
-				3A81908E1B8E2BC2003F1C7F /* ViewController.swift */,
-				3A0535D11B95022C0047E0A5 /* ConfirmTimeRequest.swift */,
-				3A8190A21B8E2C4C003F1C7F /* CharginDetails.swift */,
-				3A8190A61B8E3316003F1C7F /* CarDetails.swift */,
-				3A8190A71B8E3316003F1C7F /* CarDetails.xib */,
-				3A8190A31B8E2C4C003F1C7F /* ChargingDetails.xib */,
+				3A40DDA91B9634F40008D4A3 /* When Car is Docked */,
+				3A40DDAA1B9635450008D4A3 /* When Car is Not Docked */,
 				3A8190931B8E2BC2003F1C7F /* Assets.xcassets */,
 				3A8190951B8E2BC2003F1C7F /* LaunchScreen.storyboard */,
 				3A8190981B8E2BC2003F1C7F /* Info.plist */,
@@ -151,11 +179,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A0535D21B95022C0047E0A5 /* ConfirmTimeRequest.swift in Sources */,
-				3A8190A41B8E2C4C003F1C7F /* CharginDetails.swift in Sources */,
-				3A81908F1B8E2BC2003F1C7F /* ViewController.swift in Sources */,
+				3A40DDA81B962D630008D4A3 /* CarNotDocked.swift in Sources */,
+				3A0535D21B95022C0047E0A5 /* ConfirmAcceptRequest.swift in Sources */,
+				3A8190A41B8E2C4C003F1C7F /* ChargingDetails.swift in Sources */,
+				3A81908F1B8E2BC2003F1C7F /* CarDocked.swift in Sources */,
+				3A40DDA41B9626F30008D4A3 /* TimeRangeEnd.swift in Sources */,
 				3A81908D1B8E2BC2003F1C7F /* AppDelegate.swift in Sources */,
 				3A8190A81B8E3316003F1C7F /* CarDetails.swift in Sources */,
+				3A40DDA61B962CAB0008D4A3 /* ConfirmTimeRange.swift in Sources */,
+				3A40DDA21A54C7DA0008D4A3 /* TimeRangeStart.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +302,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.DrewTaylor.eVALET;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -281,6 +314,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.DrewTaylor.eVALET;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

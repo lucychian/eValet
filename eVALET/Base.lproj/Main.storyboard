@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8173.3" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8173.3" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="fBU-Sc-B7z">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8142"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -12,13 +12,27 @@
             <string>HelveticaNeue</string>
             <string>HelveticaNeue</string>
             <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
         </mutableArray>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Car Docked-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="eVALET" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="CarDocked" customModule="eVALET" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -99,7 +113,6 @@
                                 <rect key="frame" x="156" y="486" width="289" height="45"/>
                                 <color key="backgroundColor" red="0.44313725490196076" green="0.6705882352941176" blue="0.21176470588235294" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="350" id="2cr-Pu-MqW"/>
                                     <constraint firstAttribute="height" constant="50" id="ykq-FL-hXY"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
@@ -130,6 +143,8 @@
                             <constraint firstAttribute="trailingMargin" secondItem="g53-bc-Tsy" secondAttribute="trailing" constant="-20" id="gMU-7F-W3M"/>
                             <constraint firstItem="2dh-WQ-wBJ" firstAttribute="leading" secondItem="o0J-Ax-bxH" secondAttribute="trailing" constant="10" id="mDd-Ni-lx3"/>
                             <constraint firstItem="TN5-bz-526" firstAttribute="leading" secondItem="rrn-mA-JST" secondAttribute="trailing" constant="10" id="n7p-pO-2Dc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kTB-L6-Ffm" secondAttribute="trailing" constant="10" id="paX-vR-Jgg"/>
+                            <constraint firstItem="kTB-L6-Ffm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="srI-dl-ZkZ"/>
                             <constraint firstItem="g53-bc-Tsy" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="tMe-sW-IYk"/>
                             <constraint firstItem="7em-xo-rbv" firstAttribute="top" secondItem="g53-bc-Tsy" secondAttribute="bottom" id="uKq-Z9-BGy"/>
                         </constraints>
@@ -144,12 +159,220 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="474" y="354"/>
+            <point key="canvasLocation" x="62" y="342"/>
         </scene>
-        <!--Confirm Time Request-->
+        <!--Car Not Docked-->
+        <scene sceneID="zJn-rD-LQY">
+            <objects>
+                <viewController id="fBU-Sc-B7z" customClass="CarNotDocked" customModule="eVALET" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TUg-Hm-pDP"/>
+                        <viewControllerLayoutGuide type="bottom" id="dKH-hN-cHq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dxK-f1-qLV">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ktz-4V-xmq">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="66"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="66" id="Npa-9W-zIH"/>
+                                    <constraint firstAttribute="height" constant="66" id="SJx-fN-6K4"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="66" id="uy8-ZR-rl4"/>
+                                </constraints>
+                                <color key="barTintColor" red="0.4431372549" green="0.6705882353" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="eVALET" id="1MO-sr-zHW">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="search" id="V5I-WG-rFz">
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ErB-6i-nh8">
+                                <rect key="frame" x="127" y="276" width="347" height="48"/>
+                                <color key="backgroundColor" red="0.4431372549" green="0.6705882353" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Tr0-5m-lWA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="Make a Request">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="confirmTradeButton:" destination="cSh-zF-ZeF" eventType="touchUpInside" id="jSl-TL-X0T"/>
+                                    <action selector="viewTradeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c1u-oL-8w6"/>
+                                    <segue destination="4Eg-Qa-L7o" kind="show" id="998-6j-YbT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="44I-Nf-bol">
+                                <rect key="frame" x="127" y="382" width="347" height="48"/>
+                                <color key="backgroundColor" red="0.4431372549" green="0.6705882353" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="avn-lQ-Q69"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="View Existing Request">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="confirmTradeButton:" destination="cSh-zF-ZeF" eventType="touchUpInside" id="grp-si-F4y"/>
+                                    <action selector="viewTradeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="45v-l8-LoO"/>
+                                    <segue destination="V4w-WR-ESx" kind="show" id="52R-dv-HSV"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Welcome John Manville!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zWx-UQ-6hN">
+                                <rect key="frame" x="192" y="90" width="217" height="24"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xe0-bf-0EI">
+                                <rect key="frame" x="127" y="176" width="347" height="48"/>
+                                <color key="backgroundColor" red="0.4431372549" green="0.6705882353" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="gfJ-os-HBT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="Confirm a Spot">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="confirmTradeButton:" destination="cSh-zF-ZeF" eventType="touchUpInside" id="OjX-dA-UCJ"/>
+                                    <action selector="viewTradeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Xt-Uv-TqK"/>
+                                    <segue destination="rO5-kZ-6mJ" kind="show" id="qqZ-sX-J9o"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90980392156862744" green="0.90980392156862744" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="44I-Nf-bol" firstAttribute="top" secondItem="ErB-6i-nh8" secondAttribute="bottom" constant="60" id="8rH-Tt-Zz1"/>
+                            <constraint firstItem="zWx-UQ-6hN" firstAttribute="centerX" secondItem="dxK-f1-qLV" secondAttribute="centerX" id="GKQ-7n-cAp"/>
+                            <constraint firstItem="ktz-4V-xmq" firstAttribute="leading" secondItem="dxK-f1-qLV" secondAttribute="leadingMargin" constant="-20" id="M88-pf-rs0"/>
+                            <constraint firstItem="Xe0-bf-0EI" firstAttribute="leading" secondItem="dxK-f1-qLV" secondAttribute="leadingMargin" constant="10" id="Mh9-xR-EhM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Xe0-bf-0EI" secondAttribute="trailing" constant="10" id="T3g-dz-TAU"/>
+                            <constraint firstItem="44I-Nf-bol" firstAttribute="centerX" secondItem="dxK-f1-qLV" secondAttribute="centerX" id="XJq-le-rdO"/>
+                            <constraint firstItem="ErB-6i-nh8" firstAttribute="centerX" secondItem="dxK-f1-qLV" secondAttribute="centerX" id="fvH-ws-Rke"/>
+                            <constraint firstItem="ErB-6i-nh8" firstAttribute="top" secondItem="Xe0-bf-0EI" secondAttribute="bottom" constant="60" id="fxm-Za-Gq0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="44I-Nf-bol" secondAttribute="trailing" constant="10" id="hgL-Bt-Y7n"/>
+                            <constraint firstItem="44I-Nf-bol" firstAttribute="leading" secondItem="dxK-f1-qLV" secondAttribute="leadingMargin" constant="10" id="ijV-eN-R3M"/>
+                            <constraint firstItem="Xe0-bf-0EI" firstAttribute="centerX" secondItem="dxK-f1-qLV" secondAttribute="centerX" id="ndu-GV-7js"/>
+                            <constraint firstItem="ktz-4V-xmq" firstAttribute="top" secondItem="dxK-f1-qLV" secondAttribute="topMargin" id="pVb-Hu-Yzj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ErB-6i-nh8" secondAttribute="trailing" constant="10" id="rf7-ew-zt1"/>
+                            <constraint firstItem="ErB-6i-nh8" firstAttribute="centerY" secondItem="dxK-f1-qLV" secondAttribute="centerY" id="tf9-Nb-VN8"/>
+                            <constraint firstItem="zWx-UQ-6hN" firstAttribute="top" secondItem="ktz-4V-xmq" secondAttribute="bottom" constant="15" id="vyQ-uD-ZUf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ktz-4V-xmq" secondAttribute="trailing" constant="-20" id="wsl-Jq-xIY"/>
+                            <constraint firstItem="ErB-6i-nh8" firstAttribute="leading" secondItem="dxK-f1-qLV" secondAttribute="leadingMargin" constant="10" id="zUu-J0-DGK"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="confirmASpot" destination="Xe0-bf-0EI" id="pyb-Y3-Ncv"/>
+                        <outlet property="makeARequest" destination="ErB-6i-nh8" id="2l9-AF-3xf"/>
+                        <outlet property="viewExistingRequest" destination="44I-Nf-bol" id="HWg-ov-uoB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GFe-TT-BlO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2298" y="382"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="GB7-XX-Vf7">
+            <objects>
+                <viewController id="rO5-kZ-6mJ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eF1-Pp-8Gz"/>
+                        <viewControllerLayoutGuide type="bottom" id="hpW-wz-v4u"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SrT-PS-R9M">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FU7-oG-eFh">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="66"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="66" id="18S-nE-Sm2"/>
+                                    <constraint firstAttribute="height" constant="66" id="HJx-kO-7a6"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="66" id="hqU-X5-xme"/>
+                                </constraints>
+                                <color key="barTintColor" red="0.4431372549" green="0.6705882353" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="eVALET" id="fbv-aw-4ih">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="search" id="oMA-ns-hZN">
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90980392156862744" green="0.90980392156862744" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="FU7-oG-eFh" firstAttribute="leading" secondItem="SrT-PS-R9M" secondAttribute="leadingMargin" constant="-20" id="8Fr-VQ-sdp"/>
+                            <constraint firstItem="FU7-oG-eFh" firstAttribute="top" secondItem="SrT-PS-R9M" secondAttribute="topMargin" id="G8L-u5-dDX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="FU7-oG-eFh" secondAttribute="trailing" constant="-20" id="xhT-Cm-tGW"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I7j-ip-rHk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2298" y="1097"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="WQs-aR-lok">
+            <objects>
+                <viewController id="V4w-WR-ESx" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GwM-ij-gNm"/>
+                        <viewControllerLayoutGuide type="bottom" id="14Y-TJ-HMS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Lif-2v-503">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wei-Uh-0Qx">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="66"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="66" id="HCu-u6-hcx"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="66" id="YF2-CI-Q1q"/>
+                                    <constraint firstAttribute="height" constant="66" id="i6o-ju-CTn"/>
+                                </constraints>
+                                <color key="barTintColor" red="0.4431372549" green="0.6705882353" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="eVALET" id="V61-ah-beZ">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="search" id="ZuX-vz-Uij">
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90980392156862744" green="0.90980392156862744" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Wei-Uh-0Qx" firstAttribute="leading" secondItem="Lif-2v-503" secondAttribute="leadingMargin" constant="-20" id="a8R-vz-DlF"/>
+                            <constraint firstItem="Wei-Uh-0Qx" firstAttribute="top" secondItem="Lif-2v-503" secondAttribute="topMargin" id="ezI-Sh-53S"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Wei-Uh-0Qx" secondAttribute="trailing" constant="-20" id="pMG-p0-kDG"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eEG-0w-agj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3150" y="1097"/>
+        </scene>
+        <!--Confirm Accept Request-->
         <scene sceneID="B0f-OM-8fC">
             <objects>
-                <viewController id="cSh-zF-ZeF" customClass="ConfirmTimeRequest" customModule="eVALET" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="cSh-zF-ZeF" customClass="ConfirmAcceptRequest" customModule="eVALET" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="R84-8T-0Dd"/>
                         <viewControllerLayoutGuide type="bottom" id="85D-TG-KPn"/>
@@ -180,6 +403,9 @@
                             <datePicker contentMode="scaleToFill" ambiguous="YES" misplaced="YES" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="d0r-os-bbD">
                                 <rect key="frame" x="0.0" y="66" width="600" height="216"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="216" id="Qeq-Mo-J9c"/>
+                                </constraints>
                                 <date key="date" timeIntervalSinceReferenceDate="462749133.06454998">
                                     <!--2015-08-31 21:25:33 +0000-->
                                 </date>
@@ -216,12 +442,13 @@
                         <constraints>
                             <constraint firstItem="5rV-4W-qT6" firstAttribute="leading" secondItem="5md-xX-GwK" secondAttribute="leadingMargin" constant="-20" id="7pa-q4-Ixi"/>
                             <constraint firstItem="d0r-os-bbD" firstAttribute="centerX" secondItem="5md-xX-GwK" secondAttribute="centerX" id="99n-wo-1jS"/>
+                            <constraint firstItem="kcy-Ho-G4v" firstAttribute="leading" secondItem="5md-xX-GwK" secondAttribute="leadingMargin" constant="10" id="Wu5-br-nTM"/>
                             <constraint firstItem="kcy-Ho-G4v" firstAttribute="centerX" secondItem="5md-xX-GwK" secondAttribute="centerX" id="Yhn-QM-0Ja"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kcy-Ho-G4v" secondAttribute="trailing" constant="10" id="dhp-7v-CVP"/>
                             <constraint firstItem="68j-xv-hmQ" firstAttribute="top" secondItem="d0r-os-bbD" secondAttribute="bottom" constant="15" id="hMh-s9-S7L"/>
                             <constraint firstItem="68j-xv-hmQ" firstAttribute="centerX" secondItem="5md-xX-GwK" secondAttribute="centerX" id="jn0-bK-16B"/>
-                            <constraint firstItem="85D-TG-KPn" firstAttribute="top" secondItem="kcy-Ho-G4v" secondAttribute="bottom" constant="20" id="n28-Me-9PG"/>
                             <constraint firstItem="d0r-os-bbD" firstAttribute="top" secondItem="5rV-4W-qT6" secondAttribute="bottom" id="nhj-w9-Li7"/>
-                            <constraint firstItem="85D-TG-KPn" firstAttribute="top" secondItem="kcy-Ho-G4v" secondAttribute="bottom" constant="30" id="ysi-tf-81R"/>
+                            <constraint firstItem="85D-TG-KPn" firstAttribute="top" secondItem="kcy-Ho-G4v" secondAttribute="bottom" constant="20" id="ysi-tf-81R"/>
                             <constraint firstAttribute="trailingMargin" secondItem="5rV-4W-qT6" secondAttribute="trailing" constant="-20" id="zda-yS-Sh1"/>
                         </constraints>
                     </view>
@@ -232,12 +459,57 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rPC-t6-Tdu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="474" y="1097"/>
+            <point key="canvasLocation" x="-274" y="1103"/>
         </scene>
         <!--View Controller-->
+        <scene sceneID="te7-a3-ihO">
+            <objects>
+                <viewController id="5Bw-a8-IWM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="29h-Yk-gnK"/>
+                        <viewControllerLayoutGuide type="bottom" id="cwY-Vq-SBF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CM7-b0-coZ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eYb-Gm-GeR">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="66"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="66" id="7Tb-XX-ks3"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="66" id="SKI-rL-pcs"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="66" id="sAM-xz-aL7"/>
+                                </constraints>
+                                <color key="barTintColor" red="0.4431372549" green="0.6705882353" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="eVALET" id="zGZ-tX-sUa">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="search" id="d6H-Bb-jS1">
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90980392156862744" green="0.90980392156862744" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="eYb-Gm-GeR" firstAttribute="leading" secondItem="CM7-b0-coZ" secondAttribute="leadingMargin" constant="-20" id="PMq-yG-0tg"/>
+                            <constraint firstItem="eYb-Gm-GeR" firstAttribute="top" secondItem="CM7-b0-coZ" secondAttribute="topMargin" id="WZ2-MK-fLT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="eYb-Gm-GeR" secondAttribute="trailing" constant="-20" id="ch8-xc-jWI"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wOe-fh-SVq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="522" y="1103"/>
+        </scene>
+        <!--Time Range Start-->
         <scene sceneID="qYK-wx-0Yv">
             <objects>
-                <viewController id="4Eg-Qa-L7o" sceneMemberID="viewController">
+                <viewController id="4Eg-Qa-L7o" customClass="TimeRangeStart" customModule="eVALET" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xJr-yd-e5K"/>
                         <viewControllerLayoutGuide type="bottom" id="ax4-gW-y65"/>
@@ -245,12 +517,289 @@
                     <view key="view" contentMode="scaleToFill" id="06z-ux-nSw">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nEc-bo-yGh">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="66"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="66" id="4Ud-dv-zpe"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="66" id="Bg6-vN-Wnq"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="66" id="T4m-3n-nkB"/>
+                                </constraints>
+                                <color key="barTintColor" red="0.4431372549" green="0.6705882353" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="eVALET" id="VEY-VA-JcE">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="search" id="89f-w9-riY">
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <datePicker contentMode="scaleToFill" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="NdF-T6-eP1">
+                                <rect key="frame" x="0.0" y="66" width="600" height="216"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="216" id="UAB-Pq-01e"/>
+                                </constraints>
+                                <date key="date" timeIntervalSinceReferenceDate="462749133.06454998">
+                                    <!--2015-08-31 21:25:33 +0000-->
+                                </date>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Choose the time that works for you to trade cars, given the range supplied." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wte-Pp-1Bt">
+                                <rect key="frame" x="141" y="290" width="319" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="o37-5J-T8Q"/>
+                                    <constraint firstAttribute="width" constant="319" id="vIL-1O-FJk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c0K-1w-9Nr">
+                                <rect key="frame" x="127" y="518" width="347" height="48"/>
+                                <color key="backgroundColor" red="0.4431372549" green="0.6705882353" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="D6s-Oe-mdu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="Available Start Time">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="confirmTradeButton:" destination="cSh-zF-ZeF" eventType="touchUpInside" id="HmY-Qu-e1V"/>
+                                    <action selector="viewTradeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M6l-R7-JTd"/>
+                                    <segue destination="z0K-LJ-rZp" kind="show" id="lH4-c6-WHM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90980392156862744" green="0.90980392156862744" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="c0K-1w-9Nr" secondAttribute="trailing" constant="10" id="AFY-oP-43i"/>
+                            <constraint firstItem="c0K-1w-9Nr" firstAttribute="centerX" secondItem="06z-ux-nSw" secondAttribute="centerX" id="BfA-kd-U2e"/>
+                            <constraint firstItem="wte-Pp-1Bt" firstAttribute="top" secondItem="NdF-T6-eP1" secondAttribute="bottom" constant="15" id="EpE-t0-t5X"/>
+                            <constraint firstItem="NdF-T6-eP1" firstAttribute="top" secondItem="nEc-bo-yGh" secondAttribute="bottom" id="JFs-RG-lhW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nEc-bo-yGh" secondAttribute="trailing" constant="-20" id="PFm-sj-rCe"/>
+                            <constraint firstItem="nEc-bo-yGh" firstAttribute="leading" secondItem="06z-ux-nSw" secondAttribute="leadingMargin" constant="-20" id="Vjv-BN-Sda"/>
+                            <constraint firstItem="ax4-gW-y65" firstAttribute="top" secondItem="c0K-1w-9Nr" secondAttribute="bottom" constant="20" id="XVs-r0-5CK"/>
+                            <constraint firstItem="wte-Pp-1Bt" firstAttribute="centerX" secondItem="06z-ux-nSw" secondAttribute="centerX" id="ZoI-gJ-D1N"/>
+                            <constraint firstItem="NdF-T6-eP1" firstAttribute="centerX" secondItem="06z-ux-nSw" secondAttribute="centerX" id="b0G-mD-nWZ"/>
+                            <constraint firstItem="nEc-bo-yGh" firstAttribute="top" secondItem="06z-ux-nSw" secondAttribute="topMargin" id="gAO-J9-TLB"/>
+                            <constraint firstItem="NdF-T6-eP1" firstAttribute="leading" secondItem="06z-ux-nSw" secondAttribute="leadingMargin" constant="-20" id="gs1-t9-iSO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="NdF-T6-eP1" secondAttribute="trailing" constant="-20" id="oa3-Qh-tJ6"/>
+                            <constraint firstItem="c0K-1w-9Nr" firstAttribute="leading" secondItem="06z-ux-nSw" secondAttribute="leadingMargin" constant="10" id="sGu-He-DFc"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="availableStartTime" destination="c0K-1w-9Nr" id="R5F-WO-Fbl"/>
+                        <outlet property="datePicker" destination="NdF-T6-eP1" id="UdB-La-loY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YtB-Ny-sC9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="474" y="1800"/>
+            <point key="canvasLocation" x="1410" y="1097"/>
+        </scene>
+        <!--Time Range End-->
+        <scene sceneID="GR8-UQ-8Pd">
+            <objects>
+                <viewController id="z0K-LJ-rZp" customClass="TimeRangeEnd" customModule="eVALET" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="D6N-AX-yDk"/>
+                        <viewControllerLayoutGuide type="bottom" id="OaT-1G-tpi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Uxf-r1-t6S">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lxp-a4-KNA">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="66"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="66" id="8A2-j9-bah"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="66" id="9vZ-Td-Rk4"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="66" id="Zl9-IC-jBf"/>
+                                </constraints>
+                                <color key="barTintColor" red="0.4431372549" green="0.6705882353" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="eVALET" id="0sT-8R-2lb">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="search" id="054-5y-OJM">
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <datePicker contentMode="scaleToFill" misplaced="YES" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="JUJ-zQ-7LJ">
+                                <rect key="frame" x="0.0" y="134" width="600" height="216"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="216" id="Gri-ST-HKp"/>
+                                </constraints>
+                                <date key="date" timeIntervalSinceReferenceDate="462749133.06454998">
+                                    <!--2015-08-31 21:25:33 +0000-->
+                                </date>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0:00 PM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S0u-LB-Xv6">
+                                <rect key="frame" x="259" y="76" width="83" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="to" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GdQ-AU-ORy">
+                                <rect key="frame" x="286" y="105" width="28" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Choose the time that works for you to trade cars, given the range supplied." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jTe-zL-10E">
+                                <rect key="frame" x="141" y="358" width="319" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="319" id="Xsp-H7-pNb"/>
+                                    <constraint firstAttribute="height" constant="43" id="jNE-R8-gla"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dfE-4R-jAK">
+                                <rect key="frame" x="127" y="532" width="347" height="48"/>
+                                <color key="backgroundColor" red="0.4431372549" green="0.6705882353" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="UJp-tU-pFa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="Available End Time">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="confirmTradeButton:" destination="cSh-zF-ZeF" eventType="touchUpInside" id="3NU-CO-GjT"/>
+                                    <action selector="viewTradeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XSV-AW-ewj"/>
+                                    <segue destination="ssL-l5-a2l" kind="show" id="uzr-To-ZgT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90980392156862744" green="0.90980392156862744" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="dfE-4R-jAK" firstAttribute="leading" secondItem="Uxf-r1-t6S" secondAttribute="leadingMargin" constant="10" id="49A-Xn-3lM"/>
+                            <constraint firstItem="jTe-zL-10E" firstAttribute="top" secondItem="JUJ-zQ-7LJ" secondAttribute="bottom" constant="15" id="4eu-PF-OfH"/>
+                            <constraint firstItem="GdQ-AU-ORy" firstAttribute="top" secondItem="S0u-LB-Xv6" secondAttribute="bottom" constant="15" id="5zh-Hf-mQP"/>
+                            <constraint firstItem="Lxp-a4-KNA" firstAttribute="leading" secondItem="Uxf-r1-t6S" secondAttribute="leadingMargin" constant="-20" id="8hB-Py-LiX"/>
+                            <constraint firstItem="JUJ-zQ-7LJ" firstAttribute="centerX" secondItem="Uxf-r1-t6S" secondAttribute="centerX" id="9yr-Xb-kfo"/>
+                            <constraint firstItem="JUJ-zQ-7LJ" firstAttribute="top" secondItem="GdQ-AU-ORy" secondAttribute="bottom" constant="15" id="AnT-Ud-Wq5"/>
+                            <constraint firstItem="JUJ-zQ-7LJ" firstAttribute="leading" secondItem="Uxf-r1-t6S" secondAttribute="leadingMargin" constant="-20" id="Asw-29-1AD"/>
+                            <constraint firstItem="GdQ-AU-ORy" firstAttribute="centerX" secondItem="Uxf-r1-t6S" secondAttribute="centerX" id="B0a-wc-p1b"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="JUJ-zQ-7LJ" secondAttribute="trailing" constant="-20" id="MTO-RU-HLy"/>
+                            <constraint firstItem="Lxp-a4-KNA" firstAttribute="top" secondItem="Uxf-r1-t6S" secondAttribute="topMargin" id="P0o-FU-DiG"/>
+                            <constraint firstItem="S0u-LB-Xv6" firstAttribute="centerX" secondItem="Uxf-r1-t6S" secondAttribute="centerX" id="WX5-d5-ucx"/>
+                            <constraint firstItem="S0u-LB-Xv6" firstAttribute="top" secondItem="Lxp-a4-KNA" secondAttribute="bottom" constant="15" id="abR-O7-3ja"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Lxp-a4-KNA" secondAttribute="trailing" constant="-20" id="afk-vN-Lna"/>
+                            <constraint firstItem="jTe-zL-10E" firstAttribute="centerX" secondItem="Uxf-r1-t6S" secondAttribute="centerX" id="cgB-ug-KVE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dfE-4R-jAK" secondAttribute="trailing" constant="10" id="jGa-UM-i3m"/>
+                            <constraint firstItem="dfE-4R-jAK" firstAttribute="centerX" secondItem="Uxf-r1-t6S" secondAttribute="centerX" id="jhd-kc-0kw"/>
+                            <constraint firstItem="OaT-1G-tpi" firstAttribute="top" secondItem="dfE-4R-jAK" secondAttribute="bottom" constant="20" id="lBU-gb-WuF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="availableEndTime" destination="dfE-4R-jAK" id="Zm5-Uk-3l3"/>
+                        <outlet property="datePicker" destination="JUJ-zQ-7LJ" id="euL-D7-tiu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jC8-QC-WZO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1410" y="1796"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ufq-Vk-MaH">
+            <objects>
+                <viewController id="ssL-l5-a2l" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ajy-kR-51r"/>
+                        <viewControllerLayoutGuide type="bottom" id="lMu-Mj-BBY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze8-zm-gl5">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bq1-sJ-An2">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="66"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="66" id="BdH-29-6VI"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="66" id="RQi-FM-2DI"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="66" id="w8I-tV-LRr"/>
+                                </constraints>
+                                <color key="barTintColor" red="0.4431372549" green="0.6705882353" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="eVALET" id="Bab-61-gCA">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="search" id="zLe-cT-Azq">
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0:00 PM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HC9-do-WAX">
+                                <rect key="frame" x="259" y="88" width="83" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0:00 PM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uh1-fr-Amr">
+                                <rect key="frame" x="259" y="161" width="83" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="to" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="egT-2a-tTs">
+                                <rect key="frame" x="286" y="124" width="28" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SEw-HF-9VN">
+                                <rect key="frame" x="127" y="532" width="347" height="48"/>
+                                <color key="backgroundColor" red="0.4431372549" green="0.6705882353" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ZYH-PN-QhD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="Confirm Time Range">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="confirmTradeButton:" destination="cSh-zF-ZeF" eventType="touchUpInside" id="o0Z-bh-I0Y"/>
+                                    <action selector="viewTradeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ouz-hE-J5W"/>
+                                    <segue destination="fBU-Sc-B7z" kind="show" id="YdJ-Xl-47M"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90980392156862744" green="0.90980392156862744" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="bq1-sJ-An2" firstAttribute="leading" secondItem="Ze8-zm-gl5" secondAttribute="leadingMargin" constant="-20" id="HR8-6O-8Eh"/>
+                            <constraint firstItem="uh1-fr-Amr" firstAttribute="centerX" secondItem="Ze8-zm-gl5" secondAttribute="centerX" id="IjK-h9-blh"/>
+                            <constraint firstItem="HC9-do-WAX" firstAttribute="centerX" secondItem="Ze8-zm-gl5" secondAttribute="centerX" id="Ijq-iQ-R6v"/>
+                            <constraint firstItem="egT-2a-tTs" firstAttribute="top" secondItem="HC9-do-WAX" secondAttribute="bottom" constant="15" id="J3d-Ca-WBL"/>
+                            <constraint firstItem="SEw-HF-9VN" firstAttribute="leading" secondItem="Ze8-zm-gl5" secondAttribute="leadingMargin" constant="10" id="KEW-tC-DVX"/>
+                            <constraint firstItem="HC9-do-WAX" firstAttribute="top" secondItem="bq1-sJ-An2" secondAttribute="bottom" constant="15" id="Z3h-vp-Hey"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bq1-sJ-An2" secondAttribute="trailing" constant="-20" id="ZIu-es-Ed5"/>
+                            <constraint firstItem="egT-2a-tTs" firstAttribute="centerX" secondItem="Ze8-zm-gl5" secondAttribute="centerX" id="ZvM-mX-FCa"/>
+                            <constraint firstItem="SEw-HF-9VN" firstAttribute="centerX" secondItem="Ze8-zm-gl5" secondAttribute="centerX" id="fYy-7B-KAh"/>
+                            <constraint firstItem="uh1-fr-Amr" firstAttribute="top" secondItem="egT-2a-tTs" secondAttribute="bottom" constant="15" id="gFV-3J-Kn1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="SEw-HF-9VN" secondAttribute="trailing" constant="10" id="hny-OY-3o2"/>
+                            <constraint firstItem="bq1-sJ-An2" firstAttribute="top" secondItem="Ze8-zm-gl5" secondAttribute="topMargin" id="jkr-fl-c8X"/>
+                            <constraint firstItem="lMu-Mj-BBY" firstAttribute="top" secondItem="SEw-HF-9VN" secondAttribute="bottom" constant="20" id="kke-rN-J4E"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rEZ-n9-xKy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1410" y="2505"/>
         </scene>
     </scenes>
     <resources>

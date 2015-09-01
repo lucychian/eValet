@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  CarDocked.swift
 //  eVALET
 //
 //  Created by Drew Taylor on 8/26/15.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class CarDocked: UIViewController {
 
     @IBOutlet var scrollView: UIScrollView!
     

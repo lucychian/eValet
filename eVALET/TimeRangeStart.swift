@@ -1,21 +1,18 @@
 //
-//  ConfirmTimeRequest.swift
+//  TimeRangeStart.swift
 //  eVALET
 //
-//  Created by Drew Taylor on 8/31/15.
-//  Copyright © 2015 Drew Taylor. All rights reserved.
+//  Created by Drew Taylor on 12/31/14.
+//  Copyright © 2014 Drew Taylor. All rights reserved.
 //
 
 import UIKit
 
-class ConfirmTimeRequest: UIViewController {
+class TimeRangeStart: UIViewController {
 
     @IBOutlet var datePicker: UIDatePicker!
     
-    @IBOutlet var confirmTradeButton: UIButton!
-    
-    @IBAction func confirmTradeButton(sender: AnyObject) {
-    }
+    @IBOutlet var availableStartTime: UIButton!
     
     
     override func viewDidLoad() {
@@ -23,8 +20,8 @@ class ConfirmTimeRequest: UIViewController {
         
         datePicker.backgroundColor = UIColor.whiteColor()
         
-        confirmTradeButton.layer.cornerRadius = 5
-        
+        availableStartTime.layer.cornerRadius = 5
+
         // Do any additional setup after loading the view.
     }
 
