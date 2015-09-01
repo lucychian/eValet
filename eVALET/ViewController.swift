@@ -1,5 +1,5 @@
 //
-//  ConfirmTimeRange.swift
+//  ViewController.swift
 //  eVALET
 //
 //  Created by Drew Taylor on 9/1/15.
@@ -8,14 +8,19 @@
 
 import UIKit
 
-class ConfirmTimeRange: UIViewController {
+class ViewController: UIViewController {
 
-    @IBOutlet var confirmTimeRange: UIButton!
+    @IBOutlet var carDocked: UIButton!
+    
+    @IBOutlet var carNotDocked: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        carDocked.layer.cornerRadius = 5
+        
+        carNotDocked.layer.cornerRadius = 5
 
-        confirmTimeRange.layer.cornerRadius = 5
         // Do any additional setup after loading the view.
     }
 

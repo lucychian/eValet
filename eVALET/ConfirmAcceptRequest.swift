@@ -14,6 +14,8 @@ class ConfirmAcceptRequest: UIViewController {
     
     @IBOutlet var confirmTradeButton: UIButton!
     
+    @IBOutlet var cancelTradeButton: UIButton!
+    
     @IBAction func confirmTradeButton(sender: AnyObject) {
     }
     
@@ -24,6 +26,8 @@ class ConfirmAcceptRequest: UIViewController {
         datePicker.backgroundColor = UIColor.whiteColor()
         
         confirmTradeButton.layer.cornerRadius = 5
+        
+        cancelTradeButton.layer.cornerRadius = 5
         
         // Do any additional setup after loading the view.
     }

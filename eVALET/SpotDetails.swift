@@ -1,5 +1,5 @@
 //
-//  ConfirmTimeRange.swift
+//  SpotDetails.swift
 //  eVALET
 //
 //  Created by Drew Taylor on 9/1/15.
@@ -8,14 +8,15 @@
 
 import UIKit
 
-class ConfirmTimeRange: UIViewController {
+class SpotDetails: UIViewController {
 
-    @IBOutlet var confirmTimeRange: UIButton!
+    @IBOutlet var confirmSpot: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        confirmSpot.layer.cornerRadius = 5
 
-        confirmTimeRange.layer.cornerRadius = 5
         // Do any additional setup after loading the view.
     }
 
