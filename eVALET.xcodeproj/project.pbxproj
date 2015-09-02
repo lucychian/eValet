@@ -103,6 +103,7 @@
 		3A81908B1B8E2BC2003F1C7F /* eVALET */ = {
 			isa = PBXGroup;
 			children = (
+				685CD0B11B97AA1F00D9F04E /* Controller */,
 				3A81908C1B8E2BC2003F1C7F /* AppDelegate.swift */,
 				3A81908E1B8E2BC2003F1C7F /* ViewController.swift */,
 				3A8190901B8E2BC2003F1C7F /* Main.storyboard */,
@@ -113,8 +114,6 @@
 				3A8190931B8E2BC2003F1C7F /* Assets.xcassets */,
 				3A8190951B8E2BC2003F1C7F /* LaunchScreen.storyboard */,
 				3A8190981B8E2BC2003F1C7F /* Info.plist */,
-				685CD0AD1B96757400D9F04E /* Users.swift */,
-				685CD0AF1B97969800D9F04E /* Car.swift */,
 			);
 			path = eVALET;
 			sourceTree = "<group>";
@@ -136,6 +135,15 @@
 				685CD08E1B95143C00D9F04E /* Parse.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		685CD0B11B97AA1F00D9F04E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				685CD0AD1B96757400D9F04E /* Users.swift */,
+				685CD0AF1B97969800D9F04E /* Car.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
