@@ -24,6 +24,9 @@
 		3A8190A51B8E2C4C003F1C7F /* ChargingDetails.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A8190A31B8E2C4C003F1C7F /* ChargingDetails.xib */; };
 		3A8190A81B8E3316003F1C7F /* CarDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8190A61B8E3316003F1C7F /* CarDetails.swift */; };
 		3A8190A91B8E3316003F1C7F /* CarDetails.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A8190A71B8E3316003F1C7F /* CarDetails.xib */; };
+		3A9BC9501B97896E0032535D /* SignUpPageOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9BC94F1B97896E0032535D /* SignUpPageOne.swift */; };
+		3AABD3491B97A33600D92D36 /* SignUpPageTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AABD3481B97A33600D92D36 /* SignUpPageTwo.swift */; };
+		3AABD34B1B97AC3200D92D36 /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AABD34A1B97AC3200D92D36 /* SignIn.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +49,9 @@
 		3A8190A31B8E2C4C003F1C7F /* ChargingDetails.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChargingDetails.xib; sourceTree = "<group>"; };
 		3A8190A61B8E3316003F1C7F /* CarDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarDetails.swift; sourceTree = "<group>"; };
 		3A8190A71B8E3316003F1C7F /* CarDetails.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CarDetails.xib; sourceTree = "<group>"; };
+		3A9BC94F1B97896E0032535D /* SignUpPageOne.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpPageOne.swift; sourceTree = "<group>"; };
+		3AABD3481B97A33600D92D36 /* SignUpPageTwo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpPageTwo.swift; sourceTree = "<group>"; };
+		3AABD34A1B97AC3200D92D36 /* SignIn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,7 +112,7 @@
 			children = (
 				3A81908C1B8E2BC2003F1C7F /* AppDelegate.swift */,
 				3A8190901B8E2BC2003F1C7F /* Main.storyboard */,
-				3A40DDAD1B963F7A0008D4A3 /* ViewController.swift */,
+				3A9BC94E1B9789290032535D /* Sign Up/Login */,
 				3A40DDA91B9634F40008D4A3 /* When Car is Docked */,
 				3A40DDAA1B9635450008D4A3 /* When Car is Not Docked */,
 				3A8190931B8E2BC2003F1C7F /* Assets.xcassets */,
@@ -114,6 +120,17 @@
 				3A8190981B8E2BC2003F1C7F /* Info.plist */,
 			);
 			path = eVALET;
+			sourceTree = "<group>";
+		};
+		3A9BC94E1B9789290032535D /* Sign Up/Login */ = {
+			isa = PBXGroup;
+			children = (
+				3A40DDAD1B963F7A0008D4A3 /* ViewController.swift */,
+				3A9BC94F1B97896E0032535D /* SignUpPageOne.swift */,
+				3AABD3481B97A33600D92D36 /* SignUpPageTwo.swift */,
+				3AABD34A1B97AC3200D92D36 /* SignIn.swift */,
+			);
+			name = "Sign Up/Login";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,10 +208,13 @@
 				3A40DDAC1B963C920008D4A3 /* SpotDetails.swift in Sources */,
 				3A40DDA81B962D630008D4A3 /* CarNotDocked.swift in Sources */,
 				3A0535D21B95022C0047E0A5 /* ConfirmAcceptRequest.swift in Sources */,
+				3AABD3491B97A33600D92D36 /* SignUpPageTwo.swift in Sources */,
 				3A8190A41B8E2C4C003F1C7F /* ChargingDetails.swift in Sources */,
 				3A40DDB21B9641740008D4A3 /* ConfirmTimeRange.swift in Sources */,
 				3A40DDAE1B963F7A0008D4A3 /* ViewController.swift in Sources */,
+				3AABD34B1B97AC3200D92D36 /* SignIn.swift in Sources */,
 				3A40DDB61B9660480008D4A3 /* RequestDetails.swift in Sources */,
+				3A9BC9501B97896E0032535D /* SignUpPageOne.swift in Sources */,
 				3A81908F1B8E2BC2003F1C7F /* CarDocked.swift in Sources */,
 				3A40DDA41B9626F30008D4A3 /* TimeRangeEnd.swift in Sources */,
 				3A81908D1B8E2BC2003F1C7F /* AppDelegate.swift in Sources */,
