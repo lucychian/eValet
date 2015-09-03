@@ -44,7 +44,7 @@ class ViewController: UIViewController {
             frame.size = self.scrollView.frame.size
             self.scrollView.pagingEnabled = true
             
-            var subView = UIView(frame: frame)
+            let subView = UIView(frame: frame)
             self.scrollView.addSubview(subView)
         }
         

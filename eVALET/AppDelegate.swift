@@ -26,13 +26,57 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // [Optional] Track statistics around application opens.
         PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
+       
+        // Save an example object to the cloud
+        let username = PFObject(className:"userName")
+        username["firstName"] = "John"
+        username["lastName"] = "Manville"
+        username["carType"] = "Ford"
+        username.objectId = "A1"
+        username.saveInBackgroundWithBlock {
+            (success: Bool, error: NSError?) -> Void in
+            if (success) {
+                print("The object has been successfully saved")
+            } else {
+                print("Error: Not Saved")
+                
+            }
+        }
+        // Retrieve the object 
+       /* let query  = PFQuery(className: "userName")
+        query.getObjectInBackgroundWithId("A1") {
+            (gameScore: PFObject?, error: NSError?) -> Void in
+            if error == nil && gameScore != nil {
+                print("Found Querry")
+            } else {
+                print(error)
+            }
+        }*/
+        
+        
+        // Checking In
+        
+        // Get the first person who checked in 
+        // use date committed for the start time 
+        // dont have to request anything for the name 
+        
+        
+        
+        
         
         return true
+
         
     }
     
+        
+    
+    
+    
+    
     var window: UIWindow?
 
+     
 
 //    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
 //        // Override point for customization after application launch.
