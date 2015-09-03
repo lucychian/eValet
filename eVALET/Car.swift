@@ -17,7 +17,7 @@ Return:
     Bool - true if car is successfully set, false otherwise
 */
 
-func setUserCar(evKey: String) -> Bool{
+func setUserCar(evKey: Int) -> Bool{
     
     let user = PFUser.currentUser()
     user?["carId"] = evKey
@@ -37,33 +37,25 @@ Return:
     NSArray of Car objects, nil if query fails
 */
 
-func getCarList() -> Void{
+func getCarList(callback: ([PFObject]?) -> Void) -> Void{
     
-    print("getCarList called")
+    var carList: [AnyObject] = []
     let query = PFQuery(className:"Cars")
     query.selectKeys(["objectId","carModel"])
-    //var result: [AnyObject]?
+    
     query.findObjectsInBackgroundWithBlock {
         (objects: [AnyObject]?, error: NSError?) -> Void in
         
         if error == nil {
             // The find succeeded.
-            //print("Successfully retrieved \(objects!.count) scores.")
-            // Do something with the found objects
             if let objects = objects as? [PFObject] {
-                for object in objects {
-                    print(object.objectId)
-                    print(object["carModel"])
-                }
+                callback(objects)
             }
-            //result = objects
         } else {
-            //result = nil
             // Log details of the failure
             print("Error: \(error!) \(error!.userInfo)")
         }
     }
-    print("getCarList finished")
-    //return result!
-    
+  
+    return
 }
