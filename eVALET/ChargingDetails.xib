@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8173.3" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8187.4" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8142"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8151.3"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="HelveticaNeue.ttc">
-            <string>HelveticaNeue</string>
             <string>HelveticaNeue</string>
             <string>HelveticaNeue</string>
             <string>HelveticaNeue</string>
@@ -25,41 +24,32 @@
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Charging Details" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gga-AV-fiv">
                     <rect key="frame" x="96" y="25" width="409" height="26"/>
                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="station" translatesAutoresizingMaskIntoConstraints="NO" id="me5-UZ-0TI">
-                    <rect key="frame" x="304" y="67" width="100" height="128"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Station" translatesAutoresizingMaskIntoConstraints="NO" id="me5-UZ-0TI">
+                    <rect key="frame" x="342" y="59" width="47" height="128"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="128" id="LRH-Q5-zSi"/>
-                        <constraint firstAttribute="width" constant="100" id="tgv-po-rGs"/>
+                        <constraint firstAttribute="width" constant="47" id="tgv-po-rGs"/>
                     </constraints>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Station #" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J8Y-lq-dOx">
-                    <rect key="frame" x="193" y="82" width="103" height="20"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="25" id="40O-MS-bbb"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Trading @ 0:00 PM   " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1bO-mt-z9u">
-                    <rect key="frame" x="116" y="130" width="185" height="24"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Garage" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1bO-mt-z9u">
+                    <rect key="frame" x="235" y="130" width="66" height="24"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="25" id="Ytr-bQ-2nQ"/>
                     </constraints>
                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="License #" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZZs-GO-zRE">
-                    <rect key="frame" x="180" y="174" width="116" height="21"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Station #" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J8Y-lq-dOx">
+                    <rect key="frame" x="198" y="87" width="103" height="20"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="25" id="lsR-sa-dPZ"/>
+                        <constraint firstAttribute="height" constant="25" id="40O-MS-bbb"/>
                     </constraints>
                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
@@ -69,10 +59,7 @@
                 <constraint firstItem="1bO-mt-z9u" firstAttribute="top" secondItem="J8Y-lq-dOx" secondAttribute="bottom" constant="25" id="1CW-vb-sf1"/>
                 <constraint firstItem="me5-UZ-0TI" firstAttribute="leading" secondItem="J8Y-lq-dOx" secondAttribute="trailing" constant="10" id="2Ob-1L-lRS"/>
                 <constraint firstItem="gga-AV-fiv" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="2qS-oe-F8r"/>
-                <constraint firstItem="me5-UZ-0TI" firstAttribute="leading" secondItem="ZZs-GO-zRE" secondAttribute="trailing" constant="10" id="BDa-yi-3ig"/>
-                <constraint firstItem="ZZs-GO-zRE" firstAttribute="trailing" secondItem="1bO-mt-z9u" secondAttribute="trailing" id="NK5-LQ-84i"/>
                 <constraint firstItem="gga-AV-fiv" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="O0s-67-bE4"/>
-                <constraint firstItem="ZZs-GO-zRE" firstAttribute="top" secondItem="1bO-mt-z9u" secondAttribute="bottom" constant="25" id="SWb-mW-syD"/>
                 <constraint firstItem="J8Y-lq-dOx" firstAttribute="trailing" secondItem="1bO-mt-z9u" secondAttribute="trailing" id="nQl-LN-q5X"/>
                 <constraint firstItem="me5-UZ-0TI" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="50" id="pLE-x3-O4H"/>
                 <constraint firstItem="me5-UZ-0TI" firstAttribute="top" secondItem="gga-AV-fiv" secondAttribute="bottom" constant="20" id="sJc-rF-p55"/>
@@ -81,6 +68,6 @@
         </view>
     </objects>
     <resources>
-        <image name="station" width="1500" height="2101"/>
+        <image name="Station" width="57" height="300"/>
     </resources>
 </document>

@@ -8,7 +8,21 @@
 
 import UIKit
 
-class CarDocked: UIViewController {
+extension UIColor {
+    convenience init(red: Int, green: Int, blue: Int) {
+        assert(red >= 0 && red <= 255, "Invalid red component")
+        assert(green >= 0 && green <= 255, "Invalid green component")
+        assert(blue >= 0 && blue <= 255, "Invalid blue component")
+        
+        self.init(red: CGFloat(red) / 255.0, green: CGFloat(green) / 255.0, blue: CGFloat(blue) / 255.0, alpha: 1.0)
+    }
+    
+    convenience init(netHex:Int) {
+        self.init(red:(netHex >> 16) & 0xff, green:(netHex >> 8) & 0xff, blue:netHex & 0xff)
+    }
+}
+
+class CarDocked: UIViewController, UIScrollViewDelegate {
 
     @IBOutlet var scrollView: UIScrollView!
     
@@ -35,6 +49,7 @@ class CarDocked: UIViewController {
         
         viewTradeButton.layer.cornerRadius = 5
         
+        scrollView.delegate = self
         self.view.addSubview(scrollView)
         for index in 0..<2 {
             
@@ -42,11 +57,11 @@ class CarDocked: UIViewController {
             frame.size = self.scrollView.frame.size
             self.scrollView.pagingEnabled = true
             
-            var subView = UIView(frame: frame)
+            let subView = UIView(frame: frame)
             self.scrollView.addSubview(subView)
         }
         
-        self.scrollView.contentSize = CGSizeMake(self.scrollView.frame.size.width * 2, self.scrollView.frame.size.height)
+        self.scrollView.contentSize = CGSizeMake(self.scrollView.frame.size.width * 1.27, self.scrollView.frame.size.height)
         pageControl.addTarget(self, action: Selector("changePage:"), forControlEvents: UIControlEvents.ValueChanged)
         
         let vc0 = CarDetails(nibName: "CarDetails", bundle: nil)
@@ -64,12 +79,6 @@ class CarDocked: UIViewController {
         self.addChildViewController(vc1)
         self.scrollView.addSubview(vc1.view)
         vc1.didMoveToParentViewController(self)
-        
-        self.scrollView.contentSize = CGSizeMake(self.view.frame.size.width * 2, 240)
-        
-        
-        
-        
     }
     
     func configurePageControl() {
@@ -78,15 +87,14 @@ class CarDocked: UIViewController {
         self.pageControl.numberOfPages = 2
         self.pageControl.currentPage = 0
         self.view.addSubview(pageControl)
-        self.pageControl.tintColor = UIColor.redColor()
-        self.pageControl.pageIndicatorTintColor = UIColor.blackColor()
-        self.pageControl.currentPageIndicatorTintColor = UIColor.greenColor()
+        self.pageControl.pageIndicatorTintColor = UIColor(netHex:0x666666)
+        self.pageControl.currentPageIndicatorTintColor = UIColor(netHex:0x1881C6)
         
     }
 
     
     func changePage(sender: AnyObject) -> () {
-        let x = CGFloat(pageControl.currentPage) * scrollView.frame.size.width
+        let x = CGFloat(pageControl.currentPage) * scrollView.frame.size.width * 1.27
         scrollView.setContentOffset(CGPointMake(x, 0), animated: true)
     }
     
