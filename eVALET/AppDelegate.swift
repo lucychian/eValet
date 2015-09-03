@@ -30,18 +30,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
         
         
-        getCarList(doThings)
+        getCarList()
         
         return true
-        
-    }
-    
-    func doThings(arr: [PFObject]?) -> Void {
-        if let arr = arr {
-            for car in arr {
-                print(car)
-            }
-        }
         
     }
     

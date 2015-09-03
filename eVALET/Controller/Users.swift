@@ -51,4 +51,3 @@ func loginUser(username: String, password: String) -> Bool{
     }
     return result
 }
-
