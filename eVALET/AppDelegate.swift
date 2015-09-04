@@ -28,7 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
        
         // Save an example object to the cloud
-        let username = PFObject(className:"userName")
+  /*      let username = PFObject(className:"userName")
         username["firstName"] = "John"
         username["lastName"] = "Manville"
         username["carType"] = "Ford"
@@ -41,7 +41,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 print("Error: Not Saved")
                 
             }
-        }
+        }*/
         // Retrieve the object 
        /* let query  = PFQuery(className: "userName")
         query.getObjectInBackgroundWithId("A1") {

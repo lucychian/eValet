@@ -30,6 +30,7 @@
 		685CD0AC1B951B8600D9F04E /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 685CD0AB1B951B8600D9F04E /* libz.dylib */; };
 		685CD0AE1B96757400D9F04E /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685CD0AD1B96757400D9F04E /* Users.swift */; };
 		685CD0B01B97969800D9F04E /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685CD0AF1B97969800D9F04E /* Car.swift */; };
+		6B027CBC1B98CE20009F8FAA /* ParseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B027CBB1B98CE20009F8FAA /* ParseRequest.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		685CD0AB1B951B8600D9F04E /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libz.dylib; sourceTree = "<group>"; };
 		685CD0AD1B96757400D9F04E /* Users.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Users.swift; path = Controller/Users.swift; sourceTree = "<group>"; };
 		685CD0AF1B97969800D9F04E /* Car.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		6B027CBB1B98CE20009F8FAA /* ParseRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				3A8190901B8E2BC2003F1C7F /* Main.storyboard */,
 				3A8190A21B8E2C4C003F1C7F /* ViewController1.swift */,
 				3A8190A61B8E3316003F1C7F /* ViewController0.swift */,
+				6B027CBB1B98CE20009F8FAA /* ParseRequest.swift */,
 				3A8190A71B8E3316003F1C7F /* ViewController0.xib */,
 				3A8190A31B8E2C4C003F1C7F /* ViewController1.xib */,
 				3A8190931B8E2BC2003F1C7F /* Assets.xcassets */,
@@ -215,6 +218,7 @@
 				3A8190A41B8E2C4C003F1C7F /* ViewController1.swift in Sources */,
 				3A81908F1B8E2BC2003F1C7F /* ViewController.swift in Sources */,
 				685CD0B01B97969800D9F04E /* Car.swift in Sources */,
+				6B027CBC1B98CE20009F8FAA /* ParseRequest.swift in Sources */,
 				685CD0AE1B96757400D9F04E /* Users.swift in Sources */,
 				3A81908D1B8E2BC2003F1C7F /* AppDelegate.swift in Sources */,
 				3A8190A81B8E3316003F1C7F /* ViewController0.swift in Sources */,
