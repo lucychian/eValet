@@ -31,6 +31,8 @@
 		685CD0AE1B96757400D9F04E /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685CD0AD1B96757400D9F04E /* Users.swift */; };
 		685CD0B51B98E59D00D9F04E /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685CD0B41B98E59D00D9F04E /* Request.swift */; };
 		685CD0B91B98E7CC00D9F04E /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685CD0B81B98E7CC00D9F04E /* Car.swift */; };
+		84DDA9B91B9A4FFC00276692 /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DDA9B81B9A4FFC00276692 /* Station.swift */; settings = {ASSET_TAGS = (); }; };
+		84DDA9BB1B9FA63B00276692 /* OccupiedSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DDA9BA1B9FA63B00276692 /* OccupiedSpace.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +62,8 @@
 		685CD0AD1B96757400D9F04E /* Users.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Users.swift; path = Controller/Users.swift; sourceTree = "<group>"; };
 		685CD0B41B98E59D00D9F04E /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Controller/Request.swift; sourceTree = "<group>"; };
 		685CD0B81B98E7CC00D9F04E /* Car.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		84DDA9B81B9A4FFC00276692 /* Station.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
+		84DDA9BA1B9FA63B00276692 /* OccupiedSpace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OccupiedSpace.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +149,8 @@
 				685CD0AD1B96757400D9F04E /* Users.swift */,
 				685CD0B81B98E7CC00D9F04E /* Car.swift */,
 				685CD0B41B98E59D00D9F04E /* Request.swift */,
+				84DDA9B81B9A4FFC00276692 /* Station.swift */,
+				84DDA9BA1B9FA63B00276692 /* OccupiedSpace.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -223,9 +229,11 @@
 			files = (
 				3A8190A41B8E2C4C003F1C7F /* ViewController1.swift in Sources */,
 				3A81908F1B8E2BC2003F1C7F /* ViewController.swift in Sources */,
+				84DDA9B91B9A4FFC00276692 /* Station.swift in Sources */,
 				685CD0B91B98E7CC00D9F04E /* Car.swift in Sources */,
 				685CD0AE1B96757400D9F04E /* Users.swift in Sources */,
 				685CD0B51B98E59D00D9F04E /* Request.swift in Sources */,
+				84DDA9BB1B9FA63B00276692 /* OccupiedSpace.swift in Sources */,
 				3A81908D1B8E2BC2003F1C7F /* AppDelegate.swift in Sources */,
 				3A8190A81B8E3316003F1C7F /* ViewController0.swift in Sources */,
 			);

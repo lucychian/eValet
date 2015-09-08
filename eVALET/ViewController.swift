@@ -19,6 +19,16 @@ class ViewController: UIViewController {
     @IBAction func viewTradeButton(sender: AnyObject) {
     }
     
+    @IBAction func actionButton(sender: AnyObject) {
+        
+        getCarList({
+            (objects:[AnyObject]?, error: NSError?) -> Void in
+            for obj in objects! {
+                print (obj["carModel"] as! String)
+            }
+        })
+        
+    }
     var frame: CGRect = CGRectMake(0, 0, 0, 0)
     
     

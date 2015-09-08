@@ -29,8 +29,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // [Optional] Track statistics around application opens.
         PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
         
+
+        /*PFUser.logInWithUsernameInBackground("myUsername", password: "myPassword") { (user:PFUser?, error: NSError?) -> Void in
+            getCarInfo(user!, block: { (obj: NSObject?, error: NSError?) -> Void in
+                print (obj)
+            })
+        }*/
         
-        getCarList()
         
         return true
         

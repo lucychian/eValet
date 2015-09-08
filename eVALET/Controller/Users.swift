@@ -20,14 +20,14 @@ Return:
     Bool - true if user is successfully created, false otherwise
 */
 
-func createUser(username: String, password: String, email: String) -> Bool {
+func createUser(username: String, password: String, email: String, block: PFBooleanResultBlock) -> Void {
     
     let user = PFUser()
     user.username = username
     user.password = password
     user.email = email
     
-    return user.signUpInBackground().completed
+    user.signUpInBackgroundWithBlock(block)
 }
 
 
@@ -50,4 +50,17 @@ func loginUser(username: String, password: String) -> Bool{
         }
     }
     return result
+}
+
+/*
+getUserInfo
+Parameters:
+    userId - user ID of person to return information for
+    block - results block
+*/
+func getUserInfo(userId: String, block: PFObjectResultBlock) {
+    
+    let query = PFQuery()
+    query.getObjectInBackgroundWithId(userId, block: block)
+    
 }

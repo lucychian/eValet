@@ -18,13 +18,13 @@ Return:
     Bool - true if request is successfully created, false otherwise
 */
 
-func createRequest(start:NSDate, end:NSDate) -> Bool{
+func createRequest(start:NSDate, end:NSDate, block: PFBooleanResultBlock) -> Void{
     
     let request = PFObject(className:"Request")
     request["availableStart"] = start
     request["availableEnd"] = end
     
-    return request.saveInBackground().completed
+    request.saveInBackgroundWithBlock(block)
 
 }
 
@@ -32,16 +32,17 @@ func createRequest(start:NSDate, end:NSDate) -> Bool{
 /*
 getRequests
 Result:
-    Returns BFTask with PFObject containing user's ID, available start time, and available end time
+    Returns PFObject containing user's ID, available start time, and available end time
     ordered from least to most recent of unfulfilled requests
 */
 
-func getRequests() -> BFTask{
+func getRequests(block: PFArrayResultBlock) -> Void {
     
     let query = PFQuery(className:"Request")
     query.whereKey("fulfilled", equalTo: false)
     query.orderByAscending("createdAt")
-    return query.findObjectsInBackground()
+    
+    query.findObjectsInBackgroundWithBlock(block)
     
 }
 
