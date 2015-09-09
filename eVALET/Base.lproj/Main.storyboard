@@ -486,7 +486,7 @@
                                 </constraints>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="words" secureTextEntry="YES"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
                                         <color key="value" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
@@ -504,8 +504,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="viewTradeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sVt-Fb-sRi"/>
-                                    <segue destination="fBU-Sc-B7z" kind="show" id="MDV-Xo-rRX"/>
+                                    <action selector="signInPressed:" destination="hxD-mi-npH" eventType="touchUpInside" id="AMh-59-LBh"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="jdoe@cisco.com" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WhV-vB-mzq">
@@ -544,7 +543,10 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="signIn" destination="1T3-VM-NGY" id="UsH-Lf-AQQ"/>
+                        <outlet property="emailTextField" destination="WhV-vB-mzq" id="pxR-JV-PzR"/>
+                        <outlet property="passwordTextField" destination="H7h-xe-adS" id="RAD-uI-FZc"/>
+                        <outlet property="signIn" destination="1T3-VM-NGY" id="uc1-sq-qc5"/>
+                        <segue destination="fBU-Sc-B7z" kind="show" identifier="signIn" id="zHB-qT-rU4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NDz-7Q-ZcA" userLabel="First Responder" sceneMemberID="firstResponder"/>
