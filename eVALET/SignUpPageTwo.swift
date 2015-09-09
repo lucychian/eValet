@@ -21,8 +21,7 @@ class SignUpPageTwo: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
     @IBOutlet var signUpButton: UIButton!
     @IBOutlet var pickerView: UIPickerView!
     
-    //Array for data picker
-    var pickerDataSource = ["BMW", "Merc", "Audi", "Honda", "Nissan", "Hyundai", "Chevy", "Ford", "Tesla", "Ferrari", "Porsche"];
+    var pickerDataSource: NSMutableArray = []// = ["BMW", "Merc", "Audi", "Honda", "Nissan", "Hyundai", "Chevy", "Ford", "Tesla", "Ferrari", "Porsche"];
     
     //Pop up alert
     let alert = UIAlertView()
@@ -30,7 +29,32 @@ class SignUpPageTwo: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //Profile picture styling
+        PFUser.logInWithUsernameInBackground("myUsername", password: "myPassword") {
+            (result: PFUser?, error: NSError?) -> Void in
+            if(error != nil) {
+                print(error?.userInfo)
+            }
+            
+            getCarList({
+            (cars:[AnyObject]?, error: NSError?) -> Void in
+                if (error == nil)
+                {
+                    for car in cars! as [AnyObject]
+                    {
+                        self.pickerDataSource.addObject(car["carModel"] as! String)
+                    }
+                    self.pickerView.reloadAllComponents()
+                }
+                else
+                {
+                    print("Error")
+                }
+            })
+
+        }
+        
+        
+                
         profilePic.layer.borderColor = UIColor(red: 24/255, green: 129/255, blue: 198/255, alpha: 1).CGColor
         profilePic.layer.borderWidth = 3
         profilePic.layer.cornerRadius = 50
@@ -135,7 +159,6 @@ class SignUpPageTwo: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
     override func shouldPerformSegueWithIdentifier(identifier: String, sender: AnyObject!) -> Bool {
         //Store user inputs before continuing
         NSUserDefaults.standardUserDefaults().setObject(pickerDataSource[pickerView.selectedRowInComponent(0)], forKey: "userCar")
-        
         let documentsPath = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] as String
         let destinationPath = documentsPath.NS.stringByAppendingPathComponent("evaletProfile.jpg")
         let imageData = UIImageJPEGRepresentation(profilePic.image!, 1)!

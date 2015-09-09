@@ -279,13 +279,13 @@
                             <mask key="constraints">
                                 <exclude reference="4Qu-ha-gUh"/>
                                 <exclude reference="L9T-zh-n9G"/>
-                                <exclude reference="NKx-fB-ap8"/>
-                                <exclude reference="gYS-Av-u4u"/>
                                 <exclude reference="2NN-kZ-Y5Z"/>
                                 <exclude reference="kyg-Wf-iC0"/>
                                 <exclude reference="oJY-ut-2ko"/>
                                 <exclude reference="qeZ-Cg-AWv"/>
                                 <exclude reference="sVM-tl-fgf"/>
+                                <exclude reference="NKx-fB-ap8"/>
+                                <exclude reference="gYS-Av-u4u"/>
                                 <exclude reference="cK2-WG-U5r"/>
                                 <exclude reference="rf4-ZD-vAm"/>
                             </mask>
@@ -486,7 +486,7 @@
                                 </constraints>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" secureTextEntry="YES"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
                                         <color key="value" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
