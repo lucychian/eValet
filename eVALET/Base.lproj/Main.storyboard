@@ -457,8 +457,8 @@
                                 </textAttributes>
                                 <items>
                                     <navigationItem title="eVALET" id="cQ0-Pg-5fl">
-                                        <barButtonItem key="leftBarButtonItem" image="Back" id="yCC-Ph-M6X">
-                                            <inset key="imageInsets" minX="0.0" minY="-10" maxX="0.0" maxY="0.0"/>
+                                        <barButtonItem key="leftBarButtonItem" image="Back" width="20" id="yCC-Ph-M6X">
+                                            <inset key="imageInsets" minX="-10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <connections>
                                                 <segue destination="GoY-ZQ-MaY" kind="show" id="taq-7B-cnJ"/>
@@ -1725,8 +1725,8 @@
         <image name="drew" width="1080" height="720"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="DNy-eS-ndL"/>
-        <segue reference="TaR-hs-Req"/>
+        <segue reference="taq-7B-cnJ"/>
+        <segue reference="MDV-Xo-rRX"/>
         <segue reference="zxa-HI-aDH"/>
     </inferredMetricsTieBreakers>
 </document>
