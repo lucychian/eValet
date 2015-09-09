@@ -21,7 +21,9 @@ class SignUpPageTwo: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
     
     @IBOutlet var pickerView: UIPickerView!
     
-    var pickerDataSource = ["BMW", "Merc", "Audi", "Honda", "Nissan", "Hyundai", "Chevy", "Ford", "Tesla", "Ferrari", "Porsche"];
+    //var pickerDataSource = ["BMW", "Merc", "Audi", "Honda", "Nissan", "Hyundai", "Chevy", "Ford", "Tesla", "Ferrari", "Porsche"];
+    
+    
     
     let alert = UIAlertView()
     
@@ -42,6 +44,11 @@ class SignUpPageTwo: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
         
         profilePic.addGestureRecognizer(UITapGestureRecognizer(target: self, action: Selector("profilePicTapped")))
         profilePic.userInteractionEnabled = true
+        
+//        getCarList({
+//            (cars:[AnyObject]?, error: NSError?) -> Void in
+//            self.pickerDataSource = (cars as? [String])!
+//        })
         
         // Do any additional setup after loading the view.
     }
@@ -117,7 +124,7 @@ class SignUpPageTwo: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
     }
     
     func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return pickerDataSource[row]
+        return pickerDataSource[row] as! String
     }
     
     override func shouldPerformSegueWithIdentifier(identifier: String, sender: AnyObject!) -> Bool {

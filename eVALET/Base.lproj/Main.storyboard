@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8187.4" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="aHT-GV-6RW">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8187.4" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="CRc-L7-It6">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8151.3"/>
@@ -139,24 +139,6 @@
                                 <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="jdoe@cisco.com" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gn4-NJ-QeH">
-                                <rect key="frame" x="34" y="274" width="533" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="iVf-if-O2i"/>
-                                </constraints>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
-                                        <color key="value" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="editingChanged:" destination="GoY-ZQ-MaY" eventType="editingDidEnd" id="Lby-8n-w3s"/>
-                                    <outlet property="delegate" destination="GoY-ZQ-MaY" id="Cb1-yK-b0H"/>
-                                </connections>
-                            </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Password" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fdz-Zl-lCW">
                                 <rect key="frame" x="34" y="329" width="83" height="21"/>
                                 <constraints>
@@ -241,6 +223,24 @@
                                     <segue destination="hxD-mi-npH" kind="show" identifier="signIn" id="lMv-gJ-BRp"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="jdoe@cisco.com" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gn4-NJ-QeH">
+                                <rect key="frame" x="34" y="274" width="533" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="iVf-if-O2i"/>
+                                </constraints>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                        <color key="value" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="editingChanged:" destination="GoY-ZQ-MaY" eventType="editingDidEnd" id="Lby-8n-w3s"/>
+                                    <outlet property="delegate" destination="GoY-ZQ-MaY" id="Cb1-yK-b0H"/>
+                                </connections>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.90980392156862744" green="0.90980392156862744" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -1725,8 +1725,8 @@
         <image name="drew" width="1080" height="720"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="taq-7B-cnJ"/>
-        <segue reference="MDV-Xo-rRX"/>
+        <segue reference="iBV-VQ-X76"/>
+        <segue reference="KCV-Cg-sJ3"/>
         <segue reference="zxa-HI-aDH"/>
     </inferredMetricsTieBreakers>
 </document>
