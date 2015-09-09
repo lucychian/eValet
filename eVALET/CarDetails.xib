@@ -22,15 +22,15 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="FordFusionEnergi" translatesAutoresizingMaskIntoConstraints="NO" id="myf-yZ-LuM">
-                    <rect key="frame" x="180" y="83" width="240" height="128"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FordFusionEnergi" translatesAutoresizingMaskIntoConstraints="NO" id="myf-yZ-LuM">
+                    <rect key="frame" x="180" y="65" width="240" height="128"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="128" id="5so-Zg-fZH"/>
                         <constraint firstAttribute="width" constant="240" id="ilJ-ds-NNn"/>
                     </constraints>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="John Manville" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fSe-Qb-OCE" userLabel="Name">
-                    <rect key="frame" x="180" y="19" width="148" height="26"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="John Manville" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fSe-Qb-OCE" userLabel="Name">
+                    <rect key="frame" x="206" y="20" width="148" height="25"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="25" id="XUk-sf-l2s"/>
                     </constraints>
@@ -38,8 +38,8 @@
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="JohnManville" translatesAutoresizingMaskIntoConstraints="NO" id="aik-KE-ifR">
-                    <rect key="frame" x="344" y="14" width="36" height="36"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="JohnManville" translatesAutoresizingMaskIntoConstraints="NO" id="aik-KE-ifR">
+                    <rect key="frame" x="366" y="14.5" width="36" height="36"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="36" id="RUW-m6-nf2"/>
                         <constraint firstAttribute="width" constant="36" id="eJp-wG-pvJ"/>
@@ -53,6 +53,7 @@
                 <constraint firstItem="aik-KE-ifR" firstAttribute="leading" secondItem="fSe-Qb-OCE" secondAttribute="trailing" constant="12" id="U6D-0s-dda"/>
                 <constraint firstItem="fSe-Qb-OCE" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="-20" id="VXY-LH-tvT"/>
                 <constraint firstItem="myf-yZ-LuM" firstAttribute="top" secondItem="fSe-Qb-OCE" secondAttribute="bottom" constant="20" id="fCD-eX-Ohe"/>
+                <constraint firstItem="aik-KE-ifR" firstAttribute="centerY" secondItem="fSe-Qb-OCE" secondAttribute="centerY" id="z4a-Ra-bWo"/>
             </constraints>
         </view>
     </objects>

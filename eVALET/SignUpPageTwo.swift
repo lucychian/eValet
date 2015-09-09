@@ -16,14 +16,14 @@ public extension String {
 
 class SignUpPageTwo: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
+    //UI Vars
     @IBOutlet var profilePic: UIImageView!
-    
     @IBOutlet var signUpButton: UIButton!
-    
     @IBOutlet var pickerView: UIPickerView!
     
     var pickerDataSource: NSMutableArray = []// = ["BMW", "Merc", "Audi", "Honda", "Nissan", "Hyundai", "Chevy", "Ford", "Tesla", "Ferrari", "Porsche"];
     
+    //Pop up alert
     let alert = UIAlertView()
     
     override func viewDidLoad() {
@@ -60,24 +60,25 @@ class SignUpPageTwo: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
         profilePic.layer.cornerRadius = 50
         profilePic.layer.masksToBounds = true
         
+        //Picker view styling
         pickerView.backgroundColor = UIColor.whiteColor()
         
+        //Button styling
         signUpButton.layer.cornerRadius = 5
         
+        //Picker view setup
         self.pickerView.dataSource = self;
         self.pickerView.delegate = self;
         
+        //Profile picture gesture handling
         profilePic.addGestureRecognizer(UITapGestureRecognizer(target: self, action: Selector("profilePicTapped")))
         profilePic.userInteractionEnabled = true
-        
-        
-        
-        // Do any additional setup after loading the view.
     }
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(true)
         
+        //Change navigation bar after returning from choose picture
         UIApplication.sharedApplication().statusBarStyle = .LightContent
     }
     
@@ -85,9 +86,8 @@ class SignUpPageTwo: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-    @IBOutlet weak var selectPhotoButton: UIButton!
     
+    //Handle alert view button actions for image picking
     func alertView(alertView: UIAlertView!, clickedButtonAtIndex buttonIndex: Int) {
         switch buttonIndex{
         case 0:
@@ -101,6 +101,7 @@ class SignUpPageTwo: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
         }
     }
     
+    //Open photo selector
     func selectPhotoButtonTapped() {
         let myPickerController = UIImagePickerController()
         myPickerController.delegate = self;
@@ -109,6 +110,7 @@ class SignUpPageTwo: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
         self.presentViewController(myPickerController, animated: true, completion: nil)
     }
     
+    //Pop up for selecting or taking photos
     func profilePicTapped() {
         alert.delegate = self
         
@@ -120,6 +122,7 @@ class SignUpPageTwo: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
         alert.show()
     }
     
+    //Apply selected photo
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject])
         
     {
@@ -130,6 +133,7 @@ class SignUpPageTwo: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
         
     }
     
+    //Open camera to take photo
     func takePhotoButtonTapped() {
         let myPickerController = UIImagePickerController()
         myPickerController.delegate = self;
@@ -137,21 +141,24 @@ class SignUpPageTwo: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
         self.presentViewController(myPickerController, animated: true, completion: nil)
     }
     
+    //Function for number of components in picker view
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
         return 1
     }
     
+    //Picker view setup function
     func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return pickerDataSource.count;
     }
     
+    //Picker view setup function
     func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return pickerDataSource[row] as? String
     }
     
     override func shouldPerformSegueWithIdentifier(identifier: String, sender: AnyObject!) -> Bool {
+        //Store user inputs before continuing
         NSUserDefaults.standardUserDefaults().setObject(pickerDataSource[pickerView.selectedRowInComponent(0)], forKey: "userCar")
-        
         let documentsPath = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] as String
         let destinationPath = documentsPath.NS.stringByAppendingPathComponent("evaletProfile.jpg")
         let imageData = UIImageJPEGRepresentation(profilePic.image!, 1)!
@@ -171,15 +178,4 @@ class SignUpPageTwo: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
         
         return true
     }
-    
-    /*
-    // MARK: - Navigation
-    
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-    // Get the new view controller using segue.destinationViewController.
-    // Pass the selected object to the new view controller.
-    }
-    */
-    
 }

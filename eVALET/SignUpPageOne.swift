@@ -10,31 +10,31 @@ import UIKit
 
 class SignUpPageOne: UIViewController, UITextFieldDelegate {
     
+    //Text inputs
     @IBOutlet var firstNameTextField: UITextField!
-    
     @IBOutlet var secondNameTextField: UITextField!
-    
     @IBOutlet var emailTextField: UITextField!
-    
     @IBOutlet var passwordTextField: UITextField!
 
+    //Buttons
     @IBOutlet var continueButton: UIButton!
-
     @IBOutlet var signInButton: UIButton!
     
+    //Alert popup
     let alert = UIAlertView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //Input field setup
         self.firstNameTextField.delegate = self
         self.secondNameTextField.delegate = self
         self.emailTextField.delegate = self
         self.passwordTextField.delegate = self
         
+        //Button styling
         continueButton.backgroundColor = UIColor.grayColor()
         continueButton.layer.cornerRadius = 5
-        
         signInButton.layer.cornerRadius = 5
     }
 
@@ -43,10 +43,12 @@ class SignUpPageOne: UIViewController, UITextFieldDelegate {
         // Dispose of any resources that can be recreated.
     }
     
+    //Allow user to tap out of keyboard
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         self.view.endEditing(true)
     }
     
+    //Handle "next" buttons while inputting into text fields
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         if (textField === firstNameTextField) {
             secondNameTextField.becomeFirstResponder()
@@ -67,6 +69,7 @@ class SignUpPageOne: UIViewController, UITextFieldDelegate {
         return true
     }
     
+    //Change button styling based on whether or not information has been entered
     @IBAction func editingChanged(sender: AnyObject) {
         if (!firstNameTextField.text!.isEmpty || !secondNameTextField.text!.isEmpty || !emailTextField.text!.isEmpty ||
             !passwordTextField.text!.isEmpty) {
@@ -87,7 +90,9 @@ class SignUpPageOne: UIViewController, UITextFieldDelegate {
     }
     
     override func shouldPerformSegueWithIdentifier(identifier: String, sender: AnyObject!) -> Bool {
+        //Pressed continue button
         if (identifier == "signUp2") {
+            //Popup if email is invalid, continue if email is valid
             if isValidEmail(emailTextField.text!) {
                 NSUserDefaults.standardUserDefaults().setObject(firstNameTextField.text, forKey: "firstName")
                 NSUserDefaults.standardUserDefaults().setObject(secondNameTextField.text, forKey: "lastName")
@@ -108,21 +113,11 @@ class SignUpPageOne: UIViewController, UITextFieldDelegate {
         return true
     }
     
+    //Check if email address is valid
     func isValidEmail(testStr:String) -> Bool {
         let emailRegEx = "^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$"
         
         let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
         return emailTest.evaluateWithObject(testStr)
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

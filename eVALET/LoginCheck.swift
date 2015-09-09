@@ -30,6 +30,7 @@ class LoginCheck: UIViewController {
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(true)
         
+        //Control which page is visited based on user status
         if (loggedIn) {
             if (carDocked) {
                 self.performSegueWithIdentifier("carDocked", sender: self)
