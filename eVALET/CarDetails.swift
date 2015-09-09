@@ -9,18 +9,28 @@
 import UIKit
 
 class CarDetails: UIViewController {
+    
+    @IBOutlet var profilePic: UIImageView!
 
+    @IBOutlet var nameField: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        profilePic.layer.borderColor = UIColor(red: 24/255, green: 129/255, blue: 198/255, alpha: 1).CGColor
+        profilePic.layer.borderWidth = 2
+        profilePic.layer.cornerRadius = 18
+        profilePic.layer.masksToBounds = true
+        
+        nameField.text = NSUserDefaults.standardUserDefaults().objectForKey("firstName")! as? String
+        nameField.text?.appendContentsOf(" ")
+        nameField.text?.appendContentsOf((NSUserDefaults.standardUserDefaults().objectForKey("lastName")! as? String)!)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
     /*
     // MARK: - Navigation

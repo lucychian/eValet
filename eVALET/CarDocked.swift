@@ -26,7 +26,7 @@ class CarDocked: UIViewController, UIScrollViewDelegate {
 
     @IBOutlet var scrollView: UIScrollView!
     
-    @IBOutlet var pageControl: UIPageControl!
+    @IBOutlet weak var pageControl: UIPageControl!
     
     @IBOutlet var viewTradeButton: UIButton!
     
@@ -43,7 +43,6 @@ class CarDocked: UIViewController, UIScrollViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         
         configurePageControl()
         
@@ -94,8 +93,9 @@ class CarDocked: UIViewController, UIScrollViewDelegate {
 
     
     func changePage(sender: AnyObject) -> () {
-        let x = CGFloat(pageControl.currentPage) * scrollView.frame.size.width * 1.27
-        scrollView.setContentOffset(CGPointMake(x, 0), animated: true)
+        //let x = CGFloat(pageControl.currentPage) * scrollView.frame.size.width * 1.27
+        //scrollView.setContentOffset(CGPointMake(x, 0), animated: true)
+        return
     }
     
     func scrollViewDidEndDecelerating(scrollView: UIScrollView) {

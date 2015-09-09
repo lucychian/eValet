@@ -12,7 +12,6 @@
 		3A40DDA41B9626F30008D4A3 /* TimeRangeEnd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A40DDA31B9626F30008D4A3 /* TimeRangeEnd.swift */; };
 		3A40DDA81B962D630008D4A3 /* CarNotDocked.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A40DDA71B962D630008D4A3 /* CarNotDocked.swift */; };
 		3A40DDAC1B963C920008D4A3 /* SpotDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A40DDAB1B963C920008D4A3 /* SpotDetails.swift */; };
-		3A40DDAE1B963F7A0008D4A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A40DDAD1B963F7A0008D4A3 /* ViewController.swift */; };
 		3A40DDB21B9641740008D4A3 /* ConfirmTimeRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A40DDB11B9641740008D4A3 /* ConfirmTimeRange.swift */; };
 		3A40DDB61B9660480008D4A3 /* RequestDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A40DDB51B9660480008D4A3 /* RequestDetails.swift */; };
 		3A81908D1B8E2BC2003F1C7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A81908C1B8E2BC2003F1C7F /* AppDelegate.swift */; };
@@ -27,6 +26,7 @@
 		3A9BC9501B97896E0032535D /* SignUpPageOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9BC94F1B97896E0032535D /* SignUpPageOne.swift */; };
 		3AABD3491B97A33600D92D36 /* SignUpPageTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AABD3481B97A33600D92D36 /* SignUpPageTwo.swift */; };
 		3AABD34B1B97AC3200D92D36 /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AABD34A1B97AC3200D92D36 /* SignIn.swift */; };
+		BF5921A81B9F634000AA72FF /* LoginCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5921A71B9F634000AA72FF /* LoginCheck.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,7 +35,6 @@
 		3A40DDA31B9626F30008D4A3 /* TimeRangeEnd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeRangeEnd.swift; sourceTree = "<group>"; };
 		3A40DDA71B962D630008D4A3 /* CarNotDocked.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarNotDocked.swift; sourceTree = "<group>"; };
 		3A40DDAB1B963C920008D4A3 /* SpotDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotDetails.swift; sourceTree = "<group>"; };
-		3A40DDAD1B963F7A0008D4A3 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3A40DDB11B9641740008D4A3 /* ConfirmTimeRange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmTimeRange.swift; sourceTree = "<group>"; };
 		3A40DDB51B9660480008D4A3 /* RequestDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestDetails.swift; sourceTree = "<group>"; };
 		3A8190891B8E2BC2003F1C7F /* eVALET.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eVALET.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,6 +51,7 @@
 		3A9BC94F1B97896E0032535D /* SignUpPageOne.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpPageOne.swift; sourceTree = "<group>"; };
 		3AABD3481B97A33600D92D36 /* SignUpPageTwo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpPageTwo.swift; sourceTree = "<group>"; };
 		3AABD34A1B97AC3200D92D36 /* SignIn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
+		BF5921A71B9F634000AA72FF /* LoginCheck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginCheck.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +112,7 @@
 			children = (
 				3A81908C1B8E2BC2003F1C7F /* AppDelegate.swift */,
 				3A8190901B8E2BC2003F1C7F /* Main.storyboard */,
+				BF5921A71B9F634000AA72FF /* LoginCheck.swift */,
 				3A9BC94E1B9789290032535D /* Sign Up/Login */,
 				3A40DDA91B9634F40008D4A3 /* When Car is Docked */,
 				3A40DDAA1B9635450008D4A3 /* When Car is Not Docked */,
@@ -125,7 +126,6 @@
 		3A9BC94E1B9789290032535D /* Sign Up/Login */ = {
 			isa = PBXGroup;
 			children = (
-				3A40DDAD1B963F7A0008D4A3 /* ViewController.swift */,
 				3A9BC94F1B97896E0032535D /* SignUpPageOne.swift */,
 				3AABD3481B97A33600D92D36 /* SignUpPageTwo.swift */,
 				3AABD34A1B97AC3200D92D36 /* SignIn.swift */,
@@ -208,10 +208,10 @@
 				3A40DDAC1B963C920008D4A3 /* SpotDetails.swift in Sources */,
 				3A40DDA81B962D630008D4A3 /* CarNotDocked.swift in Sources */,
 				3A0535D21B95022C0047E0A5 /* ConfirmAcceptRequest.swift in Sources */,
+				BF5921A81B9F634000AA72FF /* LoginCheck.swift in Sources */,
 				3AABD3491B97A33600D92D36 /* SignUpPageTwo.swift in Sources */,
 				3A8190A41B8E2C4C003F1C7F /* ChargingDetails.swift in Sources */,
 				3A40DDB21B9641740008D4A3 /* ConfirmTimeRange.swift in Sources */,
-				3A40DDAE1B963F7A0008D4A3 /* ViewController.swift in Sources */,
 				3AABD34B1B97AC3200D92D36 /* SignIn.swift in Sources */,
 				3A40DDB61B9660480008D4A3 /* RequestDetails.swift in Sources */,
 				3A9BC9501B97896E0032535D /* SignUpPageOne.swift in Sources */,
@@ -330,6 +330,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = eVALET/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -343,6 +344,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = eVALET/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

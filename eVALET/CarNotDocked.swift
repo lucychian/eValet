@@ -16,6 +16,8 @@ class CarNotDocked: UIViewController {
     
     @IBOutlet var viewExistingRequest: UIButton!
     
+    @IBOutlet var nameField: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -24,6 +26,10 @@ class CarNotDocked: UIViewController {
         makeARequest.layer.cornerRadius = 5
         
         viewExistingRequest.layer.cornerRadius = 5
+        
+        nameField.text = NSUserDefaults.standardUserDefaults().objectForKey("firstName")! as? String
+        nameField.text?.appendContentsOf(" ")
+        nameField.text?.appendContentsOf((NSUserDefaults.standardUserDefaults().objectForKey("lastName")! as? String)!)
         
         // Do any additional setup after loading the view.
     }
