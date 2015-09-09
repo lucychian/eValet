@@ -151,9 +151,23 @@ class SignUpPageTwo: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
     
     override func shouldPerformSegueWithIdentifier(identifier: String, sender: AnyObject!) -> Bool {
         NSUserDefaults.standardUserDefaults().setObject(pickerDataSource[pickerView.selectedRowInComponent(0)], forKey: "userCar")
+        
         let documentsPath = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] as String
         let destinationPath = documentsPath.NS.stringByAppendingPathComponent("evaletProfile.jpg")
-        UIImageJPEGRepresentation(profilePic.image!, 1)!.writeToFile(destinationPath, atomically: true)
+        let imageData = UIImageJPEGRepresentation(profilePic.image!, 1)!
+            imageData.writeToFile(destinationPath, atomically: true)
+        
+        let user: PFUser = PFUser.currentUser()!
+        
+        let imageFile = PFFile(name: user["name"] as? String, data: imageData)
+        user["userImage"] = imageFile
+        user.saveInBackgroundWithBlock({
+            (result:Bool, error:NSError?)->Void in
+            //code
+        })
+        
+        NSUserDefaults.standardUserDefaults().setObject(true, forKey: "loggedIn")
+        
         
         return true
     }
