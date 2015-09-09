@@ -18,13 +18,6 @@ class SignIn: UIViewController, UITextFieldDelegate {
     @IBOutlet var passwordTextField: UITextField!
     
     @IBAction func signInAction(sender: AnyObject) {
-        loginUser(emailTextField.text!, password: passwordTextField.text!, block: {
-            (user: PFUser?, error: NSError?) -> Void in
-            if(error != nil) {
-            }
-            else {
-            }
-        })
     }
     
     override func viewDidLoad() {
