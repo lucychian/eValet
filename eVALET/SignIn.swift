@@ -7,10 +7,25 @@
 //
 
 import UIKit
+import Parse
 
-class SignIn: UIViewController {
+class SignIn: UIViewController, UITextFieldDelegate {
 
     @IBOutlet var signIn: UIButton!
+    
+    @IBOutlet var emailTextField: UITextField!
+    
+    @IBOutlet var passwordTextField: UITextField!
+    
+    @IBAction func signInAction(sender: AnyObject) {
+        loginUser(emailTextField.text!, password: passwordTextField.text!, block: {
+            (user: PFUser?, error: NSError?) -> Void in
+            if(error != nil) {
+            }
+            else {
+            }
+        })
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +40,9 @@ class SignIn: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func shouldPerformSegueWithIdentifier(identifier: String, sender: AnyObject!) -> Bool {
+        return true
+    }
 
     /*
     // MARK: - Navigation

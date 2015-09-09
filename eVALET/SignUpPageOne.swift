@@ -92,7 +92,7 @@ class SignUpPageOne: UIViewController, UITextFieldDelegate {
                 NSUserDefaults.standardUserDefaults().setObject(firstNameTextField.text, forKey: "firstName")
                 NSUserDefaults.standardUserDefaults().setObject(secondNameTextField.text, forKey: "lastName")
                 NSUserDefaults.standardUserDefaults().setObject(emailTextField.text, forKey: "email")
-                createUser(firstNameTextField.text! + "$" + secondNameTextField.text!, password: passwordTextField.text!, email: emailTextField.text!, block: {
+                createUser(firstNameTextField.text! + " " + secondNameTextField.text!, password: passwordTextField.text!, email: emailTextField.text!, block: {
                     (result: Bool, error: NSError?) -> Void in
                 })
                 return true

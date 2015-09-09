@@ -32,10 +32,5 @@ class LoginCheck: UIViewController {
         } else {
             self.performSegueWithIdentifier("signUp", sender: self)
         }
-        
-        getCarList({
-            (cars:[AnyObject]?, error: NSError?) -> Void in
-            self.pickerDataSource = (cars as? [String])!
-        })
     }
 }

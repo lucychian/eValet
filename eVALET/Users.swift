@@ -20,12 +20,14 @@ Return:
 Bool - true if user is successfully created, false otherwise
 */
 
-func createUser(username: String, password: String, email: String, block: PFBooleanResultBlock) -> Void {
+func createUser(name: String, password: String, email: String, block: PFBooleanResultBlock) -> Void {
     
     let user = PFUser()
-    user.username = username
+    user.username = email
     user.password = password
     user.email = email
+    
+    user["name"] = name
     
     user.signUpInBackgroundWithBlock(block)
 }
@@ -40,16 +42,10 @@ Return:
 Bool - true if sign in successful, false otherwise
 */
 
-func loginUser(username: String, password: String) -> Bool{
+func loginUser(username: String, password: String, block: PFUserResultBlock) -> Void{
     
-    var result = false
-    PFUser.logInWithUsernameInBackground(username, password:password) {
-        (user: PFUser?, error: NSError?) -> Void in
-        if user != nil {
-            result = true
-        }
-    }
-    return result
+    PFUser.logInWithUsernameInBackground(username, password:password, block:block)
+    
 }
 
 /*

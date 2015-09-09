@@ -8,6 +8,7 @@
 
 import UIKit
 import Foundation
+import Parse
 
 public extension String {
     var NS: NSString { return (self as NSString) }
@@ -21,15 +22,39 @@ class SignUpPageTwo: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
     
     @IBOutlet var pickerView: UIPickerView!
     
-    //var pickerDataSource = ["BMW", "Merc", "Audi", "Honda", "Nissan", "Hyundai", "Chevy", "Ford", "Tesla", "Ferrari", "Porsche"];
-    
-    
+    var pickerDataSource: NSMutableArray = []// = ["BMW", "Merc", "Audi", "Honda", "Nissan", "Hyundai", "Chevy", "Ford", "Tesla", "Ferrari", "Porsche"];
     
     let alert = UIAlertView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        PFUser.logInWithUsernameInBackground("myUsername", password: "myPassword") {
+            (result: PFUser?, error: NSError?) -> Void in
+            if(error != nil) {
+                print(error?.userInfo)
+            }
+            
+            getCarList({
+            (cars:[AnyObject]?, error: NSError?) -> Void in
+                if (error == nil)
+                {
+                    for car in cars! as [AnyObject]
+                    {
+                        self.pickerDataSource.addObject(car["carModel"] as! String)
+                    }
+                    self.pickerView.reloadAllComponents()
+                }
+                else
+                {
+                    print("Error")
+                }
+            })
+
+        }
+        
+        
+                
         profilePic.layer.borderColor = UIColor(red: 24/255, green: 129/255, blue: 198/255, alpha: 1).CGColor
         profilePic.layer.borderWidth = 3
         profilePic.layer.cornerRadius = 50
@@ -45,10 +70,7 @@ class SignUpPageTwo: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
         profilePic.addGestureRecognizer(UITapGestureRecognizer(target: self, action: Selector("profilePicTapped")))
         profilePic.userInteractionEnabled = true
         
-//        getCarList({
-//            (cars:[AnyObject]?, error: NSError?) -> Void in
-//            self.pickerDataSource = (cars as? [String])!
-//        })
+        
         
         // Do any additional setup after loading the view.
     }
@@ -124,7 +146,7 @@ class SignUpPageTwo: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
     }
     
     func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return pickerDataSource[row] as! String
+        return pickerDataSource[row] as? String
     }
     
     override func shouldPerformSegueWithIdentifier(identifier: String, sender: AnyObject!) -> Bool {
