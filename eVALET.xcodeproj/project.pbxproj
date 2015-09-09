@@ -44,6 +44,7 @@
 		BF027BE81BA0005B00EA1443 /* libz.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF027BE71BA0005B00EA1443 /* libz.1.dylib */; };
 		BF027BEA1BA0007E00EA1443 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF027BE91BA0007E00EA1443 /* libsqlite3.dylib */; };
 		BF5921A81B9F634000AA72FF /* LoginCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5921A71B9F634000AA72FF /* LoginCheck.swift */; settings = {ASSET_TAGS = (); }; };
+		BFF157081BA0A21F009BD50F /* ViewTradeNotDocked.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF157071BA0A21F009BD50F /* ViewTradeNotDocked.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,6 +87,7 @@
 		BF027BE71BA0005B00EA1443 /* libz.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.dylib; path = /usr/lib/libz.1.dylib; sourceTree = "<absolute>"; };
 		BF027BE91BA0007E00EA1443 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = /usr/lib/libsqlite3.dylib; sourceTree = "<absolute>"; };
 		BF5921A71B9F634000AA72FF /* LoginCheck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginCheck.swift; sourceTree = "<group>"; };
+		BFF157071BA0A21F009BD50F /* ViewTradeNotDocked.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewTradeNotDocked.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 				3A40DDB11B9641740008D4A3 /* ConfirmTimeRange.swift */,
 				3A40DDAB1B963C920008D4A3 /* SpotDetails.swift */,
 				3A40DDB51B9660480008D4A3 /* RequestDetails.swift */,
+				BFF157071BA0A21F009BD50F /* ViewTradeNotDocked.swift */,
 			);
 			name = "When Car is Not Docked";
 			sourceTree = "<group>";
@@ -290,6 +293,7 @@
 				3A0535D21B95022C0047E0A5 /* ConfirmAcceptRequest.swift in Sources */,
 				BF5921A81B9F634000AA72FF /* LoginCheck.swift in Sources */,
 				3AABD3491B97A33600D92D36 /* SignUpPageTwo.swift in Sources */,
+				BFF157081BA0A21F009BD50F /* ViewTradeNotDocked.swift in Sources */,
 				BF027BCC1B9FFBF400EA1443 /* Station.swift in Sources */,
 				3A8190A41B8E2C4C003F1C7F /* ChargingDetails.swift in Sources */,
 				3A40DDB21B9641740008D4A3 /* ConfirmTimeRange.swift in Sources */,
