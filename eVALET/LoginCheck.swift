@@ -9,7 +9,7 @@
 import UIKit
 
 class LoginCheck: UIViewController {
-    var loggedIn = false
+    var loggedIn = true
     var carDocked = true
     
     override func viewWillAppear(animated: Bool) {

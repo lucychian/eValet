@@ -29,6 +29,9 @@ class CarNotDocked: UIViewController {
         nameField.text?.appendContentsOf(" ")
         nameField.text?.appendContentsOf((NSUserDefaults.standardUserDefaults().objectForKey("lastName")! as? String)!)
         
+        let documentsPath = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] as String
+        let destinationPath = documentsPath.NS.stringByAppendingPathComponent("evaletProfile.jpg")
+        profilePic.image = UIImage(contentsOfFile: destinationPath)
         
         profilePic.layer.borderColor = UIColor(red: 24/255, green: 129/255, blue: 198/255, alpha: 1).CGColor
         profilePic.layer.borderWidth = 2

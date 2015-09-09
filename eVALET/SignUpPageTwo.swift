@@ -7,6 +7,11 @@
 //
 
 import UIKit
+import Foundation
+
+public extension String {
+    var NS: NSString { return (self as NSString) }
+}
 
 class SignUpPageTwo: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
@@ -117,7 +122,10 @@ class SignUpPageTwo: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
     
     override func shouldPerformSegueWithIdentifier(identifier: String, sender: AnyObject!) -> Bool {
         NSUserDefaults.standardUserDefaults().setObject(pickerDataSource[pickerView.selectedRowInComponent(0)], forKey: "userCar")
-            
+        let documentsPath = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] as String
+        let destinationPath = documentsPath.NS.stringByAppendingPathComponent("evaletProfile.jpg")
+        UIImageJPEGRepresentation(profilePic.image!, 1)!.writeToFile(destinationPath, atomically: true)
+        
         return true
     }
     
