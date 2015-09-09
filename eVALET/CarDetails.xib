@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8187.4" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8151.3"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -11,6 +12,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CarDetails" customModule="eVALET" customModuleProvider="target">
             <connections>
+                <outlet property="nameField" destination="fSe-Qb-OCE" id="WrR-v4-Kyo"/>
+                <outlet property="profilePic" destination="aik-KE-ifR" id="KLp-Hs-SzO"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -26,26 +29,35 @@
                         <constraint firstAttribute="width" constant="240" id="ilJ-ds-NNn"/>
                     </constraints>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="John Manville" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fSe-Qb-OCE">
-                    <rect key="frame" x="236" y="19" width="129" height="26"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="John Manville" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fSe-Qb-OCE" userLabel="Name">
+                    <rect key="frame" x="180" y="19" width="148" height="26"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="25" id="XUk-sf-l2s"/>
                     </constraints>
-                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="JohnManville" translatesAutoresizingMaskIntoConstraints="NO" id="aik-KE-ifR">
+                    <rect key="frame" x="344" y="14" width="36" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="RUW-m6-nf2"/>
+                        <constraint firstAttribute="width" constant="36" id="eJp-wG-pvJ"/>
+                    </constraints>
+                </imageView>
             </subviews>
             <color key="backgroundColor" red="0.90980392156862744" green="0.90980392156862744" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="fSe-Qb-OCE" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="2SU-yW-pYB"/>
                 <constraint firstItem="myf-yZ-LuM" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="7kN-i7-u9g"/>
-                <constraint firstItem="fSe-Qb-OCE" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="IQO-h5-Ieb"/>
+                <constraint firstItem="aik-KE-ifR" firstAttribute="leading" secondItem="fSe-Qb-OCE" secondAttribute="trailing" constant="12" id="U6D-0s-dda"/>
+                <constraint firstItem="fSe-Qb-OCE" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="-20" id="VXY-LH-tvT"/>
                 <constraint firstItem="myf-yZ-LuM" firstAttribute="top" secondItem="fSe-Qb-OCE" secondAttribute="bottom" constant="20" id="fCD-eX-Ohe"/>
             </constraints>
         </view>
     </objects>
     <resources>
         <image name="FordFusionEnergi" width="392" height="219"/>
+        <image name="JohnManville" width="394" height="296"/>
     </resources>
 </document>

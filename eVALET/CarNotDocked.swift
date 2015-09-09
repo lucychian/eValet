@@ -14,7 +14,9 @@ class CarNotDocked: UIViewController {
     
     @IBOutlet var makeARequest: UIButton!
     
-    @IBOutlet var viewExistingRequest: UIButton!
+    @IBOutlet var nameField: UILabel!
+    
+    @IBOutlet var profilePic: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,7 +25,18 @@ class CarNotDocked: UIViewController {
         
         makeARequest.layer.cornerRadius = 5
         
-        viewExistingRequest.layer.cornerRadius = 5
+        nameField.text = NSUserDefaults.standardUserDefaults().objectForKey("firstName")! as? String
+        nameField.text?.appendContentsOf(" ")
+        nameField.text?.appendContentsOf((NSUserDefaults.standardUserDefaults().objectForKey("lastName")! as? String)!)
+        
+        let documentsPath = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] as String
+        let destinationPath = documentsPath.NS.stringByAppendingPathComponent("evaletProfile.jpg")
+        profilePic.image = UIImage(contentsOfFile: destinationPath)
+        
+        profilePic.layer.borderColor = UIColor(red: 24/255, green: 129/255, blue: 198/255, alpha: 1).CGColor
+        profilePic.layer.borderWidth = 2
+        profilePic.layer.cornerRadius = 18
+        profilePic.layer.masksToBounds = true
         
         // Do any additional setup after loading the view.
     }
