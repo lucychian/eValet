@@ -26,7 +26,7 @@
 		3A9BC9501B97896E0032535D /* SignUpPageOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9BC94F1B97896E0032535D /* SignUpPageOne.swift */; };
 		3AABD3491B97A33600D92D36 /* SignUpPageTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AABD3481B97A33600D92D36 /* SignUpPageTwo.swift */; };
 		3AABD34B1B97AC3200D92D36 /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AABD34A1B97AC3200D92D36 /* SignIn.swift */; };
-		840829811BA0D9E0001701AD /* Scheduling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840829801BA0D9E0001701AD /* Scheduling.swift */; settings = {ASSET_TAGS = (); }; };
+		840829851BA14E03001701AD /* Exchange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840829821BA14E03001701AD /* Exchange.swift */; settings = {ASSET_TAGS = (); }; };
 		BF027BC41B9FFA7D00EA1443 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF027BC31B9FFA7D00EA1443 /* Request.swift */; settings = {ASSET_TAGS = (); }; };
 		BF027BC61B9FFB5D00EA1443 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF027BC51B9FFB5D00EA1443 /* Users.swift */; settings = {ASSET_TAGS = (); }; };
 		BF027BC81B9FFBA700EA1443 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF027BC71B9FFBA700EA1443 /* Car.swift */; settings = {ASSET_TAGS = (); }; };
@@ -69,7 +69,7 @@
 		3A9BC94F1B97896E0032535D /* SignUpPageOne.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpPageOne.swift; sourceTree = "<group>"; };
 		3AABD3481B97A33600D92D36 /* SignUpPageTwo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpPageTwo.swift; sourceTree = "<group>"; };
 		3AABD34A1B97AC3200D92D36 /* SignIn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
-		840829801BA0D9E0001701AD /* Scheduling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scheduling.swift; sourceTree = "<group>"; };
+		840829821BA14E03001701AD /* Exchange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exchange.swift; sourceTree = "<group>"; };
 		BF027BC31B9FFA7D00EA1443 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		BF027BC51B9FFB5D00EA1443 /* Users.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		BF027BC71B9FFBA700EA1443 /* Car.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
@@ -186,12 +186,12 @@
 		BF027BC21B9FFA4C00EA1443 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				840829821BA14E03001701AD /* Exchange.swift */,
 				BF027BC31B9FFA7D00EA1443 /* Request.swift */,
 				BF027BC51B9FFB5D00EA1443 /* Users.swift */,
 				BF027BC71B9FFBA700EA1443 /* Car.swift */,
 				BF027BC91B9FFBDA00EA1443 /* OccupiedSpace.swift */,
 				BF027BCB1B9FFBF400EA1443 /* Station.swift */,
-				840829801BA0D9E0001701AD /* Scheduling.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -291,7 +291,6 @@
 				BF027BC41B9FFA7D00EA1443 /* Request.swift in Sources */,
 				3A40DDA81B962D630008D4A3 /* CarNotDocked.swift in Sources */,
 				3A0535D21B95022C0047E0A5 /* ConfirmAcceptRequest.swift in Sources */,
-				840829811BA0D9E0001701AD /* Scheduling.swift in Sources */,
 				BF5921A81B9F634000AA72FF /* LoginCheck.swift in Sources */,
 				3AABD3491B97A33600D92D36 /* SignUpPageTwo.swift in Sources */,
 				BF027BCC1B9FFBF400EA1443 /* Station.swift in Sources */,
@@ -303,6 +302,7 @@
 				3A9BC9501B97896E0032535D /* SignUpPageOne.swift in Sources */,
 				3A81908F1B8E2BC2003F1C7F /* CarDocked.swift in Sources */,
 				BF027BCA1B9FFBDA00EA1443 /* OccupiedSpace.swift in Sources */,
+				840829851BA14E03001701AD /* Exchange.swift in Sources */,
 				3A40DDA41B9626F30008D4A3 /* TimeRangeEnd.swift in Sources */,
 				BF027BC81B9FFBA700EA1443 /* Car.swift in Sources */,
 				3A81908D1B8E2BC2003F1C7F /* AppDelegate.swift in Sources */,
