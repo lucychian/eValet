@@ -19,6 +19,11 @@ class CarDocked: UIViewController, UIScrollViewDelegate {
     @IBAction func viewTradeButton(sender: AnyObject) {
     }
     
+    @IBOutlet var chargeLabel: UILabel!
+    @IBOutlet var timeLeftLabel: UILabel!
+    @IBOutlet var tradeImage: UIImageView!
+    @IBOutlet var tradeLabel: UILabel!
+    
     //Frame for adding elements
     var frame: CGRect = CGRectMake(0, 0, 0, 0)
     
@@ -63,7 +68,7 @@ class CarDocked: UIViewController, UIScrollViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+    
         //Setup for page control element
         configurePageControl()
         
@@ -104,7 +109,20 @@ class CarDocked: UIViewController, UIScrollViewDelegate {
         //Child view controller setup for charging details
         let vc1 = ChargingDetails(nibName: "ChargingDetails", bundle: nil)
         vc1.passedStation = NSUserDefaults.standardUserDefaults().objectForKey("station")?.description
-            
+        
+        getCurrentCharge({
+            (result:Double) -> Void in
+            self.chargeLabel.text = Int(round(result)).description + "% Charged"
+        })
+        
+        getChargeTime({
+            (result:Double) -> Void in
+            let min = (result * 60) % 60
+            let hr = floor(result)
+            self.timeLeftLabel.text = String(format: "%02d:%02d Until Full", Int(hr), Int(min))
+        })
+
+ 
         var frame1 = vc1.view.frame
         frame1.origin.x = self.view.frame.size.width
         vc1.view.frame = frame1

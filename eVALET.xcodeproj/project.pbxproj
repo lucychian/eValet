@@ -27,6 +27,7 @@
 		3AABD3491B97A33600D92D36 /* SignUpPageTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AABD3481B97A33600D92D36 /* SignUpPageTwo.swift */; };
 		3AABD34B1B97AC3200D92D36 /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AABD34A1B97AC3200D92D36 /* SignIn.swift */; };
 		840829851BA14E03001701AD /* Exchange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840829821BA14E03001701AD /* Exchange.swift */; settings = {ASSET_TAGS = (); }; };
+		840829891BA1A1DA001701AD /* Trade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840829881BA1A1DA001701AD /* Trade.swift */; settings = {ASSET_TAGS = (); }; };
 		BF027BC41B9FFA7D00EA1443 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF027BC31B9FFA7D00EA1443 /* Request.swift */; settings = {ASSET_TAGS = (); }; };
 		BF027BC61B9FFB5D00EA1443 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF027BC51B9FFB5D00EA1443 /* Users.swift */; settings = {ASSET_TAGS = (); }; };
 		BF027BC81B9FFBA700EA1443 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF027BC71B9FFBA700EA1443 /* Car.swift */; settings = {ASSET_TAGS = (); }; };
@@ -71,6 +72,7 @@
 		3AABD3481B97A33600D92D36 /* SignUpPageTwo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpPageTwo.swift; sourceTree = "<group>"; };
 		3AABD34A1B97AC3200D92D36 /* SignIn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
 		840829821BA14E03001701AD /* Exchange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exchange.swift; sourceTree = "<group>"; };
+		840829881BA1A1DA001701AD /* Trade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trade.swift; sourceTree = "<group>"; };
 		BF027BC31B9FFA7D00EA1443 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		BF027BC51B9FFB5D00EA1443 /* Users.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		BF027BC71B9FFBA700EA1443 /* Car.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
@@ -195,6 +197,7 @@
 				BF027BC71B9FFBA700EA1443 /* Car.swift */,
 				BF027BC91B9FFBDA00EA1443 /* OccupiedSpace.swift */,
 				BF027BCB1B9FFBF400EA1443 /* Station.swift */,
+				840829881BA1A1DA001701AD /* Trade.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -311,6 +314,7 @@
 				BF027BC81B9FFBA700EA1443 /* Car.swift in Sources */,
 				3A81908D1B8E2BC2003F1C7F /* AppDelegate.swift in Sources */,
 				3A8190A81B8E3316003F1C7F /* CarDetails.swift in Sources */,
+				840829891BA1A1DA001701AD /* Trade.swift in Sources */,
 				3A40DDA21A54C7DA0008D4A3 /* TimeRangeStart.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
