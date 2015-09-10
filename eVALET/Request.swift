@@ -29,6 +29,27 @@ func createRequest(start:NSDate, end:NSDate, block: PFBooleanResultBlock) -> Voi
     
 }
 
+/*
+deleteRequest
+*/
+
+func deleteRequest() -> Void{
+    
+    let user = PFUser.currentUser()
+    
+    let query = PFQuery(className: "Request")
+    query.whereKey("user", equalTo: user!)
+    query.getFirstObjectInBackgroundWithBlock{(obj: AnyObject?, err: NSError?) -> Void in
+        
+        if err == nil && obj != nil {
+            obj?.deleteInBackground()
+            
+        } else {
+            print("Error")
+        }
+    }
+}
+
 
 /*
 getRequests
