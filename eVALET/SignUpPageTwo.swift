@@ -29,32 +29,22 @@ class SignUpPageTwo: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        PFUser.logInWithUsernameInBackground(NSUserDefaults.standardUserDefaults().objectForKey("email")!.description, password: "myPassword") {
-            (result: PFUser?, error: NSError?) -> Void in
-            if(error != nil) {
-                print(error?.userInfo)
-            }
-            
-            getCarList({
+        getCarList({
             (cars:[AnyObject]?, error: NSError?) -> Void in
-                if (error == nil)
+            if (error == nil)
+            {
+                for car in cars! as [AnyObject]
                 {
-                    for car in cars! as [AnyObject]
-                    {
-                        self.pickerDataSource.addObject(car["carModel"] as! String)
-                    }
-                    self.pickerView.reloadAllComponents()
+                    self.pickerDataSource.addObject(car["carModel"] as! String)
                 }
-                else
-                {
-                    print("Error")
-                }
-            })
-
-        }
+                self.pickerView.reloadAllComponents()
+            }
+            else
+            {
+                print("Error")
+            }
+        })
         
-        
-                
         profilePic.layer.borderColor = UIColor(red: 24/255, green: 129/255, blue: 198/255, alpha: 1).CGColor
         profilePic.layer.borderWidth = 3
         profilePic.layer.cornerRadius = 50

@@ -12,7 +12,7 @@ import Parse
 func createOccupiedSpace(stationId: String, batteryCharge: Int, block: PFBooleanResultBlock) {
     
     let newSpace = PFObject(className: "OccupiedSpace")
-    newSpace["user"] = PFUser.currentUser()
+    newSpace["user"] = PFUser.currentUser()!
     newSpace["station"] = PFObject(withoutDataWithClassName: "Station", objectId: stationId)
     newSpace["batteryCharge"] = batteryCharge
     
