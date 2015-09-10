@@ -17,10 +17,10 @@ Return:
 Bool - true if car is successfully set, false otherwise
 */
 
-func setUserCar(car: PFObject, block:PFBooleanResultBlock) -> Void{
+func setUserCar(carId: String, block:PFBooleanResultBlock) -> Void{
     
     let user = PFUser.currentUser()
-    user?["car"] = car
+    user?["car"] = PFObject(withoutDataWithClassName: "Cars", objectId: carId)
     user?.saveInBackgroundWithBlock(block)
     
 }
@@ -45,7 +45,8 @@ func getCarList(block: PFArrayResultBlock) -> Void {
     
     let query = PFQuery(className:"Cars")
     query.selectKeys(["objectId","carModel"])
-    
+    query.orderByAscending("carModel")
+
     query.findObjectsInBackgroundWithBlock (block)
     
 }

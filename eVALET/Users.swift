@@ -20,14 +20,16 @@ Return:
 Bool - true if user is successfully created, false otherwise
 */
 
-func createUser(name: String, password: String, email: String, block: PFBooleanResultBlock) -> Void {
+func createUser(firstName: String, lastName:
+    String, password: String, email: String, block: PFBooleanResultBlock) -> Void {
     
     let user = PFUser()
     user.username = email
     user.password = password
     user.email = email
     
-    user["name"] = name
+    user["firstName"] = firstName
+    user["lastName"] = lastName
     
     user.signUpInBackgroundWithBlock(block)
 }

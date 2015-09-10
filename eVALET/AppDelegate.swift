@@ -31,17 +31,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
 
         
-        PFUser.logInWithUsernameInBackground("myUsername", password: "myPassword", block: {
-            (user: PFUser?, error:NSError?) -> Void in
-            //createOccupiedSpace("BmvKSM5GGp", batteryCharge: 86, block: {
-              //  (result: Bool, error:NSError?)->Void in
-            getChargeTime({
-                (result:Double)->Void in
-                print(result)
-            })
-            //})
-        })
-        
         return true
         
     }

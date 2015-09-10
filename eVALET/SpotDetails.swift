@@ -28,13 +28,19 @@ class SpotDetails: UIViewController, UIPickerViewDataSource, UIPickerViewDelegat
             alert.show()
         } else {
             let charge = Int(currentPercent.text!.substringWithRange(Range<String.Index>(start: currentPercent.text!.startIndex.advancedBy(1), end: currentPercent.text!.endIndex)))
-            print(charge!)
             
-            self.performSegueWithIdentifier("carCheckedIn", sender: self)
+            getStationList({
+                (stations:[AnyObject]?, error:NSError?) -> Void in
+                createOccupiedSpace(stations![self.spotPicker.selectedRowInComponent(0)].objectId!!, batteryCharge: charge!, block: { (result:Bool, error:NSError?) -> Void in
+                    self.performSegueWithIdentifier("carCheckedIn", sender: self)
+                })
+
+            })
+            
         }
     }
     
-    var pickerDataSource: NSMutableArray = []// = ["SJC-12-1", "SJC-12-2", "SJC-12-3", "SJC-12-4", "SJC-12-5", "SJC-12-6"]
+    var pickerDataSource: NSMutableArray = []
     
     override func viewDidLoad() {
         super.viewDidLoad()

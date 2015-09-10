@@ -32,7 +32,31 @@ class SignIn: UIViewController, UITextFieldDelegate {
             else
             {
                 NSUserDefaults.standardUserDefaults().setObject(true, forKey: "loggedIn")
-                self.performSegueWithIdentifier("signIn", sender: self)
+                NSUserDefaults.standardUserDefaults().setObject(self.emailTextField.text, forKey: "email")
+                
+                let usr = PFUser.currentUser()!
+                
+                NSUserDefaults.standardUserDefaults().setObject(usr["firstName"]!, forKey: "firstName")
+                NSUserDefaults.standardUserDefaults().setObject(usr["lastName"]!, forKey: "lastName")
+                
+                let userImageFile = usr["userImage"] as! PFFile
+                userImageFile.getDataInBackgroundWithBlock ({
+                    (imageData: NSData?, error: NSError?) -> Void in
+                    if error == nil {
+                        if let imageData = imageData {
+                            let image = UIImage(data:imageData)
+                            
+                            let documentsPath = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] as String
+                            let destinationPath = documentsPath.NS.stringByAppendingPathComponent("evaletProfile.jpg")
+                            let imageData = UIImageJPEGRepresentation(image!, 1)!
+                                imageData.writeToFile(destinationPath, atomically: true)
+                            self.performSegueWithIdentifier("signIn", sender: self)
+
+                        }
+                    }
+                })
+                
+                
             }
             //error check
             //message

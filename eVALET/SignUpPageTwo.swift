@@ -29,7 +29,7 @@ class SignUpPageTwo: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        PFUser.logInWithUsernameInBackground("myUsername", password: "myPassword") {
+        PFUser.logInWithUsernameInBackground(NSUserDefaults.standardUserDefaults().objectForKey("email")!.description, password: "myPassword") {
             (result: PFUser?, error: NSError?) -> Void in
             if(error != nil) {
                 print(error?.userInfo)
@@ -159,19 +159,34 @@ class SignUpPageTwo: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
     override func shouldPerformSegueWithIdentifier(identifier: String, sender: AnyObject!) -> Bool {
         //Store user inputs before continuing
         NSUserDefaults.standardUserDefaults().setObject(pickerDataSource[pickerView.selectedRowInComponent(0)], forKey: "userCar")
+        
         let documentsPath = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] as String
         let destinationPath = documentsPath.NS.stringByAppendingPathComponent("evaletProfile.jpg")
         let imageData = UIImageJPEGRepresentation(profilePic.image!, 1)!
             imageData.writeToFile(destinationPath, atomically: true)
         
+        
         let user: PFUser = PFUser.currentUser()!
         
-        let imageFile = PFFile(name: user["name"] as? String, data: imageData)
-        user["userImage"] = imageFile
+        user.removeObjectForKey("userImage")
         user.saveInBackgroundWithBlock({
-            (result:Bool, error:NSError?)->Void in
-            //code
+            (result:Bool, error:NSError?) -> Void in
+            let imageFile = PFFile(name: user.objectId!, data: imageData)
+            user["userImage"] = imageFile
+            user.saveInBackgroundWithBlock({
+                (result:Bool, error:NSError?)->Void in
+                //code
+            })
         })
+        
+        getCarList({
+            (cars:[AnyObject]?, error:NSError?) -> Void in
+            setUserCar(cars![self.pickerView.selectedRowInComponent(0)].objectId!!, block: {
+                (result:Bool, error:NSError?) -> Void in
+            })
+        })
+        
+        
         
         NSUserDefaults.standardUserDefaults().setObject(true, forKey: "loggedIn")
         

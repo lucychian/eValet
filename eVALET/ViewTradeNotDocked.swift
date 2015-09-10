@@ -64,7 +64,7 @@ class ViewTradeNotDocked: UIViewController, UIScrollViewDelegate {
         
         //Child view controller setup for charging details
         let vc1 = ChargingDetails(nibName: "ChargingDetails", bundle: nil)
-        vc1.passedStation = 2
+        vc1.passedStation = "2"
         vc1.passedLocation = "Garage"
         
         var frame1 = vc1.view.frame

@@ -102,13 +102,15 @@ class CarDocked: UIViewController, UIScrollViewDelegate {
         
         //Child view controller setup for charging details
         let vc1 = ChargingDetails(nibName: "ChargingDetails", bundle: nil)
-        vc1.passedStation = 2
-        vc1.passedLocation = "Garage"
         
+    
+        vc1.passedStation = "2"
+        vc1.passedLocation = "Garage"
+            
         var frame1 = vc1.view.frame
         frame1.origin.x = self.view.frame.size.width
         vc1.view.frame = frame1
-        
+            
         //Add charging details view controller as child
         self.addChildViewController(vc1)
         self.scrollView.addSubview(vc1.view)

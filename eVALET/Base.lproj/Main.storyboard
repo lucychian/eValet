@@ -91,7 +91,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hsw-99-KAL">
-                                <rect key="frame" x="25" y="167" width="82.5" height="21"/>
+                                <rect key="frame" x="25" y="167" width="83" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="4pV-Gv-WEQ"/>
                                 </constraints>
@@ -220,7 +220,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fdz-Zl-lCW">
-                                <rect key="frame" x="25" y="329" width="75.5" height="21"/>
+                                <rect key="frame" x="25" y="329" width="76" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="8Kl-FH-ToO"/>
                                 </constraints>
@@ -350,8 +350,8 @@
                                     <navigationItem title="Sign Up" id="xRS-gH-0Ay"/>
                                 </items>
                             </navigationBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose your car model." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QC2-bd-Dhn">
-                                <rect key="frame" x="193.5" y="206" width="214.5" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Choose your car model." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QC2-bd-Dhn">
+                                <rect key="frame" x="194" y="206" width="215" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="ko4-ns-5GF"/>
                                     <constraint firstAttribute="height" constant="21" id="wjY-ws-MaD"/>
@@ -360,8 +360,8 @@
                                 <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="drew" translatesAutoresizingMaskIntoConstraints="NO" id="VV3-Co-4RU">
-                                <rect key="frame" x="250.5" y="86" width="100" height="100"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="drew" translatesAutoresizingMaskIntoConstraints="NO" id="VV3-Co-4RU">
+                                <rect key="frame" x="251" y="86" width="100" height="100"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" button="YES" image="YES"/>
@@ -459,7 +459,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hiP-4H-TbZ">
-                                <rect key="frame" x="25" y="167" width="75.5" height="21"/>
+                                <rect key="frame" x="25" y="167" width="76" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="jgO-uO-CZ0"/>
                                 </constraints>
@@ -560,7 +560,7 @@
                                 </constraints>
                             </scrollView>
                             <pageControl opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="2" translatesAutoresizingMaskIntoConstraints="NO" id="hZR-Sy-VNS">
-                                <rect key="frame" x="288.5" y="266" width="23" height="37"/>
+                                <rect key="frame" x="289" y="266" width="23" height="37"/>
                                 <color key="pageIndicatorTintColor" red="0.81960784313725488" green="0.81960784313725488" blue="0.81960784313725488" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="currentPageIndicatorTintColor" red="0.0" green="0.50196081399917603" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
@@ -599,7 +599,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trade at 2:00PM" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wPw-8L-Sec">
-                                <rect key="frame" x="225" y="443" width="147.5" height="40"/>
+                                <rect key="frame" x="225" y="443" width="148" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="zah-AA-9wD"/>
                                 </constraints>
@@ -645,7 +645,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1:30 Until Full" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TN5-bz-526">
-                                <rect key="frame" x="225" y="383" width="122.5" height="40"/>
+                                <rect key="frame" x="225" y="383" width="123" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="EjE-Jz-66R"/>
                                 </constraints>
@@ -977,7 +977,7 @@
                                 </items>
                             </navigationBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Battery Percentage" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gnn-5U-A9S">
-                                <rect key="frame" x="25" y="297" width="207.5" height="21"/>
+                                <rect key="frame" x="25" y="297" width="208" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="gr8-OW-AF4"/>
                                 </constraints>
@@ -1003,7 +1003,7 @@
                                 </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose the station you are charging at, and input your current battery charge." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iFM-Ws-E8b">
-                                <rect key="frame" x="140.5" y="378" width="319" height="43"/>
+                                <rect key="frame" x="141" y="378" width="319" height="43"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="43" id="asa-k2-vFH"/>
                                     <constraint firstAttribute="width" constant="319" id="sBi-cI-c0s"/>
@@ -1194,8 +1194,8 @@
                                     </mask>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time Range Requested:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yqU-JY-xTI">
-                                <rect key="frame" x="193" y="81" width="215.5" height="25"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Time Range Requested:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yqU-JY-xTI">
+                                <rect key="frame" x="193" y="81" width="216" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="xG8-0f-2eg"/>
                                 </constraints>
