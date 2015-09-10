@@ -58,7 +58,7 @@
         </view>
     </objects>
     <resources>
-        <image name="FordFusionEnergi" width="392" height="219"/>
+        <image name="FordFusionEnergi" width="57" height="300"/>
         <image name="JohnManville" width="394" height="296"/>
     </resources>
 </document>

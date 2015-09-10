@@ -15,15 +15,20 @@ class ChargingDetails: UIViewController {
     @IBOutlet var stationLocation: UILabel!
     
     //Passed info
-    var passedStation: Int!
+    var passedStation: String!
     var passedLocation: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         //Set charge info to passed info
-        stationNumber.text = "Station #" + passedStation.description
-        stationLocation.text = passedLocation
+        stationNumber.text = "Station #" + passedStation
+        
+        if (passedLocation.containsString("SJC-10")) {
+            stationLocation.text = "Building 10"
+        } else {
+            stationLocation.text = "Garage"
+        }
         
         // Do any additional setup after loading the view.
     }

@@ -25,21 +25,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Initialize Parse.
         Parse.setApplicationId("S34Ygv6AIhddz9xbroATZlHzCZymymuSJ35b3tu0",
             clientKey: "ct7jPD2vsLsx2xLI1wGaFaByh6J6V6mgotQCK3e3")
-        
+        PFUser.enableRevocableSessionInBackground()
         // [Optional] Track statistics around application opens.
         //PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
 
-        
-        PFUser.logInWithUsernameInBackground("myUsername", password: "myPassword", block: {
-            (user: PFUser?, error:NSError?) -> Void in
-            //createOccupiedSpace("BmvKSM5GGp", batteryCharge: 86, block: {
-              //  (result: Bool, error:NSError?)->Void in
-            getChargeTime({
-                (result:Double)->Void in
-                print(result)
-            })
-            //})
-        })
         
         return true
         
