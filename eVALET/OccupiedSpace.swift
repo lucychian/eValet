@@ -41,7 +41,11 @@ func getChargeTime(block:(result:Double)->Void) -> Void {
             let car = user["car"] as! PFObject
             car.fetchIfNeededInBackgroundWithBlock({
                 (car:PFObject?, error:NSError?) -> Void in
-                block(result:(car!["batterySize"] as! Double) * ((100 - (spot["batteryCharge"] as! Double))/100) / (car!["chargingRate"] as! Double))
+                getCurrentCharge({
+                    (charge:Double) -> Void in
+                    block(result:
+                        ((car!["batterySize"] as! Double) - ((charge / 100) * (car!["batterySize"] as! Double))) / (car!["chargingRate"] as! Double))
+                })
             })
         }
     })
@@ -57,21 +61,20 @@ func getCurrentCharge(block:(charge:Double)->Void) -> Void {
     
     query.getFirstObjectInBackgroundWithBlock({
         (obj: AnyObject?, error: NSError?) -> Void in
-        getChargeTime({
-            (result: Double)->Void in
+        let car = user!["car"] as! PFObject
+        car.fetchIfNeededInBackgroundWithBlock({
+            (car: PFObject?, error: NSError?) -> Void in
             let date = obj!.createdAt as NSDate?
             let timeCharged = date!.timeIntervalSinceNow / -3600.0
-            print(result)
-            print(timeCharged)
-            print(obj!["batteryCharge"] as! Int)
+            
+            var percentage = obj!["batteryCharge"] as! Double + 100 * (timeCharged * (car!["chargingRate"] as! Double)) / (car!["batterySize"] as! Double)
+            
             //full charge - return 100%
-            if( result - timeCharged < 0) {
-                block(charge: 100)
+            if(percentage > 100) {
+                percentage = 100
             }
-                //still charging - add % charged to initial battery %
-            else {
-                block(charge: 100 - (100 * ((result - timeCharged)/result)) + (obj!["batteryCharge"] as! Double))
-            }
+            
+            block(charge: percentage)
         })
     })
 }

@@ -26,3 +26,21 @@ func getTrade(block: PFObjectResultBlock) {
     
     query.getFirstObjectInBackgroundWithBlock(block)
 }
+
+
+func createTrade(request: PFObject, exchangeTime: NSDate, block: PFBooleanResultBlock) {
+
+    let user = PFUser.currentUser()!
+    let trade = PFObject(className: "Exchange")
+    trade["request"] = request
+    trade["exchangeTime"] = exchangeTime
+    
+    let query = PFQuery(className: "OccupiedSpace")
+    query.whereKey("user", equalTo: user)
+    query.getFirstObjectInBackgroundWithBlock({
+        (obj: PFObject?, error: NSError?) -> Void in
+        trade["occupiedSpace"] = obj!
+        trade.saveInBackgroundWithBlock(block)
+    })
+    
+}
