@@ -43,7 +43,6 @@ class SignUpPageTwo: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
             }
         })
         
-                
         profilePic.layer.borderColor = UIColor(red: 24/255, green: 129/255, blue: 198/255, alpha: 1).CGColor
         profilePic.layer.borderWidth = 3
         profilePic.layer.cornerRadius = 50

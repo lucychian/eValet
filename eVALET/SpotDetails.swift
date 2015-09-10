@@ -58,29 +58,22 @@ class SpotDetails: UIViewController, UIPickerViewDataSource, UIPickerViewDelegat
         self.spotPicker.dataSource = self;
         self.spotPicker.delegate = self;
         
-        PFUser.logInWithUsernameInBackground("myUsername", password: "myPassword") {
-            (result: PFUser?, error: NSError?) -> Void in
-            if(error != nil) {
-                print(error?.userInfo)
+        getStationList({
+            (stations:[AnyObject]?, error: NSError?) -> Void in
+            if (error == nil)
+            {
+                for station in stations! as [AnyObject]
+                {
+                    self.pickerDataSource.addObject(station["stationName"] as! String)
+                }
+                self.spotPicker.reloadAllComponents()
             }
-            
-            getStationList({
-                (stations:[AnyObject]?, error: NSError?) -> Void in
-                if (error == nil)
-                {
-                    for station in stations! as [AnyObject]
-                    {
-                        self.pickerDataSource.addObject(station["stationName"] as! String)
-                    }
-                    self.spotPicker.reloadAllComponents()
-                }
-                else
-                {
-                    print("Error")
-                }
-            })
-            
-        }
+            else
+            {
+                print("Error")
+            }
+        })
+
     }
 
     override func didReceiveMemoryWarning() {
