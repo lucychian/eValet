@@ -17,6 +17,7 @@ class CarDetails: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        /*
         let documentsPath = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] as String
         let destinationPath = documentsPath.NS.stringByAppendingPathComponent("evaletProfile.jpg")
         profilePic.image = UIImage(contentsOfFile: destinationPath)
@@ -29,6 +30,7 @@ class CarDetails: UIViewController {
         nameField.text = NSUserDefaults.standardUserDefaults().objectForKey("firstName")! as? String
         nameField.text?.appendContentsOf(" ")
         nameField.text?.appendContentsOf((NSUserDefaults.standardUserDefaults().objectForKey("lastName")! as? String)!)
+*/
     }
 
     override func didReceiveMemoryWarning() {

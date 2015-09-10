@@ -9,11 +9,11 @@
 import Foundation
 import Parse
 
-func createOccupiedSpace(userId: String, stationId: String, batteryCharge: Int, block: PFBooleanResultBlock) {
+func createOccupiedSpace(stationId: String, batteryCharge: Int, block: PFBooleanResultBlock) {
     
     let newSpace = PFObject(className: "OccupiedSpace")
-    newSpace["userId"] = userId
-    newSpace["stationId"] = stationId
+    newSpace["user"] = PFUser.currentUser()
+    newSpace["station"] = PFObject(withoutDataWithClassName: "Station", objectId: stationId)
     newSpace["batteryCharge"] = batteryCharge
     
     newSpace.saveInBackgroundWithBlock(block)
