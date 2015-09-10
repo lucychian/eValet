@@ -29,7 +29,11 @@ class CarNotDocked: UIViewController {
     @IBOutlet var requestImage: UIImageView!
     @IBOutlet var requestInfo: UILabel!
     
+    //Trade info
+    @IBOutlet var tradeImage: UIImageView!
+    @IBOutlet var tradeInfo: UILabel!
     
+    //Date formatter
     var formatter = NSDateFormatter()
     
     //Variable to hold the number of available spots
@@ -87,6 +91,8 @@ class CarNotDocked: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //tradeSetUp =
+        
         //Button styling
         confirmASpot.layer.cornerRadius = 5
         makeARequest.layer.cornerRadius = 5
@@ -96,6 +102,10 @@ class CarNotDocked: UIViewController {
         //Hide unneccessary buttons
         cancelRequest.hidden = true
         viewTrade.hidden = true
+        requestImage.hidden = true
+        requestInfo.hidden = true
+        tradeImage.hidden = true
+        tradeInfo.hidden = true
         
         //Set up user information
         nameField.text = NSUserDefaults.standardUserDefaults().objectForKey("firstName")!.description + " " + NSUserDefaults.standardUserDefaults().objectForKey("lastName")!.description
@@ -116,9 +126,9 @@ class CarNotDocked: UIViewController {
             if (error == nil)
             {
                 if (count == 0) {
-                    self.spotsAvailableField.text = "No spots available"
+                    self.spotsAvailableField.text = "No Spots Available"
                 } else {
-                    self.spotsAvailableField.text = count.description + " spots available"
+                    self.spotsAvailableField.text = count.description + " Spots Available"
                 }
             }
             else
@@ -128,7 +138,18 @@ class CarNotDocked: UIViewController {
         })
         
         //Stuff to do if a request was made
-        if (NSUserDefaults.standardUserDefaults().valueForKey("requestMade") != nil) {
+        if (tradeSetUp) {
+            //Stuff to do if a trade was set up
+            confirmASpot.hidden = true
+            makeARequest.hidden = true
+            cancelRequest.hidden = true
+            viewTrade.hidden = false
+            requestImage.hidden = true
+            requestInfo.hidden = true
+            tradeImage.hidden = false
+            tradeInfo.hidden = false
+        } else if (NSUserDefaults.standardUserDefaults().valueForKey("requestMade") != nil) {
+            //Stuff to do if a request was made
             if (NSUserDefaults.standardUserDefaults().boolForKey("requestMade")) {
                 confirmASpot.hidden = true
                 makeARequest.hidden = true
@@ -143,17 +164,6 @@ class CarNotDocked: UIViewController {
                 
                 requestInfo.text = "Request from " + formatter.stringFromDate(start) + " to " + formatter.stringFromDate(end)
             }
-        }
-        
-        //Stuff to do if a trade was set up
-        if (tradeSetUp) {
-            confirmASpot.hidden = true
-            makeARequest.hidden = true
-            cancelRequest.hidden = true
-            viewTrade.hidden = false
-            requestImage.hidden = true
-            requestInfo.hidden = true
-            makeARequest.setTitle("View Trade", forState: .Normal)
         }
     }
 
