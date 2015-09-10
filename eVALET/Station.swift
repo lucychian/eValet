@@ -22,3 +22,11 @@ func getStationList(block: PFArrayResultBlock) -> Void {
     
     query.findObjectsInBackgroundWithBlock(block)
 }
+
+
+func getUserStation(block: PFObjectResultBlock) -> Void {
+    let query = PFQuery(className: "OccupiedSpace")
+    query.whereKey("user", equalTo: PFUser.currentUser()!)
+    
+    query.getFirstObjectInBackgroundWithBlock(block)
+}
