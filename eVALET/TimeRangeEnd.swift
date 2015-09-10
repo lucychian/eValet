@@ -10,34 +10,32 @@ import UIKit
 
 class TimeRangeEnd: UIViewController {
 
+    //UI vars
     @IBOutlet var datePicker: UIDatePicker!
-    
     @IBOutlet var availableEndTime: UIButton!
+    @IBOutlet var startTime: UILabel!
+    
+    //Date setup
+    var start: NSDate!
+    var formatter = NSDateFormatter()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //Formate date and assign to start time text
+        formatter.timeStyle = .ShortStyle
+        startTime.text = formatter.stringFromDate(start)
+        
+        //Button styling
         availableEndTime.layer.cornerRadius = 5
         
+        //Date picker setup
         datePicker.backgroundColor = UIColor.whiteColor()
-
-        // Do any additional setup after loading the view.
+        datePicker.minimumDate = start
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

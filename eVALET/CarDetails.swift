@@ -10,9 +10,13 @@ import UIKit
 
 class CarDetails: UIViewController {
     
+    //User info
     @IBOutlet var profilePic: UIImageView!
-
     @IBOutlet var nameField: UILabel!
+    
+    //Variables passed from parent view
+    var passedImage: UIImage!
+    var passedName: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,15 +41,4 @@ class CarDetails: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

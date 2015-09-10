@@ -10,9 +10,21 @@ import UIKit
 
 class ChargingDetails: UIViewController {
 
+    //Charge info
+    @IBOutlet var stationNumber: UILabel!
+    @IBOutlet var stationLocation: UILabel!
+    
+    //Passed info
+    var passedStation: Int!
+    var passedLocation: String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        //Set charge info to passed info
+        stationNumber.text = "Station #" + passedStation.description
+        stationLocation.text = passedLocation
+        
         // Do any additional setup after loading the view.
     }
 
@@ -20,16 +32,4 @@ class ChargingDetails: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
