@@ -28,14 +28,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // [Optional] Track statistics around application opens.
         //PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
+
         
-        
-        /*PFUser.logInWithUsernameInBackground("myUsername", password: "myPassword") { (user:PFUser?, error: NSError?) -> Void in
-        getCarInfo(user!, block: { (obj: NSObject?, error: NSError?) -> Void in
-        print (obj)
+        PFUser.logInWithUsernameInBackground("myUsername", password: "myPassword", block: {
+            (user: PFUser?, error:NSError?) -> Void in
+            //createOccupiedSpace("BmvKSM5GGp", batteryCharge: 86, block: {
+              //  (result: Bool, error:NSError?)->Void in
+            getChargeTime({
+                (result:Double)->Void in
+                print(result)
+            })
+            //})
         })
-        }*/
-        
         
         return true
         
