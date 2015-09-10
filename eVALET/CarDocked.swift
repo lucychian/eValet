@@ -19,6 +19,11 @@ class CarDocked: UIViewController, UIScrollViewDelegate {
     @IBAction func viewTradeButton(sender: AnyObject) {
     }
     
+    @IBOutlet var chargeLabel: UILabel!
+    @IBOutlet var timeLeftLabel: UILabel!
+    @IBOutlet var tradeImage: UIImageView!
+    @IBOutlet var tradeLabel: UILabel!
+    
     //Frame for adding elements
     var frame: CGRect = CGRectMake(0, 0, 0, 0)
     
@@ -63,7 +68,7 @@ class CarDocked: UIViewController, UIScrollViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+    
         //Setup for page control element
         configurePageControl()
         
@@ -106,6 +111,51 @@ class CarDocked: UIViewController, UIScrollViewDelegate {
     
         vc1.passedStation = "2"
         vc1.passedLocation = "Garage"
+        
+        
+        getCurrentCharge({
+            (result:Double) -> Void in
+            self.chargeLabel.text = Int(round(result)).description + "% Charged"
+        })
+        
+        
+        /*getChargeTime({
+            (result:Double) -> Void in
+            let query = PFQuery(className:"OccupiedSpot")
+            query.whereKey("user", equalTo: PFUser.currentUser()!)
+            query.getFirstObjectInBackgroundWithBlock ({
+                (obj:PFObject?, error:NSError?)->Void in
+                let startTime = obj!.createdAt as NSDate?
+                let elapsed = startTime!.timeIntervalSinceNow
+                
+                let min = (elapsed / 60) % 60
+                let hr = elapsed / 3600
+                
+                self.timeLeftLabel.text = NSString(format: "%0.2d:%0.2d Until Full", hr, min) as String
+            })
+        })*/
+        
+        
+        getTrade({
+            (obj:PFObject?, err:NSError?) -> Void in
+            
+            if(obj == nil) {
+                self.tradeImage.hidden = true
+                self.tradeLabel.hidden = true
+            } else {
+                self.tradeImage.hidden = false
+                self.tradeLabel.hidden = false
+                
+                let time = obj!["exchangeTime"] as! NSDate?
+                
+                let formatter = NSDateFormatter()
+                formatter.timeStyle = .ShortStyle
+                self.tradeLabel.text = "Trade at" + formatter.stringFromDate(time!)
+            }
+            
+            
+        })
+        
             
         var frame1 = vc1.view.frame
         frame1.origin.x = self.view.frame.size.width

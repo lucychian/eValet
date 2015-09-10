@@ -61,14 +61,16 @@ func getCurrentCharge(block:(charge:Double)->Void) -> Void {
             (result: Double)->Void in
             let date = obj!.createdAt as NSDate?
             let timeCharged = date!.timeIntervalSinceNow / -3600.0
-            
+            print(result)
+            print(timeCharged)
+            print(obj!["batteryCharge"] as! Int)
             //full charge - return 100%
             if( result - timeCharged < 0) {
                 block(charge: 100)
             }
                 //still charging - add % charged to initial battery %
             else {
-                block(charge: 100 * (result - timeCharged)/result + (obj!["batteryCharge"] as! Double))
+                block(charge: 100 - (100 * ((result - timeCharged)/result)) + (obj!["batteryCharge"] as! Double))
             }
         })
     })

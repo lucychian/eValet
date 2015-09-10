@@ -589,7 +589,7 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="75% Percent Charged" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2dh-WQ-wBJ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00% Percent Charged" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2dh-WQ-wBJ">
                                 <rect key="frame" x="225" y="323" width="199" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="v9s-WA-HJl"/>
@@ -598,8 +598,8 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trade at 2:00PM" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wPw-8L-Sec">
-                                <rect key="frame" x="225" y="443" width="148" height="40"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trade at 00:00PM" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wPw-8L-Sec">
+                                <rect key="frame" x="225" y="443" width="159" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="zah-AA-9wD"/>
                                 </constraints>
@@ -644,8 +644,8 @@
                                     <constraint firstAttribute="width" constant="40" id="h2v-Eg-D0c"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1:30 Until Full" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TN5-bz-526">
-                                <rect key="frame" x="225" y="383" width="123" height="40"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00 Until Full" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TN5-bz-526">
+                                <rect key="frame" x="225" y="383" width="134" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="EjE-Jz-66R"/>
                                 </constraints>
@@ -703,8 +703,12 @@
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="chargeLabel" destination="2dh-WQ-wBJ" id="LM0-zH-DNg"/>
                         <outlet property="pageControl" destination="hZR-Sy-VNS" id="Dgv-TJ-RbU"/>
                         <outlet property="scrollView" destination="7em-xo-rbv" id="TIb-yx-iDd"/>
+                        <outlet property="timeLeftLabel" destination="TN5-bz-526" id="LpD-De-hO2"/>
+                        <outlet property="tradeImage" destination="bhm-EI-M3q" id="edl-Hb-hGK"/>
+                        <outlet property="tradeLabel" destination="wPw-8L-Sec" id="9ko-32-1y3"/>
                         <outlet property="viewTradeButton" destination="kTB-L6-Ffm" id="Wvs-Pu-ZZw"/>
                         <segue destination="aHT-GV-6RW" kind="show" identifier="signOut" id="WWT-nO-xUP"/>
                     </connections>
@@ -1194,7 +1198,7 @@
                                     </mask>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Time Range Requested:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yqU-JY-xTI">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time Range Requested:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yqU-JY-xTI">
                                 <rect key="frame" x="193" y="81" width="216" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="xG8-0f-2eg"/>
@@ -1643,10 +1647,10 @@
         <image name="drew" width="1080" height="720"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="TaR-hs-Req"/>
-        <segue reference="zqW-Oa-2c6"/>
         <segue reference="DNy-eS-ndL"/>
-        <segue reference="998-6j-YbT"/>
+        <segue reference="WWT-nO-xUP"/>
         <segue reference="zxa-HI-aDH"/>
+        <segue reference="TaR-hs-Req"/>
+        <segue reference="998-6j-YbT"/>
     </inferredMetricsTieBreakers>
 </document>
