@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8187.4" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8187.4" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="aHT-GV-6RW">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8151.3"/>
@@ -705,6 +705,7 @@
                         <outlet property="pageControl" destination="hZR-Sy-VNS" id="Dgv-TJ-RbU"/>
                         <outlet property="scrollView" destination="7em-xo-rbv" id="TIb-yx-iDd"/>
                         <outlet property="viewTradeButton" destination="kTB-L6-Ffm" id="Wvs-Pu-ZZw"/>
+                        <segue destination="aHT-GV-6RW" kind="show" identifier="signOut" id="WWT-nO-xUP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -905,7 +906,7 @@
                         <outlet property="spotsAvailableField" destination="Nat-rb-xt0" id="CfV-f7-6t1"/>
                         <outlet property="viewRequest" destination="kZg-Eg-YFp" id="Ueo-Iu-mgR"/>
                         <outlet property="viewTrade" destination="LCw-X6-nZF" id="gLN-EV-rwP"/>
-                        <segue destination="aHT-GV-6RW" kind="show" identifier="logOut" id="zqW-Oa-2c6"/>
+                        <segue destination="aHT-GV-6RW" kind="show" identifier="signOut" id="zqW-Oa-2c6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GFe-TT-BlO" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1662,9 +1663,10 @@
         <image name="drew" width="1080" height="720"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="998-6j-YbT"/>
         <segue reference="zHB-qT-rU4"/>
         <segue reference="taq-7B-cnJ"/>
-        <segue reference="5nc-ba-Bvt"/>
+        <segue reference="998-6j-YbT"/>
+        <segue reference="zqW-Oa-2c6"/>
+        <segue reference="5Ej-qZ-ziZ"/>
     </inferredMetricsTieBreakers>
 </document>

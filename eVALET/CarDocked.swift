@@ -32,7 +32,7 @@ class CarDocked: UIViewController, UIScrollViewDelegate {
         
         alert.title = "Settings"
         alert.addButtonWithTitle("About")
-        alert.addButtonWithTitle("Log Out")
+        alert.addButtonWithTitle("Sign Out")
         alert.addButtonWithTitle("Cancel")
         alert.show()
     }
@@ -48,7 +48,7 @@ class CarDocked: UIViewController, UIScrollViewDelegate {
         case 1:
             PFUser.logOutInBackground()
             NSUserDefaults.standardUserDefaults().setObject(false, forKey: "loggedIn")
-            self.performSegueWithIdentifier("logOut", sender: self)
+            self.performSegueWithIdentifier("signOut", sender: self)
         case 2:
             alert.endEditing(true)
         default:
