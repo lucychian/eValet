@@ -92,7 +92,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hsw-99-KAL">
-                                <rect key="frame" x="25" y="167" width="82.5" height="21"/>
+                                <rect key="frame" x="25" y="167" width="83" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="4pV-Gv-WEQ"/>
                                 </constraints>
@@ -221,7 +221,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fdz-Zl-lCW">
-                                <rect key="frame" x="25" y="329" width="75.5" height="21"/>
+                                <rect key="frame" x="25" y="329" width="76" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="8Kl-FH-ToO"/>
                                 </constraints>
@@ -362,8 +362,8 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose your car model." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QC2-bd-Dhn">
-                                <rect key="frame" x="193.5" y="206" width="214.5" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Choose your car model." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QC2-bd-Dhn">
+                                <rect key="frame" x="194" y="206" width="215" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="ko4-ns-5GF"/>
                                     <constraint firstAttribute="height" constant="21" id="wjY-ws-MaD"/>
@@ -372,8 +372,8 @@
                                 <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="drew" translatesAutoresizingMaskIntoConstraints="NO" id="VV3-Co-4RU">
-                                <rect key="frame" x="250.5" y="86" width="100" height="100"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="drew" translatesAutoresizingMaskIntoConstraints="NO" id="VV3-Co-4RU">
+                                <rect key="frame" x="251" y="86" width="100" height="100"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" button="YES" image="YES"/>
@@ -471,7 +471,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hiP-4H-TbZ">
-                                <rect key="frame" x="25" y="167" width="75.5" height="21"/>
+                                <rect key="frame" x="25" y="167" width="76" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="jgO-uO-CZ0"/>
                                 </constraints>
@@ -572,7 +572,7 @@
                                 </constraints>
                             </scrollView>
                             <pageControl opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="2" translatesAutoresizingMaskIntoConstraints="NO" id="hZR-Sy-VNS">
-                                <rect key="frame" x="288.5" y="266" width="23" height="37"/>
+                                <rect key="frame" x="289" y="266" width="23" height="37"/>
                                 <color key="pageIndicatorTintColor" red="0.81960784313725488" green="0.81960784313725488" blue="0.81960784313725488" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="currentPageIndicatorTintColor" red="0.0" green="0.50196081399917603" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
@@ -608,7 +608,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trade at 2:00PM" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wPw-8L-Sec">
-                                <rect key="frame" x="225" y="443" width="147.5" height="40"/>
+                                <rect key="frame" x="225" y="443" width="148" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="zah-AA-9wD"/>
                                 </constraints>
@@ -654,7 +654,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1:30 Until Full" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TN5-bz-526">
-                                <rect key="frame" x="225" y="383" width="122.5" height="40"/>
+                                <rect key="frame" x="225" y="383" width="123" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="EjE-Jz-66R"/>
                                 </constraints>
@@ -733,6 +733,105 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FordFusionEnergi" translatesAutoresizingMaskIntoConstraints="NO" id="iWV-zq-kIk">
+                                <rect key="frame" x="180" y="134" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="A4h-LN-uWl"/>
+                                    <constraint firstAttribute="height" constant="128" id="jMp-NO-edJ"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LCw-X6-nZF">
+                                <rect key="frame" x="25" y="530" width="550" height="50"/>
+                                <color key="backgroundColor" red="0.4431372549" green="0.6705882353" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="WJ9-Nb-etd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="View Trade">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="confirmTradeButton:" destination="cSh-zF-ZeF" eventType="touchUpInside" id="byl-KQ-lQv"/>
+                                    <action selector="viewTradeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mik-uw-3Bc"/>
+                                    <segue destination="TDz-3Q-iit" kind="show" id="GQg-GN-21v"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kZg-Eg-YFp">
+                                <rect key="frame" x="25" y="530" width="550" height="50"/>
+                                <color key="backgroundColor" red="0.4431372549" green="0.6705882353" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Ct8-pm-fRZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="View Request">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="confirmTradeButton:" destination="cSh-zF-ZeF" eventType="touchUpInside" id="3GR-bd-dom"/>
+                                    <action selector="viewTradeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VVM-IQ-UPK"/>
+                                    <segue destination="V4w-WR-ESx" kind="show" id="nH5-gG-CPU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ErB-6i-nh8">
+                                <rect key="frame" x="25" y="530" width="550" height="50"/>
+                                <color key="backgroundColor" red="0.4431372549" green="0.6705882353" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Tr0-5m-lWA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="Request Spot">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="confirmTradeButton:" destination="cSh-zF-ZeF" eventType="touchUpInside" id="jSl-TL-X0T"/>
+                                    <action selector="viewTradeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c1u-oL-8w6"/>
+                                    <segue destination="4Eg-Qa-L7o" kind="show" id="998-6j-YbT"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="JohnManville" translatesAutoresizingMaskIntoConstraints="NO" id="hfh-lE-Hc2">
+                                <rect key="frame" x="366" y="81" width="36" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="rZB-rU-Le9"/>
+                                    <constraint firstAttribute="width" constant="36" id="tC3-zK-n39"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Car" translatesAutoresizingMaskIntoConstraints="NO" id="k0K-dQ-bfL">
+                                <rect key="frame" x="173" y="282" width="44" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="K6m-n4-oCX"/>
+                                    <constraint firstAttribute="height" constant="40" id="WVn-gt-2AS"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="K6m-n4-oCX"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Spots Available" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nat-rb-xt0">
+                                <rect key="frame" x="227" y="282" width="170" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="YWA-Xo-Y6X"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xe0-bf-0EI">
+                                <rect key="frame" x="25" y="460" width="550" height="50"/>
+                                <color key="backgroundColor" red="0.4431372549" green="0.6705882353" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="gfJ-os-HBT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="Check In Spot">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="confirmTradeButton:" destination="cSh-zF-ZeF" eventType="touchUpInside" id="OjX-dA-UCJ"/>
+                                    <action selector="viewTradeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Xt-Uv-TqK"/>
+                                    <segue destination="rO5-kZ-6mJ" kind="show" id="qqZ-sX-J9o"/>
+                                </connections>
+                            </button>
                             <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ktz-4V-xmq">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="66"/>
                                 <constraints>
@@ -754,114 +853,15 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xe0-bf-0EI">
-                                <rect key="frame" x="25" y="460" width="550" height="50"/>
-                                <color key="backgroundColor" red="0.4431372549" green="0.6705882353" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="gfJ-os-HBT"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
-                                <state key="normal" title="Check In Spot">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="confirmTradeButton:" destination="cSh-zF-ZeF" eventType="touchUpInside" id="OjX-dA-UCJ"/>
-                                    <action selector="viewTradeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Xt-Uv-TqK"/>
-                                    <segue destination="rO5-kZ-6mJ" kind="show" id="qqZ-sX-J9o"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FordFusionEnergi" translatesAutoresizingMaskIntoConstraints="NO" id="iWV-zq-kIk">
-                                <rect key="frame" x="180" y="131" width="240" height="128"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="A4h-LN-uWl"/>
-                                    <constraint firstAttribute="height" constant="128" id="jMp-NO-edJ"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Spots Available" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nat-rb-xt0">
-                                <rect key="frame" x="227" y="279" width="170" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="YWA-Xo-Y6X"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Car" translatesAutoresizingMaskIntoConstraints="NO" id="k0K-dQ-bfL">
-                                <rect key="frame" x="173" y="279" width="44" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="K6m-n4-oCX"/>
-                                    <constraint firstAttribute="height" constant="40" id="WVn-gt-2AS"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="K6m-n4-oCX"/>
-                                    </mask>
-                                </variation>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="John Manville" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Scm-Zi-A2h" userLabel="Name">
-                                <rect key="frame" x="206" y="86" width="148" height="25"/>
+                                <rect key="frame" x="206" y="86" width="148" height="28"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="25" id="0xl-3E-yjg"/>
+                                    <constraint firstAttribute="height" constant="28" id="0xl-3E-yjg"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="JohnManville" translatesAutoresizingMaskIntoConstraints="NO" id="hfh-lE-Hc2">
-                                <rect key="frame" x="366" y="80.5" width="36" height="36"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="36" id="rZB-rU-Le9"/>
-                                    <constraint firstAttribute="width" constant="36" id="tC3-zK-n39"/>
-                                </constraints>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ErB-6i-nh8">
-                                <rect key="frame" x="25" y="530" width="550" height="50"/>
-                                <color key="backgroundColor" red="0.4431372549" green="0.6705882353" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="Tr0-5m-lWA"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
-                                <state key="normal" title="Request Spot">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="confirmTradeButton:" destination="cSh-zF-ZeF" eventType="touchUpInside" id="jSl-TL-X0T"/>
-                                    <action selector="viewTradeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c1u-oL-8w6"/>
-                                    <segue destination="4Eg-Qa-L7o" kind="show" id="998-6j-YbT"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kZg-Eg-YFp">
-                                <rect key="frame" x="25" y="530" width="550" height="50"/>
-                                <color key="backgroundColor" red="0.4431372549" green="0.6705882353" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="Ct8-pm-fRZ"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
-                                <state key="normal" title="View Request">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="confirmTradeButton:" destination="cSh-zF-ZeF" eventType="touchUpInside" id="3GR-bd-dom"/>
-                                    <action selector="viewTradeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VVM-IQ-UPK"/>
-                                    <segue destination="V4w-WR-ESx" kind="show" id="nH5-gG-CPU"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LCw-X6-nZF">
-                                <rect key="frame" x="25" y="530" width="550" height="50"/>
-                                <color key="backgroundColor" red="0.4431372549" green="0.6705882353" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="WJ9-Nb-etd"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
-                                <state key="normal" title="View Trade">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="confirmTradeButton:" destination="cSh-zF-ZeF" eventType="touchUpInside" id="byl-KQ-lQv"/>
-                                    <action selector="viewTradeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mik-uw-3Bc"/>
-                                    <segue destination="TDz-3Q-iit" kind="show" id="GQg-GN-21v"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.90980392156862744" green="0.90980392156862744" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -916,7 +916,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GFe-TT-BlO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2154" y="-386"/>
+            <point key="canvasLocation" x="2222" y="-398"/>
         </scene>
         <!--Spot Details-->
         <scene sceneID="GB7-XX-Vf7">
@@ -955,7 +955,7 @@
                                 </items>
                             </navigationBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Battery Percentage" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gnn-5U-A9S">
-                                <rect key="frame" x="25" y="172" width="207.5" height="21"/>
+                                <rect key="frame" x="25" y="172" width="208" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="gr8-OW-AF4"/>
                                 </constraints>
@@ -998,7 +998,7 @@
                                 </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Input the station you are charging at, and your current battery charge." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iFM-Ws-E8b">
-                                <rect key="frame" x="140.5" y="253" width="319" height="43"/>
+                                <rect key="frame" x="141" y="253" width="319" height="43"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="43" id="asa-k2-vFH"/>
                                     <constraint firstAttribute="width" constant="319" id="sBi-cI-c0s"/>
@@ -1250,8 +1250,8 @@
                                     </mask>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time Range Requested:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yqU-JY-xTI">
-                                <rect key="frame" x="193" y="81" width="215.5" height="25"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Time Range Requested:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yqU-JY-xTI">
+                                <rect key="frame" x="193" y="81" width="216" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="xG8-0f-2eg"/>
                                 </constraints>
@@ -1697,9 +1697,9 @@
         <image name="drew" width="1080" height="720"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="oVD-WJ-U0u"/>
-        <segue reference="elk-SI-WTf"/>
-        <segue reference="wH7-Su-IYQ"/>
+        <segue reference="998-6j-YbT"/>
+        <segue reference="zHB-qT-rU4"/>
         <segue reference="taq-7B-cnJ"/>
+        <segue reference="wH7-Su-IYQ"/>
     </inferredMetricsTieBreakers>
 </document>

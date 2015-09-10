@@ -19,6 +19,7 @@ class CarNotDocked: UIViewController {
     //User Info
     @IBOutlet var nameField: UILabel!
     @IBOutlet var profilePic: UIImageView!
+
     
     //Number of spots
     @IBOutlet var spotsAvailableField: UILabel!
