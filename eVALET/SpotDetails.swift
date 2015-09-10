@@ -32,6 +32,9 @@ class SpotDetails: UIViewController, UIPickerViewDataSource, UIPickerViewDelegat
             getStationList({
                 (stations:[AnyObject]?, error:NSError?) -> Void in
                 createOccupiedSpace(stations![self.spotPicker.selectedRowInComponent(0)].objectId!!, batteryCharge: charge!, block: { (result:Bool, error:NSError?) -> Void in
+                
+                    NSUserDefaults.standardUserDefaults().setObject(self.spotPicker.selectedRowInComponent(0), forKey: "station")
+                    NSUserDefaults.standardUserDefaults().setBool(true, forKey: "carDocked")
                     self.performSegueWithIdentifier("carCheckedIn", sender: self)
                 })
 

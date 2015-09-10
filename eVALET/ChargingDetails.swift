@@ -16,7 +16,6 @@ class ChargingDetails: UIViewController {
     
     //Passed info
     var passedStation: String!
-    var passedLocation: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,7 +23,7 @@ class ChargingDetails: UIViewController {
         //Set charge info to passed info
         stationNumber.text = "Station #" + passedStation
         
-        if (passedLocation.containsString("SJC-10")) {
+        if (passedStation.containsString("SJC-10")) {
             stationLocation.text = "Building 10"
         } else {
             stationLocation.text = "Garage"

@@ -17,6 +17,7 @@ class CarDetails: UIViewController {
     //Variables passed from parent view
     var passedImage: UIImage!
     var passedName: String!
+    var passedCar: UIImage!
     
     override func viewDidLoad() {
         super.viewDidLoad()
