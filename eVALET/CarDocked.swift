@@ -108,17 +108,12 @@ class CarDocked: UIViewController, UIScrollViewDelegate {
         
         //Child view controller setup for charging details
         let vc1 = ChargingDetails(nibName: "ChargingDetails", bundle: nil)
-        
-    
-        vc1.passedStation = "2"
-        vc1.passedLocation = "Garage"
-        
+        vc1.passedStation = NSUserDefaults.standardUserDefaults().objectForKey("station")?.description
         
         getCurrentCharge({
             (result:Double) -> Void in
             self.chargeLabel.text = Int(round(result)).description + "% Charged"
         })
-        
         
         getChargeTime({
             (result:Double) -> Void in
