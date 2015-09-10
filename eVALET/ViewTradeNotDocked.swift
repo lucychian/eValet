@@ -1,40 +1,38 @@
 //
-//  CarDocked.swift
+//  ViewTradeNotDocked.swift
 //  eVALET
 //
-//  Created by Drew Taylor on 8/26/15.
+//  Created by Jacob Copus on 9/9/15.
 //  Copyright © 2015 Drew Taylor. All rights reserved.
 //
 
 import UIKit
 
-class CarDocked: UIViewController, UIScrollViewDelegate {
+class ViewTradeNotDocked: UIViewController, UIScrollViewDelegate {
 
-    //UI components
+    //UI vars
     @IBOutlet var scrollView: UIScrollView!
-    @IBOutlet weak var pageControl: UIPageControl!
-    @IBOutlet var viewTradeButton: UIButton!
-    @IBAction func viewTradeButton(sender: AnyObject) {
-    }
+    @IBOutlet var pageControl: UIPageControl!
+    @IBOutlet var tradeField: UILabel!
     
-    //Frame for adding elements
+    //Setup trade time info
+    var tradeTime = NSDate()
+    var formatter = NSDateFormatter()
+    
+    //Setup frame for adding elements
     var frame: CGRect = CGRectMake(0, 0, 0, 0)
-    
-    //Set status bar style
-    override func preferredStatusBarStyle() -> UIStatusBarStyle {
-        return UIStatusBarStyle.LightContent
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //Setup for page control element
+        //Format time for trade info
+        formatter.timeStyle = .ShortStyle
+        tradeField.text = "Trade at " + formatter.stringFromDate(tradeTime)
+        
+        //Configure page controller
         configurePageControl()
         
-        //Button styling
-        viewTradeButton.layer.cornerRadius = 5
-        
-        //Scrollview setup
+        //Setup for scroll view
         scrollView.delegate = self
         self.view.addSubview(scrollView)
         for index in 0..<2 {
@@ -47,7 +45,7 @@ class CarDocked: UIViewController, UIScrollViewDelegate {
             self.scrollView.addSubview(subView)
         }
         
-        //More scrollview setup
+        //More setup for scroll view
         self.scrollView.contentSize = CGSizeMake(self.scrollView.frame.size.width * 1.27, self.scrollView.frame.size.height)
         pageControl.addTarget(self, action: Selector("changePage:"), forControlEvents: UIControlEvents.ValueChanged)
         
@@ -79,7 +77,7 @@ class CarDocked: UIViewController, UIScrollViewDelegate {
         vc1.didMoveToParentViewController(self)
     }
     
-    //Initial setup for page controller
+    //Setup for page controller
     func configurePageControl() {
         self.pageControl.numberOfPages = 2
         self.pageControl.currentPage = 0
@@ -88,23 +86,18 @@ class CarDocked: UIViewController, UIScrollViewDelegate {
         self.pageControl.currentPageIndicatorTintColor = UIColor(red: 24/255, green: 129/255, blue: 198/255, alpha: 1)
         
     }
-
-    //Currently unused function for changing page when tapped, breaks if implemented
+    
+    //Change page when page controller tapped, currently breaks when implemented
     func changePage(sender: AnyObject) -> () {
         //let x = CGFloat(pageControl.currentPage) * scrollView.frame.size.width * 1.27
         //scrollView.setContentOffset(CGPointMake(x, 0), animated: true)
         return
     }
     
-    //Change page dot to current page
+    //Change page dot when scrolling stops
     func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
         let pageNumber = round(scrollView.contentOffset.x / scrollView.frame.size.width)
         pageControl.currentPage = Int(pageNumber)
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
 }
-

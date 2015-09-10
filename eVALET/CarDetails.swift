@@ -10,42 +10,32 @@ import UIKit
 
 class CarDetails: UIViewController {
     
+    //User info
     @IBOutlet var profilePic: UIImageView!
-
     @IBOutlet var nameField: UILabel!
+    
+    //Variables passed from parent view
+    var passedImage: UIImage!
+    var passedName: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        /*
-        let documentsPath = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] as String
-        let destinationPath = documentsPath.NS.stringByAppendingPathComponent("evaletProfile.jpg")
-        profilePic.image = UIImage(contentsOfFile: destinationPath)
-
+        //Profile picture styling
+        profilePic.image = passedImage!
         profilePic.layer.borderColor = UIColor(red: 24/255, green: 129/255, blue: 198/255, alpha: 1).CGColor
         profilePic.layer.borderWidth = 2
         profilePic.layer.cornerRadius = 18
         profilePic.layer.masksToBounds = true
         
-        nameField.text = NSUserDefaults.standardUserDefaults().objectForKey("firstName")! as? String
-        nameField.text?.appendContentsOf(" ")
-        nameField.text?.appendContentsOf((NSUserDefaults.standardUserDefaults().objectForKey("lastName")! as? String)!)
-*/
+        //Change name to passed data
+        nameField.text = passedName!
+        
+        //Change car to passed image
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
