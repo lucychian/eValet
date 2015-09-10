@@ -39,9 +39,6 @@ class CarNotDocked: UIViewController {
     //Variable to hold the number of available spots
     var numAvailable = 0
     
-    //State of page, was a request made or a trade set up? Should never both be true, could both be false
-    var tradeSetUp = false
-    
     //Alert pop up
     var alert = UIAlertView()
     var about = UIAlertView()
@@ -53,7 +50,7 @@ class CarNotDocked: UIViewController {
         alert.title = "Settings"
         alert.addButtonWithTitle("About")
         alert.addButtonWithTitle("Sign Out")
-        alert.addButtonWithTitle("Cancel")
+        alert.addButtonWithTitle("Close")
         alert.show()
     }
     
@@ -91,7 +88,10 @@ class CarNotDocked: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //tradeSetUp =
+        //GET TRADE INFO IF EXISTS
+        //
+        //
+        //
         
         //Button styling
         confirmASpot.layer.cornerRadius = 5
@@ -138,16 +138,23 @@ class CarNotDocked: UIViewController {
         })
         
         //Stuff to do if a request was made
-        if (tradeSetUp) {
+        if (NSUserDefaults.standardUserDefaults().valueForKey("tradeSetUp") != nil) {
             //Stuff to do if a trade was set up
-            confirmASpot.hidden = true
-            makeARequest.hidden = true
-            cancelRequest.hidden = true
-            viewTrade.hidden = false
-            requestImage.hidden = true
-            requestInfo.hidden = true
-            tradeImage.hidden = false
-            tradeInfo.hidden = false
+            if (NSUserDefaults.standardUserDefaults().boolForKey("tradeSetUp")) {
+                confirmASpot.hidden = true
+                makeARequest.hidden = true
+                cancelRequest.hidden = true
+                viewTrade.hidden = false
+                requestImage.hidden = true
+                requestInfo.hidden = true
+                tradeImage.hidden = false
+                tradeInfo.hidden = false
+                
+                let tradeTime = NSUserDefaults.standardUserDefaults().valueForKey("tradeTime") as! NSDate
+                formatter.timeStyle = .ShortStyle
+                
+                tradeInfo.text = "Trade at " + formatter.stringFromDate(tradeTime)
+            }
         } else if (NSUserDefaults.standardUserDefaults().valueForKey("requestMade") != nil) {
             //Stuff to do if a request was made
             if (NSUserDefaults.standardUserDefaults().boolForKey("requestMade")) {

@@ -52,7 +52,6 @@
             <string>HelveticaNeue</string>
             <string>HelveticaNeue</string>
             <string>HelveticaNeue</string>
-            <string>HelveticaNeue</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -778,7 +777,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Spots Available" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nat-rb-xt0">
-                                <rect key="frame" x="227" y="282" width="170" height="40"/>
+                                <rect key="frame" x="225" y="282" width="170" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="YWA-Xo-Y6X"/>
                                 </constraints>
@@ -803,10 +802,11 @@
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Car" translatesAutoresizingMaskIntoConstraints="NO" id="k0K-dQ-bfL">
-                                <rect key="frame" x="173" y="282" width="44" height="40"/>
+                                <rect key="frame" x="175" y="282" width="40" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="K6m-n4-oCX"/>
                                     <constraint firstAttribute="height" constant="40" id="WVn-gt-2AS"/>
+                                    <constraint firstAttribute="width" constant="40" id="qTe-Bj-mNM"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -851,7 +851,7 @@
                                     <constraint firstAttribute="height" constant="50" id="WJ9-Nb-etd"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
-                                <state key="normal" title="View Trade">
+                                <state key="normal" title="Trade Details">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -861,7 +861,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Request from: 00:00 to 00:00" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tnH-0v-o58">
-                                <rect key="frame" x="227" y="332" width="200" height="80"/>
+                                <rect key="frame" x="225" y="332" width="200" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="2hE-fs-kZZ"/>
                                     <constraint firstAttribute="width" constant="200" id="gEM-v0-2q8"/>
@@ -871,10 +871,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Request" translatesAutoresizingMaskIntoConstraints="NO" id="J37-pX-APS">
-                                <rect key="frame" x="173" y="352" width="44" height="40"/>
+                                <rect key="frame" x="175" y="352" width="40" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="3CW-5E-VJa"/>
                                     <constraint firstAttribute="height" constant="40" id="AgF-TT-FB0"/>
+                                    <constraint firstAttribute="width" constant="40" id="dKK-sw-c8i"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -1137,7 +1138,7 @@
                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </textAttributes>
                                 <items>
-                                    <navigationItem title="Confirm Trade" id="1ra-ta-2pe">
+                                    <navigationItem title="Trade Details" id="1ra-ta-2pe">
                                         <barButtonItem key="leftBarButtonItem" image="Back" id="L7b-Fr-TMH">
                                             <inset key="imageInsets" minX="-10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1149,14 +1150,14 @@
                                 </items>
                             </navigationBar>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kcy-Ho-G4v">
-                                <rect key="frame" x="25" y="470" width="550" height="50"/>
+                                <rect key="frame" x="25" y="460" width="550" height="50"/>
                                 <color key="backgroundColor" red="0.4431372549" green="0.6705882353" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="350" id="OrU-WQ-1MS"/>
                                     <constraint firstAttribute="height" constant="50" id="aHQ-M7-GHQ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
-                                <state key="normal" title="Confirm Trade">
+                                <state key="normal" title="Reschedule Trade">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <variation key="default">
@@ -1171,7 +1172,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0yv-rJ-bFc">
-                                <rect key="frame" x="30" y="530" width="540" height="50"/>
+                                <rect key="frame" x="25" y="530" width="550" height="50"/>
                                 <color key="backgroundColor" red="0.80000000000000004" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="350" id="2oE-Tj-UMD"/>
@@ -1192,75 +1193,54 @@
                                     <segue destination="BYZ-38-t0r" kind="show" id="i7D-dH-rnY"/>
                                 </connections>
                             </button>
-                            <datePicker contentMode="scaleToFill" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="d0r-os-bbD">
-                                <rect key="frame" x="0.0" y="161" width="600" height="216"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" alwaysBounceHorizontal="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zvd-mO-IvC">
+                                <rect key="frame" x="0.0" y="66" width="600" height="200"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="216" id="Qeq-Mo-J9c"/>
+                                    <constraint firstAttribute="height" constant="200" id="YK1-h0-2fI"/>
                                 </constraints>
-                                <date key="date" timeIntervalSinceReferenceDate="462749133.06454998">
-                                    <!--2015-08-31 21:25:33 +0000-->
-                                </date>
-                            </datePicker>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose the time that works for you to trade cars, given the range supplied." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="68j-xv-hmQ">
-                                <rect key="frame" x="141" y="392" width="319" height="43"/>
-                                <accessibility key="accessibilityConfiguration">
-                                    <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
-                                </accessibility>
+                            </scrollView>
+                            <pageControl opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="2" translatesAutoresizingMaskIntoConstraints="NO" id="siV-ff-k3v">
+                                <rect key="frame" x="288" y="266" width="23" height="37"/>
+                                <color key="pageIndicatorTintColor" red="0.81960784310000001" green="0.81960784310000001" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="currentPageIndicatorTintColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="pageControl:" destination="BYZ-38-t0r" eventType="valueChanged" id="iI6-0C-mcA"/>
+                                </connections>
+                            </pageControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Trade at 00:00PM" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hlN-Vm-2af">
+                                <rect key="frame" x="225" y="323" width="159" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="319" id="1e0-09-6RM"/>
-                                    <constraint firstAttribute="width" constant="319" id="3yh-70-whW"/>
-                                    <constraint firstAttribute="width" constant="319" id="lHQ-FY-tEa"/>
-                                    <constraint firstAttribute="height" constant="43" id="uV1-9t-zFa"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                <color key="textColor" red="0.50196081399917603" green="0.50196081399917603" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="1e0-09-6RM"/>
-                                        <exclude reference="lHQ-FY-tEa"/>
-                                    </mask>
-                                </variation>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time Range Requested:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yqU-JY-xTI">
-                                <rect key="frame" x="193" y="81" width="216" height="25"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="25" id="xG8-0f-2eg"/>
+                                    <constraint firstAttribute="height" constant="40" id="fCu-6N-EZL"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11:30 AM - 2:00 PM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Olt-y5-kf8">
-                                <rect key="frame" x="210" y="121" width="180" height="25"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="HandShake" translatesAutoresizingMaskIntoConstraints="NO" id="1sw-Cd-DZe">
+                                <rect key="frame" x="175" y="323" width="40" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="25" id="db0-Tl-2M8"/>
+                                    <constraint firstAttribute="height" constant="40" id="N4j-Bf-Dcu"/>
+                                    <constraint firstAttribute="width" constant="40" id="V8g-hX-ETj"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.90980392156862744" green="0.90980392156862744" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="d0r-os-bbD" firstAttribute="leading" secondItem="5md-xX-GwK" secondAttribute="leadingMargin" constant="-20" id="1yK-sM-wMc"/>
-                            <constraint firstItem="Olt-y5-kf8" firstAttribute="top" secondItem="yqU-JY-xTI" secondAttribute="bottom" constant="15" id="3T4-4M-bnO"/>
-                            <constraint firstItem="yqU-JY-xTI" firstAttribute="centerX" secondItem="5md-xX-GwK" secondAttribute="centerX" id="5Dt-tw-tCg"/>
                             <constraint firstItem="5rV-4W-qT6" firstAttribute="leading" secondItem="5md-xX-GwK" secondAttribute="leadingMargin" constant="-20" id="7pa-q4-Ixi"/>
-                            <constraint firstItem="d0r-os-bbD" firstAttribute="centerX" secondItem="5md-xX-GwK" secondAttribute="centerX" id="99n-wo-1jS"/>
-                            <constraint firstItem="d0r-os-bbD" firstAttribute="top" secondItem="Olt-y5-kf8" secondAttribute="bottom" constant="15" id="EbI-sz-zwv"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="0yv-rJ-bFc" secondAttribute="trailing" constant="10" id="F02-0L-Ax5"/>
-                            <constraint firstItem="0yv-rJ-bFc" firstAttribute="top" secondItem="kcy-Ho-G4v" secondAttribute="bottom" constant="10" id="Frr-g0-4Hv"/>
-                            <constraint firstItem="yqU-JY-xTI" firstAttribute="top" secondItem="5rV-4W-qT6" secondAttribute="bottom" constant="15" id="R3w-vu-89g"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0yv-rJ-bFc" secondAttribute="trailing" constant="5" id="F02-0L-Ax5"/>
+                            <constraint firstItem="0yv-rJ-bFc" firstAttribute="top" secondItem="kcy-Ho-G4v" secondAttribute="bottom" constant="20" id="Frr-g0-4Hv"/>
+                            <constraint firstItem="hlN-Vm-2af" firstAttribute="top" secondItem="siV-ff-k3v" secondAttribute="bottom" constant="20" id="RyO-nF-ifN"/>
+                            <constraint firstItem="siV-ff-k3v" firstAttribute="top" secondItem="Zvd-mO-IvC" secondAttribute="bottom" id="UFK-pZ-hyc"/>
+                            <constraint firstItem="siV-ff-k3v" firstAttribute="centerX" secondItem="5md-xX-GwK" secondAttribute="centerX" id="VJM-f8-lRk"/>
+                            <constraint firstItem="Zvd-mO-IvC" firstAttribute="leading" secondItem="5md-xX-GwK" secondAttribute="leadingMargin" constant="-20" id="VpQ-t8-M7q"/>
                             <constraint firstItem="kcy-Ho-G4v" firstAttribute="leading" secondItem="5md-xX-GwK" secondAttribute="leadingMargin" constant="5" id="Wu5-br-nTM"/>
                             <constraint firstItem="kcy-Ho-G4v" firstAttribute="centerX" secondItem="5md-xX-GwK" secondAttribute="centerX" id="Yhn-QM-0Ja"/>
-                            <constraint firstItem="Olt-y5-kf8" firstAttribute="centerX" secondItem="5md-xX-GwK" secondAttribute="centerX" id="cYq-gg-wC0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Zvd-mO-IvC" secondAttribute="trailing" constant="-20" id="awR-7N-oHS"/>
+                            <constraint firstItem="1sw-Cd-DZe" firstAttribute="top" secondItem="siV-ff-k3v" secondAttribute="bottom" constant="20" id="blo-2Q-F0d"/>
+                            <constraint firstItem="hlN-Vm-2af" firstAttribute="leading" secondItem="1sw-Cd-DZe" secondAttribute="trailing" constant="10" id="cQn-cR-ACL"/>
                             <constraint firstAttribute="trailingMargin" secondItem="kcy-Ho-G4v" secondAttribute="trailing" constant="5" id="dhp-7v-CVP"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="d0r-os-bbD" secondAttribute="trailing" constant="-20" id="fkp-qN-nEN"/>
-                            <constraint firstItem="68j-xv-hmQ" firstAttribute="top" secondItem="d0r-os-bbD" secondAttribute="bottom" constant="15" id="hMh-s9-S7L"/>
-                            <constraint firstItem="68j-xv-hmQ" firstAttribute="centerX" secondItem="5md-xX-GwK" secondAttribute="centerX" id="jn0-bK-16B"/>
-                            <constraint firstItem="0yv-rJ-bFc" firstAttribute="leading" secondItem="5md-xX-GwK" secondAttribute="leadingMargin" constant="10" id="mN6-tp-Bji"/>
+                            <constraint firstItem="Zvd-mO-IvC" firstAttribute="top" secondItem="5rV-4W-qT6" secondAttribute="bottom" id="j5M-IH-tiW"/>
+                            <constraint firstItem="0yv-rJ-bFc" firstAttribute="leading" secondItem="5md-xX-GwK" secondAttribute="leadingMargin" constant="5" id="mN6-tp-Bji"/>
                             <constraint firstItem="85D-TG-KPn" firstAttribute="top" secondItem="0yv-rJ-bFc" secondAttribute="bottom" constant="20" id="pC9-ov-GGt"/>
                             <constraint firstItem="5rV-4W-qT6" firstAttribute="top" secondItem="5md-xX-GwK" secondAttribute="topMargin" id="s1t-VX-ixX"/>
                             <constraint firstAttribute="trailingMargin" secondItem="5rV-4W-qT6" secondAttribute="trailing" constant="-20" id="zda-yS-Sh1"/>
@@ -1275,7 +1255,6 @@
                     <connections>
                         <outlet property="cancelTradeButton" destination="0yv-rJ-bFc" id="5Vn-BA-zQy"/>
                         <outlet property="confirmTradeButton" destination="kcy-Ho-G4v" id="5w7-AA-b1b"/>
-                        <outlet property="datePicker" destination="d0r-os-bbD" id="WjP-8i-9w0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rPC-t6-Tdu" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1557,10 +1536,10 @@
             </objects>
             <point key="canvasLocation" x="1038" y="-2915"/>
         </scene>
-        <!--View Trade Not Docked-->
+        <!--View Trade Docked-->
         <scene sceneID="DJR-DK-4Tg">
             <objects>
-                <viewController modalTransitionStyle="crossDissolve" id="TDz-3Q-iit" customClass="ViewTradeNotDocked" customModule="eVALET" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="crossDissolve" id="TDz-3Q-iit" customClass="ViewTradeDocked" customModule="eVALET" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="M4s-Iw-0uv"/>
                         <viewControllerLayoutGuide type="bottom" id="mEn-Vf-k2S"/>
@@ -1623,16 +1602,41 @@
                                     <constraint firstAttribute="height" constant="40" id="eSi-CY-nw2"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="syZ-Qm-RZk">
+                                <rect key="frame" x="25" y="530" width="550" height="50"/>
+                                <color key="backgroundColor" red="0.80000000000000004" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="350" id="6oH-Va-xoN"/>
+                                    <constraint firstAttribute="height" constant="50" id="Ok4-qy-nQd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="Cancel Trade">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="6oH-Va-xoN"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="cancelTradePressed:" destination="TDz-3Q-iit" eventType="touchUpInside" id="K2g-3Z-hcy"/>
+                                    <action selector="confirmTradeButton:" destination="cSh-zF-ZeF" eventType="touchUpInside" id="7PH-Qf-meh"/>
+                                    <action selector="viewTradeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gTa-Ew-8yt"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.90980392160000001" green="0.90980392160000001" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="dON-Kd-Pkm" firstAttribute="centerX" secondItem="Ene-x9-wgD" secondAttribute="centerX" id="0ag-J2-nub"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="syZ-Qm-RZk" secondAttribute="trailing" constant="5" id="5Tj-Fd-zGZ"/>
                             <constraint firstItem="Idd-47-FTg" firstAttribute="top" secondItem="dON-Kd-Pkm" secondAttribute="bottom" constant="20" id="7YI-tb-kHN"/>
                             <constraint firstItem="BTV-8a-h6X" firstAttribute="top" secondItem="t92-Ze-s9j" secondAttribute="bottom" constant="20" id="7Zj-OR-qFU"/>
                             <constraint firstItem="BTV-8a-h6X" firstAttribute="top" secondItem="dON-Kd-Pkm" secondAttribute="bottom" constant="20" id="Avv-de-IQQ"/>
                             <constraint firstItem="t92-Ze-s9j" firstAttribute="top" secondItem="XpU-if-x48" secondAttribute="bottom" id="FLD-iG-SX2"/>
+                            <constraint firstItem="mEn-Vf-k2S" firstAttribute="top" secondItem="syZ-Qm-RZk" secondAttribute="bottom" constant="20" id="KLp-Cy-H4w"/>
                             <constraint firstItem="Idd-47-FTg" firstAttribute="leading" secondItem="BTV-8a-h6X" secondAttribute="trailing" constant="10" id="U7O-Eh-bpG"/>
                             <constraint firstItem="dON-Kd-Pkm" firstAttribute="top" secondItem="t92-Ze-s9j" secondAttribute="bottom" id="XHO-KN-mLC"/>
+                            <constraint firstItem="syZ-Qm-RZk" firstAttribute="leading" secondItem="Ene-x9-wgD" secondAttribute="leadingMargin" constant="5" id="bZx-w4-xm6"/>
                             <constraint firstItem="XpU-if-x48" firstAttribute="leading" secondItem="Ene-x9-wgD" secondAttribute="leadingMargin" constant="-20" id="c93-Tc-MeJ"/>
                             <constraint firstItem="t92-Ze-s9j" firstAttribute="leading" secondItem="Ene-x9-wgD" secondAttribute="leadingMargin" constant="-20" id="dQr-A0-4eG"/>
                             <constraint firstItem="t92-Ze-s9j" firstAttribute="centerX" secondItem="Ene-x9-wgD" secondAttribute="centerX" id="m37-Tk-xoJ"/>
@@ -1649,9 +1653,13 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="cancelTrade" destination="syZ-Qm-RZk" id="YDD-8Z-SEH"/>
                         <outlet property="pageControl" destination="dON-Kd-Pkm" id="kBt-Pd-Pnv"/>
-                        <outlet property="scrollView" destination="t92-Ze-s9j" id="0w2-Qv-jBd"/>
+                        <outlet property="pageController" destination="dON-Kd-Pkm" id="rVj-If-VW1"/>
+                        <outlet property="scrollView" destination="t92-Ze-s9j" id="VxH-CQ-gmu"/>
                         <outlet property="tradeField" destination="Idd-47-FTg" id="7Yl-VR-VyB"/>
+                        <outlet property="tradeInfo" destination="Idd-47-FTg" id="xtR-hu-Kdr"/>
+                        <segue destination="fBU-Sc-B7z" kind="show" identifier="cancelTrade" id="4mh-Ta-Gza"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ycg-rH-5zR" userLabel="First Responder" sceneMemberID="firstResponder"/>

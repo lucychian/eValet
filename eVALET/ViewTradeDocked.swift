@@ -1,14 +1,14 @@
 //
-//  ViewTradeNotDocked.swift
+//  ViewTradeDocked.swift
 //  eVALET
 //
-//  Created by Jacob Copus on 9/9/15.
+//  Created by Drew Taylor on 8/31/15.
 //  Copyright © 2015 Drew Taylor. All rights reserved.
 //
 
 import UIKit
 
-class ViewTradeNotDocked: UIViewController, UIScrollViewDelegate {
+class ViewTradeDocked: UIViewController, UIScrollViewDelegate {
 
     //UI vars
     @IBOutlet var scrollView: UIScrollView!
@@ -25,7 +25,7 @@ class ViewTradeNotDocked: UIViewController, UIScrollViewDelegate {
     
     //Alert pop up
     var alert = UIAlertView()
-    
+
     //Cancel trade
     @IBAction func cancelTradePressed(sender: AnyObject) {
         alert.title = "Cancel Trade"
@@ -49,7 +49,6 @@ class ViewTradeNotDocked: UIViewController, UIScrollViewDelegate {
             print("Error in alert selection.")
         }
     }
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -132,4 +131,8 @@ class ViewTradeNotDocked: UIViewController, UIScrollViewDelegate {
         pageControl.currentPage = Int(pageNumber)
     }
 
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
 }

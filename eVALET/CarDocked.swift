@@ -38,7 +38,7 @@ class CarDocked: UIViewController, UIScrollViewDelegate {
         alert.title = "Settings"
         alert.addButtonWithTitle("About")
         alert.addButtonWithTitle("Sign Out")
-        alert.addButtonWithTitle("Cancel")
+        alert.addButtonWithTitle("Close")
         alert.show()
     }
     
@@ -98,7 +98,8 @@ class CarDocked: UIViewController, UIScrollViewDelegate {
         let destinationPath = documentsPath.NS.stringByAppendingPathComponent("evaletProfile.jpg")
         vc0.passedImage = UIImage(contentsOfFile: destinationPath)
         vc0.passedName = NSUserDefaults.standardUserDefaults().objectForKey("firstName")!.description + " " + NSUserDefaults.standardUserDefaults().objectForKey("lastName")!.description
-        //vc0.passedCar =
+        let carPath = documentsPath.NS.stringByAppendingPathComponent("userCar.jpg")
+        vc0.passedCar = UIImage(contentsOfFile: carPath)
         
         //Add car details view controller as child
         self.addChildViewController(vc0)
