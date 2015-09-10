@@ -24,6 +24,7 @@ func createRequest(start:NSDate, end:NSDate, block: PFBooleanResultBlock) -> Voi
     request["availableStart"] = start
     request["availableEnd"] = end
     request["user"] = PFUser.currentUser()!
+    request["fulfilled"] = false
     
     request.saveInBackgroundWithBlock(block)
     

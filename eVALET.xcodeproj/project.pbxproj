@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3A0535D21B95022C0047E0A5 /* ConfirmAcceptRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0535D11B95022C0047E0A5 /* ConfirmAcceptRequest.swift */; };
+		3A0535D21B95022C0047E0A5 /* ViewTradeDocked.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0535D11B95022C0047E0A5 /* ViewTradeDocked.swift */; };
 		3A40DDA21A54C7DA0008D4A3 /* TimeRangeStart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A40DDA11A54C7DA0008D4A3 /* TimeRangeStart.swift */; };
 		3A40DDA41B9626F30008D4A3 /* TimeRangeEnd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A40DDA31B9626F30008D4A3 /* TimeRangeEnd.swift */; };
 		3A40DDA81B962D630008D4A3 /* CarNotDocked.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A40DDA71B962D630008D4A3 /* CarNotDocked.swift */; };
@@ -49,7 +49,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3A0535D11B95022C0047E0A5 /* ConfirmAcceptRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmAcceptRequest.swift; sourceTree = "<group>"; };
+		3A0535D11B95022C0047E0A5 /* ViewTradeDocked.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewTradeDocked.swift; sourceTree = "<group>"; };
 		3A40DDA11A54C7DA0008D4A3 /* TimeRangeStart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeRangeStart.swift; sourceTree = "<group>"; };
 		3A40DDA31B9626F30008D4A3 /* TimeRangeEnd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeRangeEnd.swift; sourceTree = "<group>"; };
 		3A40DDA71B962D630008D4A3 /* CarNotDocked.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarNotDocked.swift; sourceTree = "<group>"; };
@@ -123,7 +123,7 @@
 				3A8190A71B8E3316003F1C7F /* CarDetails.xib */,
 				3A8190A21B8E2C4C003F1C7F /* ChargingDetails.swift */,
 				3A8190A31B8E2C4C003F1C7F /* ChargingDetails.xib */,
-				3A0535D11B95022C0047E0A5 /* ConfirmAcceptRequest.swift */,
+				3A0535D11B95022C0047E0A5 /* ViewTradeDocked.swift */,
 			);
 			name = "When Car is Docked";
 			sourceTree = "<group>";
@@ -293,7 +293,7 @@
 				3A40DDAC1B963C920008D4A3 /* SpotDetails.swift in Sources */,
 				BF027BC41B9FFA7D00EA1443 /* Request.swift in Sources */,
 				3A40DDA81B962D630008D4A3 /* CarNotDocked.swift in Sources */,
-				3A0535D21B95022C0047E0A5 /* ConfirmAcceptRequest.swift in Sources */,
+				3A0535D21B95022C0047E0A5 /* ViewTradeDocked.swift in Sources */,
 				BF5921A81B9F634000AA72FF /* LoginCheck.swift in Sources */,
 				3AABD3491B97A33600D92D36 /* SignUpPageTwo.swift in Sources */,
 				BFF157081BA0A21F009BD50F /* ViewTradeNotDocked.swift in Sources */,
