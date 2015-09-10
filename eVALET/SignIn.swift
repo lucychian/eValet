@@ -31,6 +31,7 @@ class SignIn: UIViewController, UITextFieldDelegate {
             }
             else
             {
+                NSUserDefaults.standardUserDefaults().setObject(true, forKey: "loggedIn")
                 self.performSegueWithIdentifier("signIn", sender: self)
             }
             //error check
@@ -38,8 +39,18 @@ class SignIn: UIViewController, UITextFieldDelegate {
         })
 
     }
+    
+    //Allow user to tap out of keyboard
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //Input field setup
+        self.emailTextField.delegate = self
+        self.passwordTextField.delegate = self
         
         //Button styling
         signIn.layer.cornerRadius = 5
@@ -48,5 +59,31 @@ class SignIn: UIViewController, UITextFieldDelegate {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    //Handle "next" buttons while inputting into text fields
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        if (textField === emailTextField) {
+            if isValidEmail(textField.text!) {
+                passwordTextField.becomeFirstResponder()
+            } else {
+                alert.title = "Invalid Email"
+                alert.message = "Please enter a valid email address."
+                alert.addButtonWithTitle("Ok")
+                alert.show()
+            }
+        } else if (textField === passwordTextField) {
+            passwordTextField.resignFirstResponder()
+        }
+        
+        return true
+    }
+    
+    //Check if email address is valid
+    func isValidEmail(testStr:String) -> Bool {
+        let emailRegEx = "^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$"
+        
+        let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
+        return emailTest.evaluateWithObject(testStr)
     }
 }

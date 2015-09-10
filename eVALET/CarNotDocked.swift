@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Foundation
+import Parse
 
 class CarNotDocked: UIViewController {
 
@@ -29,6 +31,40 @@ class CarNotDocked: UIViewController {
     //State of page, was a request made or a trade set up? Should never both be true, could both be false
     var requestMade = false
     var tradeSetUp = false
+    
+    //Alert pop up
+    var alert = UIAlertView()
+    var about = UIAlertView()
+
+    //Handle press of settings button
+    @IBAction func settingsButtonPressed(sender: AnyObject) {
+        alert.delegate = self
+        
+        alert.title = "Settings"
+        alert.addButtonWithTitle("About")
+        alert.addButtonWithTitle("Log Out")
+        alert.addButtonWithTitle("Cancel")
+        alert.show()
+    }
+    
+    //Handle alert view button actions for settings
+    func alertView(alertView: UIAlertView!, clickedButtonAtIndex buttonIndex: Int) {
+        switch buttonIndex{
+        case 0:
+            about.title = "About"
+            about.message = "eVALET app made for Cisco GIS by Lucy Chian, Jacob Copus, Pooja Rajkumar, and Drew Taylor. Thanks for using the app!"
+            about.addButtonWithTitle("Close")
+            about.show()
+        case 1:
+            PFUser.logOutInBackground()
+            NSUserDefaults.standardUserDefaults().setObject(false, forKey: "loggedIn")
+            self.performSegueWithIdentifier("logOut", sender: self)
+        case 2:
+            alert.endEditing(true)
+        default:
+            print("Error in alert selection.")
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

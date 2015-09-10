@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Foundation
+import Parse
 
 class CarDocked: UIViewController, UIScrollViewDelegate {
 
@@ -20,6 +22,40 @@ class CarDocked: UIViewController, UIScrollViewDelegate {
     //Frame for adding elements
     var frame: CGRect = CGRectMake(0, 0, 0, 0)
     
+    //Alert pop up
+    var alert = UIAlertView()
+    var about = UIAlertView()
+    
+    //Handle press of settings button
+    @IBAction func settingsButtonPressed(sender: AnyObject) {
+        alert.delegate = self
+        
+        alert.title = "Settings"
+        alert.addButtonWithTitle("About")
+        alert.addButtonWithTitle("Log Out")
+        alert.addButtonWithTitle("Cancel")
+        alert.show()
+    }
+    
+    //Handle alert view button actions for settings
+    func alertView(alertView: UIAlertView!, clickedButtonAtIndex buttonIndex: Int) {
+        switch buttonIndex{
+        case 0:
+            about.title = "About"
+            about.message = "eVALET app made for Cisco GIS by Lucy Chian, Jacob Copus, Pooja Rajkumar, and Drew Taylor. Thanks for using the app!"
+            about.addButtonWithTitle("Close")
+            about.show()
+        case 1:
+            PFUser.logOutInBackground()
+            NSUserDefaults.standardUserDefaults().setObject(false, forKey: "loggedIn")
+            self.performSegueWithIdentifier("logOut", sender: self)
+        case 2:
+            alert.endEditing(true)
+        default:
+            print("Error in alert selection.")
+        }
+    }
+
     //Set status bar style
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
         return UIStatusBarStyle.LightContent
