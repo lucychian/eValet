@@ -51,6 +51,7 @@
             <string>HelveticaNeue</string>
             <string>HelveticaNeue</string>
             <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -826,18 +827,16 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kZg-Eg-YFp">
                                 <rect key="frame" x="25" y="530" width="550" height="50"/>
-                                <color key="backgroundColor" red="0.4431372549" green="0.6705882353" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.80000000000000004" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Ct8-pm-fRZ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
-                                <state key="normal" title="View Request">
+                                <state key="normal" title="Cancel Request">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="confirmTradeButton:" destination="cSh-zF-ZeF" eventType="touchUpInside" id="3GR-bd-dom"/>
-                                    <action selector="viewTradeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VVM-IQ-UPK"/>
-                                    <segue destination="V4w-WR-ESx" kind="show" id="nH5-gG-CPU"/>
+                                    <action selector="cancelRequestPressed:" destination="fBU-Sc-B7z" eventType="touchUpInside" id="OmV-nA-YmN"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LCw-X6-nZF">
@@ -856,6 +855,28 @@
                                     <segue destination="TDz-3Q-iit" kind="show" id="GQg-GN-21v"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Request from: 00:00 to 00:00" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tnH-0v-o58">
+                                <rect key="frame" x="227" y="342" width="200" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="2hE-fs-kZZ"/>
+                                    <constraint firstAttribute="width" constant="200" id="gEM-v0-2q8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Request" translatesAutoresizingMaskIntoConstraints="NO" id="J37-pX-APS">
+                                <rect key="frame" x="173" y="342" width="44" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="3CW-5E-VJa"/>
+                                    <constraint firstAttribute="height" constant="40" id="AgF-TT-FB0"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="AgF-TT-FB0"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.90980392156862744" green="0.90980392156862744" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -864,6 +885,7 @@
                             <constraint firstItem="iWV-zq-kIk" firstAttribute="top" secondItem="Scm-Zi-A2h" secondAttribute="bottom" constant="20" id="6bc-Dl-9hi"/>
                             <constraint firstItem="Scm-Zi-A2h" firstAttribute="top" secondItem="ktz-4V-xmq" secondAttribute="bottom" constant="20" id="9Ds-Rj-SuF"/>
                             <constraint firstItem="hfh-lE-Hc2" firstAttribute="top" secondItem="ktz-4V-xmq" secondAttribute="bottom" constant="15" id="CJy-lc-1kE"/>
+                            <constraint firstItem="J37-pX-APS" firstAttribute="top" secondItem="k0K-dQ-bfL" secondAttribute="bottom" constant="20" id="FVG-Si-OjH"/>
                             <constraint firstItem="LCw-X6-nZF" firstAttribute="leading" secondItem="dxK-f1-qLV" secondAttribute="leadingMargin" constant="5" id="G3O-MW-vX2"/>
                             <constraint firstAttribute="trailingMargin" secondItem="LCw-X6-nZF" secondAttribute="trailing" constant="5" id="HOD-96-p6D"/>
                             <constraint firstItem="k0K-dQ-bfL" firstAttribute="centerX" secondItem="dxK-f1-qLV" secondAttribute="centerX" constant="-105" id="Kzy-d5-Th9"/>
@@ -871,8 +893,10 @@
                             <constraint firstAttribute="trailingMargin" secondItem="kZg-Eg-YFp" secondAttribute="trailing" constant="5" id="MCb-6x-oEe"/>
                             <constraint firstItem="Xe0-bf-0EI" firstAttribute="leading" secondItem="dxK-f1-qLV" secondAttribute="leadingMargin" constant="5" id="Mh9-xR-EhM"/>
                             <constraint firstItem="k0K-dQ-bfL" firstAttribute="top" secondItem="iWV-zq-kIk" secondAttribute="bottom" constant="20" id="P6K-rl-0Nb"/>
+                            <constraint firstItem="tnH-0v-o58" firstAttribute="top" secondItem="Nat-rb-xt0" secondAttribute="bottom" constant="20" id="QEC-f2-bM8"/>
                             <constraint firstItem="kZg-Eg-YFp" firstAttribute="leading" secondItem="dxK-f1-qLV" secondAttribute="leadingMargin" constant="5" id="Rqb-ay-sGA"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Xe0-bf-0EI" secondAttribute="trailing" constant="5" id="T3g-dz-TAU"/>
+                            <constraint firstItem="tnH-0v-o58" firstAttribute="leading" secondItem="J37-pX-APS" secondAttribute="trailing" constant="10" id="V8F-oI-SRM"/>
                             <constraint firstItem="dKH-hN-cHq" firstAttribute="top" secondItem="ErB-6i-nh8" secondAttribute="bottom" constant="20" id="eIr-x2-IY3"/>
                             <constraint firstItem="Scm-Zi-A2h" firstAttribute="centerX" secondItem="dxK-f1-qLV" secondAttribute="centerX" constant="-20" id="eNW-bY-uWF"/>
                             <constraint firstItem="hfh-lE-Hc2" firstAttribute="centerY" secondItem="Scm-Zi-A2h" secondAttribute="centerY" id="etA-eW-Kle"/>
@@ -886,6 +910,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="ErB-6i-nh8" secondAttribute="trailing" constant="5" id="rf7-ew-zt1"/>
                             <constraint firstItem="Nat-rb-xt0" firstAttribute="leading" secondItem="k0K-dQ-bfL" secondAttribute="trailing" constant="10" id="riE-GJ-1Db"/>
                             <constraint firstItem="ErB-6i-nh8" firstAttribute="centerY" secondItem="dxK-f1-qLV" secondAttribute="centerY" id="tf9-Nb-VN8"/>
+                            <constraint firstItem="J37-pX-APS" firstAttribute="centerX" secondItem="dxK-f1-qLV" secondAttribute="centerX" constant="-105" id="vER-8d-icD"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ktz-4V-xmq" secondAttribute="trailing" constant="-20" id="wsl-Jq-xIY"/>
                             <constraint firstItem="ErB-6i-nh8" firstAttribute="leading" secondItem="dxK-f1-qLV" secondAttribute="leadingMargin" constant="5" id="zUu-J0-DGK"/>
                         </constraints>
@@ -899,12 +924,14 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="cancelRequest" destination="kZg-Eg-YFp" id="uqd-hd-Le3"/>
                         <outlet property="confirmASpot" destination="Xe0-bf-0EI" id="pyb-Y3-Ncv"/>
                         <outlet property="makeARequest" destination="ErB-6i-nh8" id="2l9-AF-3xf"/>
                         <outlet property="nameField" destination="Scm-Zi-A2h" id="Zo8-EG-Jl7"/>
                         <outlet property="profilePic" destination="hfh-lE-Hc2" id="k6Z-yq-CJy"/>
+                        <outlet property="requestImage" destination="J37-pX-APS" id="th2-ui-86W"/>
+                        <outlet property="requestInfo" destination="tnH-0v-o58" id="coa-Q6-fHq"/>
                         <outlet property="spotsAvailableField" destination="Nat-rb-xt0" id="CfV-f7-6t1"/>
-                        <outlet property="viewRequest" destination="kZg-Eg-YFp" id="Ueo-Iu-mgR"/>
                         <outlet property="viewTrade" destination="LCw-X6-nZF" id="gLN-EV-rwP"/>
                         <segue destination="aHT-GV-6RW" kind="show" identifier="signOut" id="zqW-Oa-2c6"/>
                     </connections>
@@ -1057,55 +1084,6 @@
             </objects>
             <point key="canvasLocation" x="2154" y="369"/>
         </scene>
-        <!--Request Details-->
-        <scene sceneID="WQs-aR-lok">
-            <objects>
-                <viewController modalTransitionStyle="crossDissolve" id="V4w-WR-ESx" customClass="RequestDetails" customModule="eVALET" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="GwM-ij-gNm"/>
-                        <viewControllerLayoutGuide type="bottom" id="14Y-TJ-HMS"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Lif-2v-503">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wei-Uh-0Qx">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="66"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="66" id="HCu-u6-hcx"/>
-                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="66" id="YF2-CI-Q1q"/>
-                                    <constraint firstAttribute="height" constant="66" id="i6o-ju-CTn"/>
-                                </constraints>
-                                <color key="barTintColor" red="0.4431372549" green="0.6705882353" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <textAttributes key="titleTextAttributes">
-                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
-                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </textAttributes>
-                                <items>
-                                    <navigationItem title="View Request" id="V61-ah-beZ">
-                                        <barButtonItem key="leftBarButtonItem" image="Back" id="ZuX-vz-Uij">
-                                            <inset key="imageInsets" minX="-10" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <connections>
-                                                <segue destination="fBU-Sc-B7z" kind="show" id="OPs-u1-dQa"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                        </subviews>
-                        <color key="backgroundColor" red="0.90980392156862744" green="0.90980392156862744" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="Wei-Uh-0Qx" firstAttribute="leading" secondItem="Lif-2v-503" secondAttribute="leadingMargin" constant="-20" id="a8R-vz-DlF"/>
-                            <constraint firstItem="Wei-Uh-0Qx" firstAttribute="top" secondItem="Lif-2v-503" secondAttribute="topMargin" id="ezI-Sh-53S"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Wei-Uh-0Qx" secondAttribute="trailing" constant="-20" id="pMG-p0-kDG"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="eEG-0w-agj" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3006" y="369"/>
-        </scene>
         <!--Confirm Accept Request-->
         <scene sceneID="B0f-OM-8fC">
             <objects>
@@ -1165,7 +1143,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0yv-rJ-bFc">
                                 <rect key="frame" x="30" y="530" width="540" height="50"/>
-                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.80000000000000004" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="350" id="2oE-Tj-UMD"/>
                                     <constraint firstAttribute="height" constant="50" id="z8I-PT-20x"/>
@@ -1304,6 +1282,9 @@
                                         <barButtonItem key="leftBarButtonItem" image="Back" id="89f-w9-riY">
                                             <inset key="imageInsets" minX="-10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <connections>
+                                                <segue destination="fBU-Sc-B7z" kind="show" id="1ws-KC-Jmz"/>
+                                            </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
@@ -1339,9 +1320,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="confirmTradeButton:" destination="cSh-zF-ZeF" eventType="touchUpInside" id="HmY-Qu-e1V"/>
-                                    <action selector="viewTradeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M6l-R7-JTd"/>
-                                    <segue destination="z0K-LJ-rZp" kind="show" id="lH4-c6-WHM"/>
+                                    <segue destination="z0K-LJ-rZp" kind="show" identifier="setStartTime" id="M3o-EZ-3Ga"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1454,7 +1433,7 @@
                                 <connections>
                                     <action selector="confirmTradeButton:" destination="cSh-zF-ZeF" eventType="touchUpInside" id="3NU-CO-GjT"/>
                                     <action selector="viewTradeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XSV-AW-ewj"/>
-                                    <segue destination="fBU-Sc-B7z" kind="show" id="oVD-WJ-U0u"/>
+                                    <segue destination="fBU-Sc-B7z" kind="show" identifier="makeRequest" id="oVD-WJ-U0u"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0:00 PM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S0u-LB-Xv6">
@@ -1528,7 +1507,7 @@
                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </textAttributes>
                                 <items>
-                                    <navigationItem title="eVALET" id="YLi-EQ-bIb"/>
+                                    <navigationItem id="YLi-EQ-bIb"/>
                                 </items>
                             </navigationBar>
                         </subviews>
@@ -1648,7 +1627,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ycg-rH-5zR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2618" y="1068"/>
+            <point key="canvasLocation" x="3054" y="369"/>
         </scene>
     </scenes>
     <resources>
@@ -1659,14 +1638,15 @@
         <image name="FordFusionEnergi" width="392" height="219"/>
         <image name="HandShake" width="44" height="44"/>
         <image name="JohnManville" width="394" height="296"/>
+        <image name="Request" width="44" height="44"/>
         <image name="SettingsButton" width="44" height="44"/>
         <image name="drew" width="1080" height="720"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="zHB-qT-rU4"/>
-        <segue reference="taq-7B-cnJ"/>
-        <segue reference="998-6j-YbT"/>
+        <segue reference="TaR-hs-Req"/>
         <segue reference="zqW-Oa-2c6"/>
-        <segue reference="5Ej-qZ-ziZ"/>
+        <segue reference="DNy-eS-ndL"/>
+        <segue reference="998-6j-YbT"/>
+        <segue reference="zxa-HI-aDH"/>
     </inferredMetricsTieBreakers>
 </document>

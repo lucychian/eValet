@@ -16,7 +16,7 @@ class TimeRangeEnd: UIViewController {
     @IBOutlet var startTime: UILabel!
     
     //Date setup
-    var start: NSDate!
+    var start = NSUserDefaults.standardUserDefaults().objectForKey("requestStart") as! NSDate
     var formatter = NSDateFormatter()
     
     override func viewDidLoad() {
@@ -37,5 +37,17 @@ class TimeRangeEnd: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func shouldPerformSegueWithIdentifier(identifier: String, sender: AnyObject!) -> Bool {
+        let end = datePicker.date
+        
+        if (identifier == "makeRequest") {
+            createRequest(start, end: end, block: {(success:Bool, error: NSError?) -> Void in })
+            NSUserDefaults.standardUserDefaults().setObject(end, forKey: "requestEnd")
+            NSUserDefaults.standardUserDefaults().setObject(true, forKey: "requestMade")
+        }
+        
+        return true
     }
 }

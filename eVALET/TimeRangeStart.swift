@@ -30,9 +30,11 @@ class TimeRangeStart: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
-        //Send start time to next view controller
-        let detailVC = segue.destinationViewController as! TimeRangeEnd;
-        detailVC.start = datePicker.date
+    override func shouldPerformSegueWithIdentifier(identifier: String, sender: AnyObject?) -> Bool {
+        if (identifier == "setStartTime") {
+            NSUserDefaults.standardUserDefaults().setObject(datePicker.date, forKey: "requestStart")
+        }
+        
+        return true
     }
 }
